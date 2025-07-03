@@ -59,7 +59,7 @@ function App() {
               />
               <div className="relative z-10">
                 <TiltedCard
-                  imageSrc="/assets/avatar.jpg"
+                  imageSrc={`${import.meta.env.BASE_URL}assets/avatar.jpg`}
                   altText="User Avatar"
                   captionText=""
                   containerHeight="300px"

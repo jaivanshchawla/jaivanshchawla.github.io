@@ -1,0 +1,15 @@
+@import "tailwindcss";
+body {
+  overflow-x: hidden;
+}
+
+#home-section,
+#about-section,
+#experience-section,
+#highlights-section,
+#education {
+  scroll-margin-top: 120px; /* Adjust to your navbar's height */
+}
+html {
+  scroll-behavior: smooth;
+}

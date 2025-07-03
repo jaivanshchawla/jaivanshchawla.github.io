@@ -1,0 +1,47 @@
+.blurred-blob {
+  width: 700px;
+  max-width: 100vw;
+  height: 350px;
+  background: radial-gradient(ellipse at 50% 100%,
+    orange 0%,
+    orange 18%,
+    #fb3a3a 38%,
+    #f472b6 65%,
+    #60a5fa 100%,
+    transparent 100%
+  );
+  opacity: 0.7;
+  filter: blur(60px);
+  border-radius: 350px 350px 0 0 / 350px 350px 0 0;
+  animation: blobMorph 16s ease-in-out infinite alternate;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.blob-top {
+  bottom: 0;
+  transform: translateX(-50%) scaleY(-1);
+}
+
+.blob-bottom {
+  top: 0;
+  transform: translateX(-50%);
+}
+
+@keyframes blobMorph {
+  0% {
+    border-radius: 350px 350px 0 0 / 350px 350px 0 0;
+    filter: blur(60px);
+  }
+  50% {
+    border-radius: 320px 380px 0 0 / 340px 370px 0 0;
+    filter: blur(70px);
+  }
+  100% {
+    border-radius: 350px 350px 0 0 / 350px 350px 0 0;
+    filter: blur(60px);
+  }
+}

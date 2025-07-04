@@ -27,7 +27,7 @@ export function Tibraze() {
         className='flex max-w-[270px] flex-col overflow-hidden border border-zinc-950/10 bg-white dark:border-zinc-50/10 dark:bg-zinc-900'
       >
         <MorphingDialogImage
-          src='/assets/omen.jpg'
+          src='/nordtech/assets/magician.png'
           alt='A desk lamp designed by Edouard Wilfrid Buquet in 1925. It features a double-arm design and is made from nickel-plated brass, aluminium and varnished wood.'
           className='h-48 w-full object-cover'
         />
@@ -57,7 +57,7 @@ export function Tibraze() {
           className='pointer-events-auto relative flex h-auto w-full flex-col overflow-hidden border border-zinc-950/10 bg-white dark:border-zinc-50/10 dark:bg-zinc-900 sm:w-[500px]'
         >
           <MorphingDialogImage
-            src='/assets/omen.jpg'
+            src='/nordtech/assets/magician.png'
             alt='A desk lamp designed by Edouard Wilfrid Buquet in 1925. It features a double-arm design and is made from nickel-plated brass, aluminium and varnished wood.'
             className='h-full w-full'
           />

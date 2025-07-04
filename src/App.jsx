@@ -142,8 +142,8 @@ function App() {
         <CaseStudyCard
           title="Smart Energy Grid"
           category="Capstone Project"
-          image="/assets/casestudy1.jpg"
-          logo="/assets/magician.png"
+          image="/nordtech/assets/turtle.png"
+          logo="/nordtech/assets/turtle.png"
           link="https://example.com/case-study"
           type="content"
         />

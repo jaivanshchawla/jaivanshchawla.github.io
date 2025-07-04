@@ -204,91 +204,110 @@ const cards = [
   {
     description: "Lana Del Rey",
     title: "Summertime Sadness",
-    src: "https://assets.aceternity.com/demos/lana-del-rey.jpeg",
+    src: "/nordtech/assets/cool.png",
     ctaText: "Visit",
     ctaLink: "https://ui.aceternity.com/templates",
-    content: () => {
-      return (
-        <p>
-          Lana Del Rey, an iconic American singer-songwriter, is celebrated for
-          her melancholic and cinematic music style. Born Elizabeth Woolridge
-          Grant in New York City, she has captivated audiences worldwide with
-          her haunting voice and introspective lyrics. <br /> <br /> Her songs
-          often explore themes of tragic romance, glamour, and melancholia,
-          drawing inspiration from both contemporary and vintage pop culture.
-          With a career that has seen numerous critically acclaimed albums, Lana
-          Del Rey has established herself as a unique and influential figure in
-          the music industry, earning a dedicated fan base and numerous
-          accolades.
-        </p>
-      );
-    },
+    content: () => (
+      <p>
+        Lana Del Rey, an iconic American singer-songwriter, is celebrated for
+        her melancholic and cinematic music style. Born Elizabeth Woolridge
+        Grant in New York City, she has captivated audiences worldwide with her
+        haunting voice and introspective lyrics. <br /> <br /> Her songs often
+        explore themes of tragic romance, glamour, and melancholia, drawing
+        inspiration from both contemporary and vintage pop culture. With a
+        career that has seen numerous critically acclaimed albums, Lana Del Rey
+        has established herself as a unique and influential figure in the music
+        industry, earning a dedicated fan base and numerous accolades.
+      </p>
+    ),
   },
   {
     description: "Babbu Maan",
     title: "Mitran Di Chhatri",
-    src: "https://assets.aceternity.com/demos/babbu-maan.jpeg",
+    src: "/nordtech/assets/guy.png",
     ctaText: "Visit",
     ctaLink: "https://ui.aceternity.com/templates",
-    content: () => {
-      return (
-        <p>
-          Babu Maan, a legendary Punjabi singer, is renowned for his soulful
-          voice and profound lyrics that resonate deeply with his audience. Born
-          in the village of Khant Maanpur in Punjab, India, he has become a
-          cultural icon in the Punjabi music industry. <br /> <br /> His songs
-          often reflect the struggles and triumphs of everyday life, capturing
-          the essence of Punjabi culture and traditions. With a career spanning
-          over two decades, Babu Maan has released numerous hit albums and
-          singles that have garnered him a massive fan following both in India
-          and abroad.
-        </p>
-      );
-    },
+    content: () => (
+      <p>
+        Babbu Maan, a legendary Punjabi singer, is renowned for his soulful
+        voice and profound lyrics that resonate deeply with his audience. Born
+        in the village of Khant Maanpur in Punjab, India, he has become a
+        cultural icon in the Punjabi music industry. <br /> <br /> His songs
+        often reflect the struggles and triumphs of everyday life, capturing the
+        essence of Punjabi culture and traditions. With a career spanning over
+        two decades, Babbu Maan has released numerous hit albums and singles
+        that have garnered him a massive fan following both in India and abroad.
+      </p>
+    ),
   },
-
   {
     description: "Metallica",
     title: "For Whom The Bell Tolls",
-    src: "https://assets.aceternity.com/demos/metallica.jpeg",
+    src: "/nordtech/assets/punk.png",
     ctaText: "Visit",
     ctaLink: "https://ui.aceternity.com/templates",
-    content: () => {
-      return (
-        <p>
-          Metallica, an iconic American heavy metal band, is renowned for their
-          powerful sound and intense performances that resonate deeply with
-          their audience. Formed in Los Angeles, California, they have become a
-          cultural icon in the heavy metal music industry. <br /> <br /> Their
-          songs often reflect themes of aggression, social issues, and personal
-          struggles, capturing the essence of the heavy metal genre. With a
-          career spanning over four decades, Metallica has released numerous hit
-          albums and singles that have garnered them a massive fan following
-          both in the United States and abroad.
-        </p>
-      );
-    },
+    content: () => (
+      <p>
+        Metallica, an iconic American heavy metal band, is renowned for their
+        powerful sound and intense performances. Formed in Los Angeles,
+        California, they have become a cultural icon in the heavy metal music
+        industry. <br /> <br /> Their songs often reflect themes of aggression,
+        social issues, and personal struggles. With a career spanning over four
+        decades, Metallica has released numerous hit albums and singles that
+        have garnered them a massive fan following both in the United States and
+        abroad.
+      </p>
+    ),
   },
   {
     description: "Lord Himesh",
     title: "Aap Ka Suroor",
-    src: "https://assets.aceternity.com/demos/aap-ka-suroor.jpeg",
+    src: "/nordtech/assets/chill.png",
     ctaText: "Visit",
     ctaLink: "https://ui.aceternity.com/templates",
-    content: () => {
-      return (
-        <p>
-          Himesh Reshammiya, a renowned Indian music composer, singer, and
-          actor, is celebrated for his distinctive voice and innovative
-          compositions. Born in Mumbai, India, he has become a prominent figure
-          in the Bollywood music industry. <br /> <br /> His songs often feature
-          a blend of contemporary and traditional Indian music, capturing the
-          essence of modern Bollywood soundtracks. With a career spanning over
-          two decades, Himesh Reshammiya has released numerous hit albums and
-          singles that have garnered him a massive fan following both in India
-          and abroad.
-        </p>
-      );
-    },
+    content: () => (
+      <p>
+        Himesh Reshammiya, a renowned Indian music composer, singer, and actor,
+        is celebrated for his distinctive voice and innovative compositions.
+        Born in Mumbai, India, he has become a prominent figure in the Bollywood
+        music industry. <br /> <br /> His songs often feature a blend of
+        contemporary and traditional Indian music. With a career spanning over
+        two decades, he has released numerous hit albums and singles that have
+        garnered him a massive fan following.
+      </p>
+    ),
+  },
+  {
+    description: "Daft Punk",
+    title: "One More Time",
+    src: "/nordtech/assets/rain.png",
+    ctaText: "Visit",
+    ctaLink: "https://ui.aceternity.com/templates",
+    content: () => (
+      <p>
+        Daft Punk, the legendary French electronic music duo, is celebrated for
+        revolutionizing house music with their innovative soundscapes and
+        iconic robot personas. <br /> <br /> Known for their infectious beats
+        and groundbreaking albums like "Discovery," Daft Punk has influenced
+        countless artists and earned a devoted global fan base.
+      </p>
+    ),
+  },
+  {
+    description: "Taylor Swift",
+    title: "Blank Space",
+    src: "/nordtech/assets/snake.png",
+    ctaText: "Visit",
+    ctaLink: "https://ui.aceternity.com/templates",
+    content: () => (
+      <p>
+        Taylor Swift, a multi-Grammy-winning singer-songwriter, is celebrated
+        for her storytelling prowess and genre-spanning musical evolution.
+        Rising to fame as a country artist before conquering pop music,
+        she has captivated millions worldwide. <br /> <br /> Swift’s deeply
+        personal lyrics and catchy melodies have made her one of the most
+        influential artists of her generation.
+      </p>
+    ),
   },
 ];

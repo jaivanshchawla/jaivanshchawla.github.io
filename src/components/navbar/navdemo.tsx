@@ -42,7 +42,7 @@ export function NavbarDemo() {
         <NavItems items={navItems} onItemClick={handleSmoothScroll} />
         <div className="flex items-center gap-4">
           <NavbarButton variant="secondary">Resume</NavbarButton>
-          <NavbarButton variant="red">Contact</NavbarButton>
+          <NavbarButton variant="customGrey">Contact</NavbarButton>
         </div>
       </NavBody>
 
@@ -72,14 +72,14 @@ export function NavbarDemo() {
           <div className="flex w-full flex-col gap-4">
             <NavbarButton
               onClick={() => setIsMobileMenuOpen(false)}
-              variant="green"
+              variant="customGreen"
               className="w-full"
             >
               Resume
             </NavbarButton>
             <NavbarButton
               onClick={() => setIsMobileMenuOpen(false)}
-              variant="blue"
+              variant="customSilver"
               className="w-full"
             >
               Contact

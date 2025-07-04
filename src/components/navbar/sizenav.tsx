@@ -257,16 +257,16 @@ export const NavbarLogo = () => (
   </a>
 );
 
-// --- NavbarButton with robust type-safety and color variants ---
+// --- NavbarButton with custom color variants via style prop ---
 
 type Variant =
   | "primary"
   | "secondary"
   | "dark"
   | "gradient"
-  | "red"
-  | "green"
-  | "blue";
+  | "customGrey"
+  | "customGreen"
+  | "customSilver";
 
 const baseStyles =
   "px-4 py-2 rounded-md text-sm font-bold relative cursor-pointer hover:-translate-y-0.5 transition duration-200 inline-block text-center";
@@ -277,9 +277,31 @@ const variantStyles: Record<Variant, string> = {
   dark: "bg-black text-white shadow-[0_0_24px_rgba(34,42,53,0.06)]",
   gradient:
     "bg-gradient-to-b from-blue-500 to-blue-700 text-white shadow-[0px_2px_0px_0px_rgba(255,255,255,0.3)_inset]",
-  red: "bg-red-600 text-white hover:bg-red-700",
-  green: "bg-green-600 text-white hover:bg-green-700",
-  blue: "bg-blue-600 text-white hover:bg-blue-700",
+  customGrey: "",   // #DADADA
+  customGreen: "",  // #DDE3DC
+  customSilver: "", // #CFCFCF
+};
+
+const variantStyleProps: Record<Variant, React.CSSProperties | undefined> = {
+  primary: undefined,
+  secondary: undefined,
+  dark: undefined,
+  gradient: undefined,
+  customGrey: {
+    backgroundColor: "#DADADA",
+    color: "#222", // dark text for contrast
+    border: "none",
+  },
+  customGreen: {
+    backgroundColor: "#DDE3DC",
+    color: "#222",
+    border: "none",
+  },
+  customSilver: {
+    backgroundColor: "#CFCFCF",
+    color: "#222",
+    border: "none",
+  },
 };
 
 type NavbarButtonProps<T extends React.ElementType> = {
@@ -300,6 +322,7 @@ export const NavbarButton = <T extends React.ElementType = "a">({
   return (
     <Tag
       className={cn(baseStyles, variantStyles[variant], className)}
+      style={variantStyleProps[variant]}
       {...props}
     >
       {children}

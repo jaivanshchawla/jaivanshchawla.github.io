@@ -90,7 +90,7 @@ const RippleButton = forwardRef<HTMLButtonElement, RippleButtonProps>(
     return (
       <button
         ref={setRefs}
-        className="font-jost duration-[600ms] relative flex items-center justify-center overflow-hidden rounded-full bg-[#cbfe7e] p-[1.3rem] text-[1.2rem] font-medium text-[#0e352e] transition hover:text-white"
+        className="font-jost duration-[600ms] relative flex items-center justify-center overflow-hidden rounded-full bg-[#C8E6C9] p-[1.3rem] text-[1.2rem] font-medium text-[#0e352e] transition hover:text-white"
         onMouseEnter={(e) => {
           if (e.target === e.currentTarget) {
             createRipple(e);
@@ -111,7 +111,7 @@ const RippleButton = forwardRef<HTMLButtonElement, RippleButtonProps>(
             position: absolute;
             border-radius: 50%;
             pointer-events: none;
-            background-color:rgb(0, 97, 142);
+            background-color:#66BB6A;
             z-index: 1;
             opacity: 0;
             transition: transform 50ms linear;

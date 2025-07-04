@@ -7,7 +7,7 @@
     justify-content: center;
     position: fixed;
     z-index: 99;
-    background-color: #141516;
+    background-color: #1A0F14;
 
     svg {
         position: absolute;
@@ -16,13 +16,13 @@
         height: calc(100% + 300px);
 
         path {
-            fill: #141516;
+            fill: #1A0F14;
         }
     }
 
     p {
         display: flex;
-        color: rgb(255, 235, 197);
+        color: #FF8A9A;
         font-size: 45px;
         align-items: center;
         position: absolute;

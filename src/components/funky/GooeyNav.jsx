@@ -212,63 +212,22 @@ const GooeyNav = ({
             animation: point calc(var(--time)) ease 1 -350ms;
           }
           @keyframes particle {
-            0% {
-              transform: rotate(0deg) translate(calc(var(--start-x)), calc(var(--start-y)));
-              opacity: 1;
-              animation-timing-function: cubic-bezier(0.55, 0, 1, 0.45);
-            }
-            70% {
-              transform: rotate(calc(var(--rotate) * 0.5)) translate(calc(var(--end-x) * 1.2), calc(var(--end-y) * 1.2));
-              opacity: 1;
-              animation-timing-function: ease;
-            }
-            85% {
-              transform: rotate(calc(var(--rotate) * 0.66)) translate(calc(var(--end-x)), calc(var(--end-y)));
-              opacity: 1;
-            }
-            100% {
-              transform: rotate(calc(var(--rotate) * 1.2)) translate(calc(var(--end-x) * 0.5), calc(var(--end-y) * 0.5));
-              opacity: 1;
-            }
+            0% { transform: rotate(0deg) translate(calc(var(--start-x)), calc(var(--start-y))); opacity: 1; animation-timing-function: cubic-bezier(0.55, 0, 1, 0.45); }
+            70% { transform: rotate(calc(var(--rotate) * 0.5)) translate(calc(var(--end-x) * 1.2), calc(var(--end-y) * 1.2)); opacity: 1; animation-timing-function: ease; }
+            85% { transform: rotate(calc(var(--rotate) * 0.66)) translate(calc(var(--end-x)), calc(var(--end-y))); opacity: 1; }
+            100% { transform: rotate(calc(var(--rotate) * 1.2)) translate(calc(var(--end-x) * 0.5), calc(var(--end-y) * 0.5)); opacity: 1; }
           }
           @keyframes point {
-            0% {
-              transform: scale(0);
-              opacity: 0;
-              animation-timing-function: cubic-bezier(0.55, 0, 1, 0.45);
-            }
-            25% {
-              transform: scale(calc(var(--scale) * 0.25));
-            }
-            38% {
-              opacity: 1;
-            }
-            65% {
-              transform: scale(var(--scale));
-              opacity: 1;
-              animation-timing-function: ease;
-            }
-            85% {
-              transform: scale(var(--scale));
-              opacity: 1;
-            }
-            100% {
-              transform: scale(0);
-              opacity: 0;
-            }
+            0% { transform: scale(0); opacity: 0; animation-timing-function: cubic-bezier(0.55, 0, 1, 0.45); }
+            25% { transform: scale(calc(var(--scale) * 0.25)); }
+            38% { opacity: 1; }
+            65% { transform: scale(var(--scale)); opacity: 1; animation-timing-function: ease; }
+            85% { transform: scale(var(--scale)); opacity: 1; }
+            100% { transform: scale(0); opacity: 0; }
           }
-          li, li a {
-            cursor: pointer !important;
-            user-select: none !important;
-          }
-          li.active {
-            color: black;
-            text-shadow: none;
-          }
-          li.active::after {
-            opacity: 1;
-            transform: scale(1);
-          }
+          li, li a { cursor: pointer !important; user-select: none !important; }
+          li.active { color: black; text-shadow: none; }
+          li.active::after { opacity: 1; transform: scale(1); }
           li::after {
             content: "";
             position: absolute;
@@ -280,6 +239,19 @@ const GooeyNav = ({
             transition: all 0.3s ease;
             z-index: -1;
           }
+          
+          /* Individual button colors when inactive */
+          li:not(.active):nth-child(1) { color: #D46A6A; } /* Red for GitHub */
+          li:not(.active):nth-child(2) { color: #6EAAD1; } /* Teal for LinkedIn */
+          li:not(.active):nth-child(3) { color: #E8A18C; } /* Blue for Email */
+          li:not(.active):nth-child(4) { color: #D08FA2 ; } /* Dove Pink for Instagram */
+          // li:not(.active):nth-child(4) { color: #96CEB4; } 
+          
+          /* You can add more colors for additional buttons */
+          li:not(.active):nth-child(5) { color: #FFEAA7; } /* Yellow */
+          li:not(.active):nth-child(6) { color: #DDA0DD; } /* Plum */
+          li:not(.active):nth-child(7) { color: #FFB347; } /* Orange */
+          li:not(.active):nth-child(8) { color: #FF69B4; } /* Pink */
         `}
       </style>
       <div className="w-full max-w-screen-lg mx-auto px-2" ref={containerRef}>
@@ -287,17 +259,12 @@ const GooeyNav = ({
           <ul
             ref={navRef}
             className="flex flex-wrap justify-center items-center gap-2 sm:gap-4 md:gap-6 lg:gap-8 px-2 sm:px-4 py-2 list-none m-0 relative z-[3]"
-            style={{
-              color: "white",
-              textShadow: "0 1px 1px hsl(205deg 30% 10% / 0.2)",
-            }}
+            style={{ textShadow: "0 1px 1px hsl(205deg 30% 10% / 0.2)" }}
           >
             {items.map((item, index) => (
               <li
                 key={index}
-                className={`py-1.5 px-3 text-sm sm:text-base md:text-lg rounded-full relative cursor-pointer transition-all duration-300 ease shadow-[0_0_0.5px_1.5px_transparent] text-white ${
-                  activeIndex === index ? "active" : ""
-                }`}
+                className={`py-1.5 px-3 text-sm sm:text-base md:text-lg rounded-full relative cursor-pointer transition-all duration-300 ease shadow-[0_0_0.5px_1.5px_transparent] ${activeIndex === index ? "active" : ""}`}
                 onClick={(e) => handleClick(e, index, item.href)}
                 tabIndex={0}
               >

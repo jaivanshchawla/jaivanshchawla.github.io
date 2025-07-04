@@ -10,7 +10,7 @@ const gooeyNavItems = [
   { label: "GitHub", href: "https://github.com/jaivanshchawla" },
   { label: "LinkedIn", href: "https://linkedin.com/in/jaivanshchawla" },
   { label: "Email", href: "mailto:jaivanshchawla@example.com" },
-  { label: "Twitter", href: "https://twitter.com/jaivanshchawla" },
+  { label: "Instagram", href: "https://twitter.com/jaivanshchawla" },
 ];
 
 const Hero = () => {

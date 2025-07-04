@@ -129,7 +129,7 @@ function App() {
       {/* More Highlights */}
       <div id="highlights-section">
         <h2 className="text-center mt-10 text-3xl font-semibold tracking-tight text-slate-200">
-          More Highlights
+          PROJECTS
         </h2>
         <div className="mt-8 px-4">
           <ExpandableCardGrid />

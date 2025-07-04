@@ -32,9 +32,7 @@ const getContainer = () => {
   const id = "_coolMode_effect";
   let existingContainer = document.getElementById(id);
 
-  if (existingContainer) {
-    return existingContainer;
-  }
+  if (existingContainer) return existingContainer;
 
   const container = document.createElement("div");
   container.setAttribute("id", id);
@@ -59,7 +57,7 @@ const applyParticleEffect = (
   const defaultParticle = "circle";
   const particleType = options?.particle || defaultParticle;
   const sizes = [15, 20, 25, 35, 45];
-  const limit = 45;
+  const limit = 22; // reduced to half the original 45
 
   let particles: CoolParticle[] = [];
   let autoAddParticle = false;
@@ -69,8 +67,10 @@ const applyParticleEffect = (
   const container = getContainer();
 
   function generateParticle() {
-    const size =
-      options?.size || sizes[Math.floor(Math.random() * sizes.length)];
+    const pixelRatio = window.devicePixelRatio || 1;
+    const baseSize = options?.size || sizes[Math.floor(Math.random() * sizes.length)];
+    const size = baseSize * pixelRatio;
+
     const speedHorz = options?.speedHorz || Math.random() * 10;
     const speedUp = options?.speedUp || Math.random() * 25;
     const spinVal = Math.random() * 360;
@@ -88,11 +88,14 @@ const applyParticleEffect = (
       circle.setAttributeNS(null, "cx", (size / 2).toString());
       circle.setAttributeNS(null, "cy", (size / 2).toString());
       circle.setAttributeNS(null, "r", (size / 2).toString());
-      circle.setAttributeNS(
-        null,
-        "fill",
-        `hsl(${Math.random() * 360}, 70%, 50%)`,
-      );
+
+      const colors = [
+        "#1292EE", "#57B0FB", "#FFC555", "#FF141E", "#56C288",
+        "#F23459", "#00FFFF", "#f81ce5", "#5F5FFF", "#6e56cf",
+        "#F8C231", "#FF6900", "#007AFF", "#00BB83", "#B7F2FF",
+      ];
+      const randomColor = colors[Math.floor(Math.random() * colors.length)];
+      circle.setAttributeNS(null, "fill", randomColor);
 
       circleSVG.appendChild(circle);
       circleSVG.setAttribute("width", size.toString());
@@ -105,7 +108,6 @@ const applyParticleEffect = (
 
     particle.style.position = "absolute";
     particle.style.transform = `translate3d(${left}px, ${top}px, 0px) rotate(${spinVal}deg)`;
-
     container.appendChild(particle);
 
     particles.push({
@@ -150,7 +152,6 @@ const applyParticleEffect = (
   }
 
   let animationFrame: number | undefined;
-
   let lastParticleTimestamp = 0;
   const particleGenerationDelay = 30;
 
@@ -172,12 +173,16 @@ const applyParticleEffect = (
   loop();
 
   const isTouchInteraction = "ontouchstart" in window;
-
   const tap = isTouchInteraction ? "touchstart" : "mousedown";
   const tapEnd = isTouchInteraction ? "touchend" : "mouseup";
   const move = isTouchInteraction ? "touchmove" : "mousemove";
 
+  let lastMouseUpdate = 0;
   const updateMousePosition = (e: MouseEvent | TouchEvent) => {
+    const now = performance.now();
+    if (now - lastMouseUpdate < 16) return; // throttle updates to ~60fps
+    lastMouseUpdate = now;
+
     if ("touches" in e) {
       mouseX = e.touches?.[0].clientX;
       mouseY = e.touches?.[0].clientY;
@@ -199,9 +204,7 @@ const applyParticleEffect = (
   element.addEventListener(move, updateMousePosition, { passive: true });
   element.addEventListener(tap, tapHandler, { passive: true });
   element.addEventListener(tapEnd, disableAutoAddParticle, { passive: true });
-  element.addEventListener("mouseleave", disableAutoAddParticle, {
-    passive: true,
-  });
+  element.addEventListener("mouseleave", disableAutoAddParticle, { passive: true });
 
   return () => {
     element.removeEventListener(move, updateMousePosition);
@@ -214,9 +217,7 @@ const applyParticleEffect = (
         cancelAnimationFrame(animationFrame);
         clearInterval(interval);
 
-        if (--instanceCounter === 0) {
-          container.remove();
-        }
+        if (--instanceCounter === 0) container.remove();
       }
     }, 500);
   };
@@ -236,7 +237,6 @@ export const CoolMode: React.FC<CoolModeProps> = ({ children, options }) => {
     }
   }, [options]);
 
-  // Ensure children is a single React element and supports ref
   if (!React.isValidElement(children)) {
     throw new Error("CoolMode expects a single, valid React element as its child.");
   }

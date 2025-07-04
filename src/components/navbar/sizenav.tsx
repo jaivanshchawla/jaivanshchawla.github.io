@@ -10,7 +10,13 @@ import {
 import React, { useRef, useState } from "react";
 
 // Navbar container with scroll-based visibility logic
-export const Navbar = ({ children, className }: { children: React.ReactNode; className?: string }) => {
+export const Navbar = ({
+  children,
+  className,
+}: {
+  children: React.ReactNode;
+  className?: string;
+}) => {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollY } = useScroll({ target: ref });
   const [visible, setVisible] = useState(false);
@@ -20,17 +26,31 @@ export const Navbar = ({ children, className }: { children: React.ReactNode; cla
   });
 
   return (
-    <motion.div ref={ref} className={cn("fixed inset-x-0 top-0 z-50 w-full", className)}>
+    <motion.div
+      ref={ref}
+      className={cn("fixed inset-x-0 top-0 z-50 w-full", className)}
+    >
       {React.Children.map(children, (child) =>
         React.isValidElement(child)
-          ? React.cloneElement(child as React.ReactElement<{ visible?: boolean }>, { visible })
+          ? React.cloneElement(
+              child as React.ReactElement<{ visible?: boolean }>,
+              { visible }
+            )
           : child
       )}
     </motion.div>
   );
 };
 
-export const NavBody = ({ children, className, visible }: { children: React.ReactNode; className?: string; visible?: boolean }) => (
+export const NavBody = ({
+  children,
+  className,
+  visible,
+}: {
+  children: React.ReactNode;
+  className?: string;
+  visible?: boolean;
+}) => (
   <motion.div
     animate={{
       backdropFilter: "blur(10px)",
@@ -53,7 +73,18 @@ export const NavBody = ({ children, className, visible }: { children: React.Reac
   </motion.div>
 );
 
-export const NavItems = ({ items, className, onItemClick }: { items: { name: string; link: string }[]; className?: string; onItemClick?: (e: React.MouseEvent<HTMLAnchorElement>, link: string) => void }) => {
+export const NavItems = ({
+  items,
+  className,
+  onItemClick,
+}: {
+  items: { name: string; link: string }[];
+  className?: string;
+  onItemClick?: (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    link: string
+  ) => void;
+}) => {
   const [hovered, setHovered] = useState<number | null>(null);
 
   return (
@@ -85,7 +116,15 @@ export const NavItems = ({ items, className, onItemClick }: { items: { name: str
   );
 };
 
-export const MobileNav = ({ children, className, visible }: { children: React.ReactNode; className?: string; visible?: boolean }) => (
+export const MobileNav = ({
+  children,
+  className,
+  visible,
+}: {
+  children: React.ReactNode;
+  className?: string;
+  visible?: boolean;
+}) => (
   <motion.div
     animate={{
       backdropFilter: "blur(10px)",
@@ -107,20 +146,44 @@ export const MobileNav = ({ children, className, visible }: { children: React.Re
   </motion.div>
 );
 
-export const MobileNavHeader = ({ children, className }: { children: React.ReactNode; className?: string }) => (
-  <div className={cn("flex w-full flex-row items-center justify-between px-2 py-1", className)}>
+export const MobileNavHeader = ({
+  children,
+  className,
+}: {
+  children: React.ReactNode;
+  className?: string;
+}) => (
+  <div
+    className={cn(
+      "flex w-full flex-row items-center justify-between px-2 py-1",
+      className
+    )}
+  >
     {children}
   </div>
 );
 
-export const MobileNavMenu = ({ children, className, isOpen }: { children: React.ReactNode; className?: string; isOpen: boolean }) => (
+export const MobileNavMenu = ({
+  children,
+  className,
+  isOpen,
+}: {
+  children: React.ReactNode;
+  className?: string;
+  isOpen: boolean;
+}) => (
   <AnimatePresence>
     {isOpen && (
       <motion.div
         initial={{ opacity: 0, y: -20, scale: 0.95 }}
         animate={{ opacity: 1, y: 8, scale: 1 }} // Adjust y for spacing
         exit={{ opacity: 0, y: -20, scale: 0.95 }}
-        transition={{ type: "spring", stiffness: 300, damping: 30, duration: 0.4 }}
+        transition={{
+          type: "spring",
+          stiffness: 300,
+          damping: 30,
+          duration: 0.4,
+        }}
         className={cn(
           "absolute inset-x-0 top-16 z-50 flex w-full flex-col items-start justify-start gap-4 rounded-lg bg-black/70 backdrop-blur-lg px-4 py-8 shadow-[0_0_24px_rgba(34,42,53,0.06),0_1px_1px_rgba(0,0,0,0.05)] dark:bg-neutral-900/70",
           className
@@ -132,7 +195,13 @@ export const MobileNavMenu = ({ children, className, isOpen }: { children: React
   </AnimatePresence>
 );
 
-export const MobileNavToggle = ({ isOpen, onClick }: { isOpen: boolean; onClick: () => void }) => (
+export const MobileNavToggle = ({
+  isOpen,
+  onClick,
+}: {
+  isOpen: boolean;
+  onClick: () => void;
+}) => (
   <div className="relative w-8 h-8" onClick={onClick}>
     <AnimatePresence mode="wait" initial={false}>
       {isOpen ? (
@@ -141,7 +210,12 @@ export const MobileNavToggle = ({ isOpen, onClick }: { isOpen: boolean; onClick:
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           exit={{ opacity: 0, scale: 0.8 }}
-          transition={{ type: "spring", stiffness: 400, damping: 30, duration: 0.3 }}
+          transition={{
+            type: "spring",
+            stiffness: 400,
+            damping: 30,
+            duration: 0.3,
+          }}
           className="absolute inset-0 flex items-center justify-center"
         >
           <X className="text-black dark:text-white w-8 h-8" />
@@ -152,7 +226,12 @@ export const MobileNavToggle = ({ isOpen, onClick }: { isOpen: boolean; onClick:
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           exit={{ opacity: 0, scale: 0.8 }}
-          transition={{ type: "spring", stiffness: 400, damping: 30, duration: 0.3 }}
+          transition={{
+            type: "spring",
+            stiffness: 400,
+            damping: 30,
+            duration: 0.3,
+          }}
           className="absolute inset-0 flex items-center justify-center"
         >
           <Menu className="text-black dark:text-white w-8 h-8" />
@@ -163,36 +242,66 @@ export const MobileNavToggle = ({ isOpen, onClick }: { isOpen: boolean; onClick:
 );
 
 export const NavbarLogo = () => (
-  <a href="#" className="relative z-20 mr-4 flex items-center space-x-2 px-2 py-1 text-sm font-normal text-black">
-    <img src="/nordtech/assets/navlogo.png" alt="logo" width={30} height={30} className="rounded-md" />
+  <a
+    href="#"
+    className="relative z-20 mr-4 flex items-center space-x-2 px-2 py-1 text-sm font-normal text-black"
+  >
+    <img
+      src="/nordtech/assets/navlogo.png"
+      alt="logo"
+      width={30}
+      height={30}
+      className="rounded-md"
+    />
     <span className="font-medium text-black dark:text-white">coolguyjc</span>
   </a>
 );
 
-export const NavbarButton = ({
-  href,
-  as: Tag = "a",
-  children,
-  className,
-  variant = "primary",
-  ...props
-}: {
-  href?: string;
-  as?: React.ElementType;
-  children: React.ReactNode;
-  className?: string;
-  variant?: "primary" | "secondary" | "dark" | "gradient";
-} & (React.ComponentPropsWithoutRef<"a"> | React.ComponentPropsWithoutRef<"button">)) => {
-  const baseStyles = "px-4 py-2 rounded-md bg-white text-black text-sm font-bold relative cursor-pointer hover:-translate-y-0.5 transition duration-200 inline-block text-center";
-  const variantStyles = {
-    primary: "shadow-[0_0_24px_rgba(34,42,53,0.06)]",
-    secondary: "bg-transparent shadow-none dark:text-white",
-    dark: "bg-black text-white shadow-[0_0_24px_rgba(34,42,53,0.06)]",
-    gradient: "bg-gradient-to-b from-blue-500 to-blue-700 text-white shadow-[0px_2px_0px_0px_rgba(255,255,255,0.3)_inset]",
-  };
+// --- NavbarButton with robust type-safety and color variants ---
 
+type Variant =
+  | "primary"
+  | "secondary"
+  | "dark"
+  | "gradient"
+  | "red"
+  | "green"
+  | "blue";
+
+const baseStyles =
+  "px-4 py-2 rounded-md text-sm font-bold relative cursor-pointer hover:-translate-y-0.5 transition duration-200 inline-block text-center";
+
+const variantStyles: Record<Variant, string> = {
+  primary: "bg-white text-black shadow-[0_0_24px_rgba(34,42,53,0.06)]",
+  secondary: "bg-transparent shadow-none dark:text-white text-black",
+  dark: "bg-black text-white shadow-[0_0_24px_rgba(34,42,53,0.06)]",
+  gradient:
+    "bg-gradient-to-b from-blue-500 to-blue-700 text-white shadow-[0px_2px_0px_0px_rgba(255,255,255,0.3)_inset]",
+  red: "bg-red-600 text-white hover:bg-red-700",
+  green: "bg-green-600 text-white hover:bg-green-700",
+  blue: "bg-blue-600 text-white hover:bg-blue-700",
+};
+
+type NavbarButtonProps<T extends React.ElementType> = {
+  as?: T;
+  variant?: Variant;
+  className?: string;
+  children: React.ReactNode;
+} & Omit<React.ComponentPropsWithoutRef<T>, "as" | "className" | "children" | "variant">;
+
+export const NavbarButton = <T extends React.ElementType = "a">({
+  as,
+  variant = "primary",
+  className,
+  children,
+  ...props
+}: NavbarButtonProps<T>) => {
+  const Tag = as || "a";
   return (
-    <Tag href={href} className={cn(baseStyles, variantStyles[variant], className)} {...props}>
+    <Tag
+      className={cn(baseStyles, variantStyles[variant], className)}
+      {...props}
+    >
       {children}
     </Tag>
   );

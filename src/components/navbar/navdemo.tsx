@@ -22,7 +22,10 @@ export function NavbarDemo() {
 
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-  const handleSmoothScroll = (e: React.MouseEvent<HTMLAnchorElement>, link: string) => {
+  const handleSmoothScroll = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    link: string
+  ) => {
     e.preventDefault();
     const target = document.querySelector(link);
     if (target) {
@@ -39,7 +42,7 @@ export function NavbarDemo() {
         <NavItems items={navItems} onItemClick={handleSmoothScroll} />
         <div className="flex items-center gap-4">
           <NavbarButton variant="secondary">Resume</NavbarButton>
-          <NavbarButton variant="primary">Contact</NavbarButton>
+          <NavbarButton variant="red">Contact</NavbarButton>
         </div>
       </NavBody>
 
@@ -55,7 +58,6 @@ export function NavbarDemo() {
 
         <MobileNavMenu
           isOpen={isMobileMenuOpen}
-          onClose={() => setIsMobileMenuOpen(false)}
         >
           {navItems.map((item, idx) => (
             <a
@@ -70,14 +72,14 @@ export function NavbarDemo() {
           <div className="flex w-full flex-col gap-4">
             <NavbarButton
               onClick={() => setIsMobileMenuOpen(false)}
-              variant="primary"
+              variant="green"
               className="w-full"
             >
               Resume
             </NavbarButton>
             <NavbarButton
               onClick={() => setIsMobileMenuOpen(false)}
-              variant="primary"
+              variant="blue"
               className="w-full"
             >
               Contact

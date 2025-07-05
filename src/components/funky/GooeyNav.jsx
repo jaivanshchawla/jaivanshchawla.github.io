@@ -88,21 +88,24 @@ const GooeyNav = ({
   const handleClick = (e, index, href) => {
     e.preventDefault();
     const liEl = e.currentTarget;
-    if (activeIndex === index) return;
-    setActiveIndex(index);
-    updateEffectPosition(liEl);
-    if (filterRef.current) {
-      const particles = filterRef.current.querySelectorAll(".particle");
-      particles.forEach((p) => filterRef.current.removeChild(p));
+
+    if (activeIndex !== index) {
+      setActiveIndex(index);
+      updateEffectPosition(liEl);
+      if (filterRef.current) {
+        const particles = filterRef.current.querySelectorAll(".particle");
+        particles.forEach((p) => filterRef.current.removeChild(p));
+      }
+      if (textRef.current) {
+        textRef.current.classList.remove("active");
+        void textRef.current.offsetWidth;
+        textRef.current.classList.add("active");
+      }
+      if (filterRef.current) {
+        makeParticles(filterRef.current);
+      }
     }
-    if (textRef.current) {
-      textRef.current.classList.remove("active");
-      void textRef.current.offsetWidth;
-      textRef.current.classList.add("active");
-    }
-    if (filterRef.current) {
-      makeParticles(filterRef.current);
-    }
+
     const delay = animationTime * 1 + timeVariance + 100;
     setTimeout(() => {
       if (href && href !== "#") {
@@ -245,9 +248,6 @@ const GooeyNav = ({
           li:not(.active):nth-child(2) { color: #6EAAD1; } /* Teal for LinkedIn */
           li:not(.active):nth-child(3) { color: #E8A18C; } /* Blue for Email */
           li:not(.active):nth-child(4) { color: #D08FA2 ; } /* Dove Pink for Instagram */
-          // li:not(.active):nth-child(4) { color: #96CEB4; } 
-          
-          /* You can add more colors for additional buttons */
           li:not(.active):nth-child(5) { color: #FFEAA7; } /* Yellow */
           li:not(.active):nth-child(6) { color: #DDA0DD; } /* Plum */
           li:not(.active):nth-child(7) { color: #FFB347; } /* Orange */

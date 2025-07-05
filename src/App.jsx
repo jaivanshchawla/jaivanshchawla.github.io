@@ -59,7 +59,7 @@ function App() {
               />
               <div className="relative z-10">
                 <TiltedCard
-                  imageSrc="/nordtech/assets/avatar.jpg"
+                  imageSrc="/nordtech/assets/jc.webp"
                   altText="User Avatar"
                   captionText=""
                   containerHeight="300px"

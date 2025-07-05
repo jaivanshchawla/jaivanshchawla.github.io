@@ -5,7 +5,6 @@ import Hero from "./components/home";
 import "./App.css";
 import ClickSpark from "./components/ui/ClickSpark";
 import { NavbarDemo } from "./components/navbar/navdemo";
-
 import { LampContainer } from "./components/ui/lamp";
 import TiltedCard from "./components/card/TiltedCard";
 import { GlowEffect } from "./components/card/gloweffect";
@@ -15,7 +14,7 @@ import { Manipal } from "./components/motion-primitives/MUJ";
 import { Presidium } from "./components/motion-primitives/PRES";
 import { Tibraze } from "./components/motion-primitives/differ";
 import CaseStudyCard from "./components/card/casecard";
-import IntegrationPills from "./components/ui/pills"; // ⬅️ ADDED THIS IMPORT
+import IntegrationPills from "./components/ui/pills";
 
 function App() {
   const [showPreloader, setShowPreloader] = useState(true);
@@ -75,7 +74,6 @@ function App() {
                 />
               </div>
             </div>
-            {/* Bio */}
             <div className="meinfo max-w-2xl text-slate-300 text-justify">
               <p className="leading-relaxed text-[16px]">
                 I’ve been fascinated by computers, electronics, microcontrollers,
@@ -128,7 +126,7 @@ function App() {
         </div>
       </div>
 
-      {/* More Highlights */}
+      {/* Projects Section */}
       <div id="highlights-section">
         <h1 className="text-center mt-10 text-3xl font-semibold tracking-tight text-transparent md:text-6xl bg-gradient-to-br from-[#E6D6F7] to-[#B89BE6] bg-clip-text">
           PROJECTS
@@ -139,18 +137,34 @@ function App() {
         </div>
       </div>
 
-      {/* Tibraze and CaseStudyCard side-by-side */}
-      <div className="mt-8 flex flex-col md:flex-row justify-center gap-8 px-4">
-        <Tibraze />
-        <CaseStudyCard
-          title="Smart Energy Grid"
-          category="Capstone Project"
-          image="/nordtech/assets/turtle.png"
-          logo="/nordtech/assets/turtle.png"
-          link="https://example.com/case-study"
-          type="content"
-        />
-      </div>
+      {/* Aligned Tibraze + CaseStudyCard */}
+      <div className="relative max-w-2xl mx-auto w-full mt-8 min-h-[700px]">
+  {/* Tibraze - absolute on md+, normal flow below */}
+  <div className="
+    md:absolute md:left-[25%] md:translate-x-[-50%]
+    w-full flex justify-center mb-8 md:mb-0
+  ">
+    <Tibraze />
+  </div>
+
+  {/* CaseStudyCard - absolute on md+, normal flow below */}
+  <div className="
+    md:absolute md:left-[75%] md:translate-x-[-50%]
+    w-full flex justify-center
+  ">
+    <CaseStudyCard
+      title="Smart Energy Grid"
+      category="Capstone Project"
+      image="/nordtech/assets/turtle.png"
+      logo="/nordtech/assets/turtle.png"
+      link="https://example.com/case-study"
+      type="content"
+    />
+  </div>
+</div>
+
+
+
 
       {/* Skills Section */}
       <div id="skills-section" className="mt-20">
@@ -186,7 +200,6 @@ function App() {
         sparkCount={8}
         duration={400}
       >
-        {/* Navbar included globally */}
         <NavbarDemo />
 
         <AnimatePresence onExitComplete={handlePreloaderExitComplete}>

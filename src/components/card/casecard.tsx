@@ -1,5 +1,4 @@
 import React from "react";
-
 import { cn } from "../../lib/utils";
 
 interface CaseStudyCardProps extends React.HTMLAttributes<HTMLDivElement> {
@@ -22,7 +21,8 @@ const ContentCard: React.FC<CaseStudyCardProps> = ({ title, category, image, log
         backgroundPosition: "center",
       }}
     >
-      {image && <div className="opacity-70rounded-lg absolute inset-0 bg-black" />}
+      {/* Solid blue overlay with no opacity */}
+      {image && <div className="rounded-lg absolute inset-0 bg-[#0D0A12]" />}
 
       <div className="relative z-10">
         {category && <div className="text-xs text-[#F6C1D5]">{category}</div>}
@@ -32,7 +32,7 @@ const ContentCard: React.FC<CaseStudyCardProps> = ({ title, category, image, log
           </div>
         )}
       </div>
-      {logo && ( // Check if image exists
+      {logo && (
         <img src={logo} alt={title} className="z-10 h-9 rounded-lg" />
       )}
     </div>
@@ -74,7 +74,7 @@ const HoverRevealSlip = ({ show }: { show: React.ReactNode }) => {
       {/* Sliding link/tab coming out from behind */}
       <div
         className={cn(
-          "z-1 absolute bottom-0 right-0 flex h-48 w-14 -translate-x-10 transform items-start justify-start rounded-r-lg bg-green-600 pl-2 pt-2 text-sm font-bold text-white transition-transform duration-300 ease-in-out [backface-visibility:hidden] group-hover:translate-x-0 group-hover:rotate-[5deg]",
+          "z-1 absolute bottom-0 right-0 flex h-48 w-14 -translate-x-10 transform items-start justify-start rounded-r-lg bg-[#C58D84] pl-2 pt-2 text-sm font-bold text-white transition-transform duration-300 ease-in-out [backface-visibility:hidden] group-hover:translate-x-0 group-hover:rotate-[5deg]",
         )}
       >
         <div className="-rotate-90 whitespace-nowrap pb-22 pr-9">Forks, Git & Code</div>

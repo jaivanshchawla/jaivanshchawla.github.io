@@ -18,8 +18,13 @@ const Hero = () => {
 
   useEffect(() => {
     if (introRef.current) {
+      const children = introRef.current.children;
+
+      // Animate all except the subheading (fade + move up)
       gsap.fromTo(
-        introRef.current.children,
+        Array.from(children).filter(
+          (el) => !el.classList.contains(styles.subheading)
+        ),
         { opacity: 0, y: 60 },
         {
           opacity: 1,
@@ -29,12 +34,32 @@ const Hero = () => {
           stagger: 0.3,
         }
       );
+
+      // Animate the subheading (fade + blur + color change)
+      const subheadingEl = introRef.current.querySelector(`.${styles.subheading}`);
+      if (subheadingEl) {
+        gsap.fromTo(
+          subheadingEl,
+          {
+            opacity: 0,
+            filter: "blur(20px)",
+            color: "#000000",
+          },
+          {
+            opacity: 1,
+            filter: "blur(0px)",
+            color: "#C5A3FF",
+            duration: 5,
+            ease: "power3.out",
+          }
+        );
+      }
     }
   }, []);
 
   return (
     <section className={styles.hero}>
-      {/* Spotlight: now rendered first, behind everything */}
+      {/* Spotlight: rendered first, behind everything */}
       <Spotlight />
 
       {/* Background SVG */}

@@ -28,7 +28,7 @@ const ContentCard: React.FC<CaseStudyCardProps> = ({ title, category, image, log
         {category && <div className="text-xs text-gray-200">{category}</div>}
 
         {title && (
-          <div className="mr-2 text-lg font-bold leading-tight tracking-wide text-red-300">
+          <div className="mr-2 text-[0.96rem] font-bold leading-tight tracking-wide text-[#D6B4F7]">
             {title}
           </div>
         )}

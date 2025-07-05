@@ -153,8 +153,8 @@ function App() {
           w-full flex justify-center
         ">
           <CaseStudyCard
-            title="Smart Energy Grid"
-            category="Capstone Project"
+            title="Explore the code for these projects and more on my GitHub — where clean commits meet clever solutions. Fork responsibly."
+            category="The One With All The Code"
             image="/nordtech/assets/turtle.png"
             logo="/nordtech/assets/turtle.png"
             link="https://example.com/case-study"

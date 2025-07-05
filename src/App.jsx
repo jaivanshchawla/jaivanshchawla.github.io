@@ -102,11 +102,12 @@ function App() {
 
       {/* Academic Profile */}
       <h1
-        id="education"
-        className="text-center mt-20 text-4xl font-medium tracking-tight text-transparent md:text-6xl bg-gradient-to-br from-slate-300 to-slate-500 bg-clip-text"
-      >
-        ACADEMIC PROFILE
-      </h1>
+  id="education"
+  className="text-center mt-20 text-4xl font-medium tracking-tight text-transparent md:text-6xl bg-gradient-to-br from-[#F6C5B7] to-[#E79C83] bg-clip-text"
+>
+  ACADEMIC PROFILE
+</h1>
+
 
       <div className="mt-8 flex justify-center">
         <Manipal />

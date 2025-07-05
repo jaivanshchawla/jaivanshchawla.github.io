@@ -165,9 +165,10 @@ function App() {
 
       {/* Skills Section */}
       <div id="skills-section">
-        <h1 className="text-center text-4xl font-medium tracking-tight text-transparent md:text-6xl bg-gradient-to-br from-[#E0BBE4] to-[#957DAD] bg-clip-text">
-          SKILLS
-        </h1>
+        <h1 className="text-center mt-20 text-4xl font-medium tracking-tight text-transparent md:text-6xl bg-gradient-to-br from-[#E6C1B5] to-[#D88C9A] bg-clip-text">
+  SKILLS
+</h1>
+
         <IntegrationPills />
       </div>
 

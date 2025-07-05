@@ -21,7 +21,7 @@ const ContentCard: React.FC<CaseStudyCardProps> = ({ title, category, image, log
         backgroundPosition: "center",
       }}
     >
-      {/* Solid blue overlay with no opacity */}
+      {/* Solid overlay with no opacity */}
       {image && <div className="rounded-lg absolute inset-0 bg-[#0D0A12]" />}
 
       <div className="relative z-10">
@@ -67,8 +67,10 @@ const HoverRevealSlip = ({ show }: { show: React.ReactNode }) => {
           "relative z-50 h-full w-48 origin-left transition-transform duration-500 ease-out [transform-style:preserve-3d] group-hover:[transform:rotateY(-30deg)]",
         )}
       >
-        {/* Front side of the card */}
-        <div className={cn("h-full w-full rounded-lg bg-white shadow-md", common)}>{show}</div>
+        {/* Front side of the card - now green */}
+        <div className={cn("h-full w-full rounded-lg bg-green-600 shadow-md", common)}>
+          {show}
+        </div>
       </div>
 
       {/* Sliding link/tab coming out from behind */}

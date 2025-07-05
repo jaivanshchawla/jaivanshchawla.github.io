@@ -15,7 +15,7 @@ import { Manipal } from "./components/motion-primitives/MUJ";
 import { Presidium } from "./components/motion-primitives/PRES";
 import { Tibraze } from "./components/motion-primitives/differ";
 import CaseStudyCard from "./components/card/casecard";
-import { Heading1 } from "lucide-react";
+import IntegrationPills from "./components/ui/pills"; // ⬅️ ADDED THIS IMPORT
 
 function App() {
   const [showPreloader, setShowPreloader] = useState(true);
@@ -103,12 +103,11 @@ function App() {
 
       {/* Academic Profile */}
       <h1
-  id="education"
-  className="text-center mt-20 text-4xl font-medium tracking-tight text-transparent md:text-6xl bg-gradient-to-br from-[#F6C5B7] to-[#E79C83] bg-clip-text"
->
-  ACADEMIC PROFILE
-</h1>
-
+        id="education"
+        className="text-center mt-20 text-4xl font-medium tracking-tight text-transparent md:text-6xl bg-gradient-to-br from-[#F6C5B7] to-[#E79C83] bg-clip-text"
+      >
+        ACADEMIC PROFILE
+      </h1>
 
       <div className="mt-8 flex justify-center">
         <Manipal />
@@ -132,8 +131,8 @@ function App() {
       {/* More Highlights */}
       <div id="highlights-section">
         <h1 className="text-center mt-10 text-3xl font-semibold tracking-tight text-transparent md:text-6xl bg-gradient-to-br from-[#E6D6F7] to-[#B89BE6] bg-clip-text">
-  PROJECTS
-</h1>
+          PROJECTS
+        </h1>
 
         <div className="mt-8 px-4">
           <ExpandableCardGrid />
@@ -151,6 +150,14 @@ function App() {
           link="https://example.com/case-study"
           type="content"
         />
+      </div>
+
+      {/* Skills Section */}
+      <div id="skills-section" className="mt-20">
+        <h1 className="text-center text-4xl font-medium tracking-tight text-transparent md:text-6xl bg-gradient-to-br from-[#E0BBE4] to-[#957DAD] bg-clip-text">
+          SKILLS
+        </h1>
+        <IntegrationPills />
       </div>
 
       {/* Footer */}

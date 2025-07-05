@@ -78,7 +78,7 @@ const HoverRevealSlip = ({ show }: { show: React.ReactNode }) => {
           "z-1 absolute bottom-0 right-0 flex h-48 w-14 -translate-x-10 transform items-start justify-start rounded-r-lg bg-green-600 pl-2 pt-2 text-sm font-bold text-white transition-transform duration-300 ease-in-out [backface-visibility:hidden] group-hover:translate-x-0 group-hover:rotate-[5deg]",
         )}
       >
-        <div className="-rotate-90 whitespace-nowrap pb-16 pr-9">Game of Forks</div>
+        <div className="-rotate-90 whitespace-nowrap pb-16 pr-9">Forks, Git & Code</div>
       </div>
     </div>
   );

@@ -138,36 +138,33 @@ function App() {
       </div>
 
       {/* Aligned Tibraze + CaseStudyCard */}
-      <div className="relative max-w-2xl mx-auto w-full mt-8 min-h-[700px]">
-  {/* Tibraze - absolute on md+, normal flow below */}
-  <div className="
-    md:absolute md:left-[25%] md:translate-x-[-50%]
-    w-full flex justify-center mb-8 md:mb-0
-  ">
-    <Tibraze />
-  </div>
+      <div className="relative max-w-2xl mx-auto w-full mt-8 min-h-[400px]">
+        {/* Tibraze - absolute on md+, normal flow below */}
+        <div className="
+          md:absolute md:left-[25%] md:translate-x-[-50%]
+          w-full flex justify-center mb-8 md:mb-0
+        ">
+          <Tibraze />
+        </div>
 
-  {/* CaseStudyCard - absolute on md+, normal flow below */}
-  <div className="
-    md:absolute md:left-[75%] md:translate-x-[-50%]
-    w-full flex justify-center
-  ">
-    <CaseStudyCard
-      title="Smart Energy Grid"
-      category="Capstone Project"
-      image="/nordtech/assets/turtle.png"
-      logo="/nordtech/assets/turtle.png"
-      link="https://example.com/case-study"
-      type="content"
-    />
-  </div>
-</div>
-
-
-
+        {/* CaseStudyCard - absolute on md+, normal flow below */}
+        <div className="
+          md:absolute md:left-[75%] md:translate-x-[-50%]
+          w-full flex justify-center
+        ">
+          <CaseStudyCard
+            title="Smart Energy Grid"
+            category="Capstone Project"
+            image="/nordtech/assets/turtle.png"
+            logo="/nordtech/assets/turtle.png"
+            link="https://example.com/case-study"
+            type="content"
+          />
+        </div>
+      </div>
 
       {/* Skills Section */}
-      <div id="skills-section" className="mt-20">
+      <div id="skills-section">
         <h1 className="text-center text-4xl font-medium tracking-tight text-transparent md:text-6xl bg-gradient-to-br from-[#E0BBE4] to-[#957DAD] bg-clip-text">
           SKILLS
         </h1>

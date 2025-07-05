@@ -15,6 +15,7 @@ import { Manipal } from "./components/motion-primitives/MUJ";
 import { Presidium } from "./components/motion-primitives/PRES";
 import { Tibraze } from "./components/motion-primitives/differ";
 import CaseStudyCard from "./components/card/casecard";
+import { Heading1 } from "lucide-react";
 
 function App() {
   const [showPreloader, setShowPreloader] = useState(true);
@@ -119,9 +120,10 @@ function App() {
 
       {/* Experience Section */}
       <div id="experience-section">
-        <h1 className="text-center mt-20 text-4xl font-medium tracking-tight text-transparent md:text-6xl bg-gradient-to-br from-slate-300 to-slate-500 bg-clip-text">
+        <h1 className="text-center mt-20 text-4xl font-medium tracking-tight text-transparent md:text-6xl bg-gradient-to-br from-[#B3E5C5] to-[#4FAF7E] bg-clip-text">
           EXPERIENCE
         </h1>
+
         <div className="mt-12 px-4">
           <ExpandableCardDemo />
         </div>
@@ -129,9 +131,10 @@ function App() {
 
       {/* More Highlights */}
       <div id="highlights-section">
-        <h2 className="text-center mt-10 text-3xl font-semibold tracking-tight text-slate-200">
-          PROJECTS
-        </h2>
+        <h1 className="text-center mt-10 text-3xl font-semibold tracking-tight text-transparent md:text-6xl bg-gradient-to-br from-[#E6D6F7] to-[#B89BE6] bg-clip-text">
+  PROJECTS
+</h1>
+
         <div className="mt-8 px-4">
           <ExpandableCardGrid />
         </div>

@@ -257,7 +257,7 @@ export const NavbarLogo = () => (
   </a>
 );
 
-// --- NavbarButton with custom color variants via style prop ---
+// --- NavbarButton with custom color variants and hover via CSS classes ---
 
 type Variant =
   | "primary"
@@ -269,39 +269,17 @@ type Variant =
   | "customSilver";
 
 const baseStyles =
-  "px-4 py-2 rounded-md text-sm font-bold relative cursor-pointer hover:-translate-y-0.5 transition duration-200 inline-block text-center";
+  "px-4 py-2 rounded-md text-sm font-bold relative cursor-pointer transition duration-200 inline-block text-center";
 
 const variantStyles: Record<Variant, string> = {
-  primary: "bg-white text-black shadow-[0_0_24px_rgba(34,42,53,0.06)]",
-  secondary: "bg-transparent shadow-none dark:text-white text-black",
-  dark: "bg-black text-white shadow-[0_0_24px_rgba(34,42,53,0.06)]",
+  primary: "bg-white text-black shadow-[0_0_24px_rgba(34,42,53,0.06)] hover:-translate-y-0.5",
+  secondary: "bg-transparent shadow-none dark:text-white text-black hover:-translate-y-0.5",
+  dark: "bg-black text-white shadow-[0_0_24px_rgba(34,42,53,0.06)] hover:-translate-y-0.5",
   gradient:
-    "bg-gradient-to-b from-blue-500 to-blue-700 text-white shadow-[0px_2px_0px_0px_rgba(255,255,255,0.3)_inset]",
-  customGrey: "",   // #DADADA
-  customGreen: "",  // #DDE3DC
-  customSilver: "", // #CFCFCF
-};
-
-const variantStyleProps: Record<Variant, React.CSSProperties | undefined> = {
-  primary: undefined,
-  secondary: undefined,
-  dark: undefined,
-  gradient: undefined,
-  customGrey: {
-    backgroundColor: "#DADADA",
-    color: "#222", // dark text for contrast
-    border: "none",
-  },
-  customGreen: {
-    backgroundColor: "#DDE3DC",
-    color: "#222",
-    border: "none",
-  },
-  customSilver: {
-    backgroundColor: "#CFCFCF",
-    color: "#222",
-    border: "none",
-  },
+    "bg-gradient-to-b from-blue-500 to-blue-700 text-white shadow-[0px_2px_0px_0px_rgba(255,255,255,0.3)_inset] hover:-translate-y-0.5",
+  customGrey: "custom-grey-btn hover:-translate-y-0.5",
+  customGreen: "custom-green-btn hover:-translate-y-0.5",
+  customSilver: "custom-silver-btn hover:-translate-y-0.5",
 };
 
 type NavbarButtonProps<T extends React.ElementType> = {
@@ -320,13 +298,44 @@ export const NavbarButton = <T extends React.ElementType = "a">({
 }: NavbarButtonProps<T>) => {
   const Tag = as || "a";
   return (
-    <Tag
-      className={cn(baseStyles, variantStyles[variant], className)}
-      style={variantStyleProps[variant]}
-      {...props}
-    >
-      {children}
-    </Tag>
+    <>
+      <Tag
+        className={cn(baseStyles, variantStyles[variant], className)}
+        {...props}
+      >
+        {children}
+      </Tag>
+      {/* Custom styles for our color variants */}
+      <style jsx global>{`
+        .custom-grey-btn {
+          background: #DADADA !important;
+          color: #222 !important;
+          border: none !important;
+          transition: background 0.2s;
+        }
+        .custom-grey-btn:hover {
+          background: #B5B5B5 !important;
+        }
+        .custom-green-btn {
+          background: #DDE3DC !important;
+          color: #222 !important;
+          border: none !important;
+          transition: background 0.2s;
+        }
+        .custom-green-btn:hover {
+          background: #B6C1B7 !important;
+        }
+        .custom-silver-btn {
+          background: #CFCFCF !important;
+          color: #222 !important;
+          border: none !important;
+          transition: background 0.2s;
+        }
+        .custom-silver-btn:hover {
+          background: #A9A9A9 !important;
+        }
+      `}</style>
+    </>
   );
 };
 

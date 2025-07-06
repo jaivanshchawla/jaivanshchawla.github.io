@@ -25,7 +25,7 @@ const brands = [
     hoverClass: "group-hover:scale-75 group-hover:text-gray-500",
   },
   {
-    name: "Webflow",
+    name: "React",
     className: "bg-gray-200",
     hoverClass: "group-hover:scale-75 group-hover:text-gray-500",
   },

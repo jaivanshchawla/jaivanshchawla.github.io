@@ -9,7 +9,7 @@ const brands = [
     hoverClass: "group-hover:scale-75 group-hover:text-gray-500",
   },
   {
-    name: "RSS",
+    name: "Python",
     className: "bg-gray-200 font-bold",
     hoverClass:
       "group-hover:border-blue-500 group-hover:text-blue-500 group-hover:bg-white group-hover:border-2",

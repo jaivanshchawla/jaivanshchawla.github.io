@@ -4,7 +4,7 @@ import { cn } from "../../lib/utils";
 
 const brands = [
   {
-    name: "Shopify",
+    name: "C/C++",
     className: "bg-gray-200",
     hoverClass: "group-hover:scale-75 group-hover:text-gray-500",
   },

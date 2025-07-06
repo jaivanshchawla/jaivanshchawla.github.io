@@ -41,7 +41,7 @@ const brands = [
       "group-hover:border-green-500 group-hover:text-green-500 group-hover:bg-white group-hover:border-2",
   },
   {
-    name: "TikTok",
+    name: "Git/Github",
     className: "bg-gray-200",
     hoverClass: "group-hover:scale-75 group-hover:text-gray-500",
   },

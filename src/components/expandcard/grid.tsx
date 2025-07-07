@@ -280,7 +280,7 @@ const cards = [
   {
     description: "Daft Punk",
     title: "One More Time",
-    src: "/nordtech/assets/rain.png",
+    src: "/assets/rain-min.webp",
     ctaText: "Visit",
     ctaLink: "https://github.com/jaivanshchawla",
     content: () => (

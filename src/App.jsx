@@ -163,7 +163,7 @@ function App() {
       </div>
 
       {/* Skills Section */}
-      <div id="skills-section">
+      <div id="skills-section" className="mb-0">
         <h1 className="text-center mt-20 text-4xl font-medium tracking-tight text-transparent md:text-6xl bg-gradient-to-br from-[#E6C1B5] to-[#D88C9A] bg-clip-text">
           SKILLS
         </h1>
@@ -172,7 +172,7 @@ function App() {
       </div>
 
       {/* Footer */}
-      <div id="footer-section">
+      <div id="footer-section" className="mt-0">
         <Footer />
       </div>
     </div>

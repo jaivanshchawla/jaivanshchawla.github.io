@@ -224,7 +224,7 @@ const cards = [
   {
     description: "Babbu Maan",
     title: "Mitran Di Chhatri",
-    src: "/nordtech/assets/guy.png",
+    src: "/assets/guy-min.webp",
     ctaText: "Visit",
     ctaLink: "https://ui.aceternity.com/templates",
     content: () => (

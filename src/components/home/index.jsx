@@ -9,8 +9,8 @@ import { Spotlight } from "./spotlight";
 const gooeyNavItems = [
   { label: "GitHub", href: "https://github.com/jaivanshchawla" },
   { label: "LinkedIn", href: "https://linkedin.com/in/jaivanshchawla" },
-  { label: "Email", href: "mailto:jaivanshchawla@example.com" },
-  { label: "Instagram", href: "https://twitter.com/jaivanshchawla" },
+  { label: "Email", href: "mailto:jaivanshmuj@gmail.com" },
+  { label: "Instagram", href: "https://www.instagram.com/__coolguyjc__/" },
 ];
 
 const Hero = () => {

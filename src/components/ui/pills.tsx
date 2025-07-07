@@ -29,6 +29,7 @@ const brands: Brand[] = [
   { name: "Blender", color: "#F5792A" },
   { name: "Figma,Canva", color: "#A259FF" },
   { name: "Photoshop", color: "#31A8FF" },
+  { name: "Conversational AI", color: "#14B8A6" },
 ];
 
 export default function IntegrationPills() {

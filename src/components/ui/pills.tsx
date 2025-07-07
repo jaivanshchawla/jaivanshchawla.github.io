@@ -67,7 +67,7 @@ const brands = [
       "group-hover:border-purple-500 group-hover:text-purple-500 group-hover:bg-white group-hover:border-2",
   },
   {
-    name: "MERN",
+    name: "Gsap",
     className: "bg-gray-200 font-bold",
     hoverClass:
       "group-hover:border-purple-500 group-hover:text-purple-500 group-hover:bg-white group-hover:border-2",

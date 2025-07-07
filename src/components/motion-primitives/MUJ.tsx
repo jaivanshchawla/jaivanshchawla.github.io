@@ -70,11 +70,7 @@ export function Manipal() {
                     Beyond academics, I've been fortunate to dive headfirst into leadership and real-world experience. As a Student Placement Coordinator, I'm constantly working to bridge the gap between students and their dream careers, while my role in the logistics team at Cosmos (our astronomy club) has taught me that the universe is vast, but so is human potential when we work together. Writing content for the Atal Incubation Center has sharpened my ability to communicate complex ideas simply, and my internships have been game-changers—each one revealing new layers of what I'm capable of and what I still need to master. The classroom teaches you theory, but the real world? That's where you learn to adapt, improvise, and evolve.
                   </p>
                   <p>
-                    By turns funny and sobering, playful and philosophical, What
-                    I Talk About When I Talk About Running is rich and
-                    revelatory, both for fans of this masterful yet guardedly
-                    private writer and for the exploding population of athletes
-                    who find similar satisfaction in running.
+                    The certifications tell their own story of restless curiosity: Oracle SQL for DBMS, OOP Python from Cisco, DSA from CodeChef, Design and Analysis of Algorithms from IIT Madras through NPTEL, and Linux from Red Hat for Operating Systems. Each certificate represents not just knowledge gained, but late nights spent debugging, problem sets that initially seemed impossible, and that incredible moment when complex concepts finally click into place. These aren't just credentials on a resume—they're proof that I'm willing to go the extra mile, dig deeper, and never settle for surface-level understanding. The more I learn, the more I realize how much more there is to discover, and honestly? That's the most exciting part of this entire journey.
                   </p>
                 </div>
               </div>

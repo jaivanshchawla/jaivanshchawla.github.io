@@ -204,7 +204,7 @@ const cards = [
   {
     description: "Lana Del Rey",
     title: "Summertime Sadness",
-    src: "/nordtech/assets/cool.png",
+    src: "/assets/cool-min.webp",
     ctaText: "Visit",
     ctaLink: "https://ui.aceternity.com/templates",
     content: () => (

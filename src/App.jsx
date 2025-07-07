@@ -77,23 +77,7 @@ function App() {
             </div>
             <div className="meinfo max-w-2xl text-slate-300 text-justify">
               <p className="leading-relaxed text-[16px]">
-                I’ve been fascinated by computers, electronics, microcontrollers,
-                robotics, IoT devices, and sensors for as long as I can remember.
-                Currently pursuing a Mechatronics Engineering (Honours) degree at
-                The University of Sydney, I specialize in embedded systems and
-                have hands-on experience with a diverse set of programming
-                languages, including Python, C, C++, and JavaScript, alongside
-                exposure to C#, Node.js, and Rust. My skills extend beyond
-                coding—I’m proficient in CAD (SolidWorks), PCB design (KiCad,
-                EasyEDA), and technical documentation (LaTeX, Markdown), honed
-                through student clubs, coursework, and personal projects. I thrive
-                in collaborative environments, leading an electrical engineering
-                team at university and contributing to three student initiatives
-                focused on electronics and robotics. While my foundation is in
-                mechatronics, I’m passionate about bridging software, electronics,
-                and innovative technologies. My goal is to leverage platforms like
-                this to learn, innovate, and connect with inspiring professionals
-                while working on impactful engineering challenges.
+I'm that guy who gets genuinely excited about everything tech—and everything automotive. Currently crushing it with a 9.20 GPA in Computer Science & Engineering (AI & ML) at Manipal University Jaipur, but honestly? I'm addicted to learning whatever's next. One day I'm building AI/ML models with TensorFlow, the next I'm designing UIs in Figma, then architecting databases with MySQL, or even creating 3D art in Blender. When I'm not coding, you'll find me collecting Hot Wheels, following car releases, or obsessing over the newest phone drops and GPU reveals—I'm that person who knows the specs before they're officially announced. Python, C++, JavaScript, React, machine learning, full-stack dev, creative design—I collect skills like they're going out of style. As Student Placement Coordinator, I've learned that the best solutions come from thinking outside your comfort zone. I'm not trying to be a specialist—I'm trying to be that person who can jump into any project and figure out what needs to be done. Always hungry for the next challenge, the next framework, the next "wait, how does this work?" moment. Basically, I'm that crazy person who actually enjoys breaking things just to rebuild them better. Let's build something cool together.
               </p>
             </div>
           </div>

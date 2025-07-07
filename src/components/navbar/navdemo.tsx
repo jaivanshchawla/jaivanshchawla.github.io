@@ -18,6 +18,7 @@ export function NavbarDemo() {
     { name: "Education", link: "#education" },
     { name: "Experience", link: "#experience-section" },
     { name: "Projects", link: "#highlights-section" },
+    { name: "Skills", link: "#skills-section" },
   ];
 
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);

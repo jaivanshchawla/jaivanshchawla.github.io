@@ -243,7 +243,7 @@ const cards = [
   {
     description: "Metallica",
     title: "For Whom The Bell Tolls",
-    src: "/nordtech/assets/punk.png",
+    src: "/assets/punk-min.webp",
     ctaText: "Visit",
     ctaLink: "https://ui.aceternity.com/templates",
     content: () => (

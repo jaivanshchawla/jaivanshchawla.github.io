@@ -56,7 +56,7 @@ const brands = [
     hoverClass: "group-hover:scale-75 group-hover:text-gray-500",
   },
   {
-    name: "Blender",
+    name: "MERN",
     className: "bg-gray-200 font-bold",
     hoverClass:
       "group-hover:border-purple-500 group-hover:text-purple-500 group-hover:bg-white group-hover:border-2",

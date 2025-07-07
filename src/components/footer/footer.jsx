@@ -37,15 +37,15 @@ const Footer = () => {
           <a href="/" className="hover:text-white font-medium transition-colors duration-300">coolguyjc</a>
 
           <div className="flex gap-2 justify-center flex-wrap">
-            <span>email@example.com</span>
+            <span>jaivanshmuj@gmail.com</span>
             <span>|</span>
-            <span>+91-9876543210</span>
+            <span>+91-9654263346</span>
           </div>
 
           <div className="flex gap-2 justify-center flex-wrap">
             <span>Jaivansh Chawla</span>
             <span>|</span>
-            <span>India</span>
+            <span>Gurugram/Jaipur,India</span>
           </div>
         </div>
       </div>

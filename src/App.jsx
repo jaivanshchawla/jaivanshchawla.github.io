@@ -15,13 +15,15 @@ import { Presidium } from "./components/motion-primitives/PRES";
 import { Tibraze } from "./components/motion-primitives/differ";
 import CaseStudyCard from "./components/card/casecard";
 import IntegrationPills from "./components/ui/pills";
-import Footer from "./components/footer/footer"; // ✅ Add your new Footer import here
+import Footer from "./components/footer/footer"; // ✅ NEW FOOTER IMPORT
 
 function App() {
   const [showPreloader, setShowPreloader] = useState(true);
   const pendingScroll = useRef(null);
 
-  const handlePreloaderExitComplete = () => setShowPreloader(false);
+  const handlePreloaderExitComplete = () => {
+    setShowPreloader(false);
+  };
 
   useEffect(() => {
     if (showPreloader) {
@@ -75,7 +77,23 @@ function App() {
             </div>
             <div className="meinfo max-w-2xl text-slate-300 text-justify">
               <p className="leading-relaxed text-[16px]">
-                {/* your about me text */}
+                I’ve been fascinated by computers, electronics, microcontrollers,
+                robotics, IoT devices, and sensors for as long as I can remember.
+                Currently pursuing a Mechatronics Engineering (Honours) degree at
+                The University of Sydney, I specialize in embedded systems and
+                have hands-on experience with a diverse set of programming
+                languages, including Python, C, C++, and JavaScript, alongside
+                exposure to C#, Node.js, and Rust. My skills extend beyond
+                coding—I’m proficient in CAD (SolidWorks), PCB design (KiCad,
+                EasyEDA), and technical documentation (LaTeX, Markdown), honed
+                through student clubs, coursework, and personal projects. I thrive
+                in collaborative environments, leading an electrical engineering
+                team at university and contributing to three student initiatives
+                focused on electronics and robotics. While my foundation is in
+                mechatronics, I’m passionate about bridging software, electronics,
+                and innovative technologies. My goal is to leverage platforms like
+                this to learn, innovate, and connect with inspiring professionals
+                while working on impactful engineering challenges.
               </p>
             </div>
           </div>
@@ -122,10 +140,17 @@ function App() {
 
       {/* Aligned Tibraze + CaseStudyCard */}
       <div className="relative max-w-2xl mx-auto w-full mt-8 min-h-[400px]">
-        <div className="md:absolute md:left-[25%] md:translate-x-[-50%] w-full flex justify-center mb-8 md:mb-0">
+        <div className="
+          md:absolute md:left-[25%] md:translate-x-[-50%]
+          w-full flex justify-center mb-8 md:mb-0
+        ">
           <Tibraze />
         </div>
-        <div className="md:absolute md:left-[75%] md:translate-x-[-50%] w-full flex justify-center">
+
+        <div className="
+          md:absolute md:left-[75%] md:translate-x-[-50%]
+          w-full flex justify-center
+        ">
           <CaseStudyCard
             title="Explore the code for these projects and more on my GitHub — where clean commits meet clever solutions. Fork responsibly."
             category="The One With All The Code"
@@ -146,8 +171,10 @@ function App() {
         <IntegrationPills />
       </div>
 
-      {/* ✅ New Footer */}
-      <Footer />
+      {/* Footer */}
+      <div id="footer-section">
+        <Footer />
+      </div>
     </div>
   );
 
@@ -161,8 +188,15 @@ function App() {
         background: "#000",
       }}
     >
-      <ClickSpark sparkColor="#fff" sparkSize={10} sparkRadius={15} sparkCount={8} duration={400}>
+      <ClickSpark
+        sparkColor="#fff"
+        sparkSize={10}
+        sparkRadius={15}
+        sparkCount={8}
+        duration={400}
+      >
         <NavbarDemo />
+
         <AnimatePresence onExitComplete={handlePreloaderExitComplete}>
           {showPreloader && <Preloader key="preloader" />}
         </AnimatePresence>

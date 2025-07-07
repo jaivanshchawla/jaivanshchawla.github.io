@@ -155,7 +155,7 @@ function App() {
             title="Explore the code for these projects and more on my GitHub — where clean commits meet clever solutions. Fork responsibly."
             category="The One With All The Code"
             image="/assets/robocomp.webp"
-            logo="/assets/robocomp.webp"
+            logo="/assets/turbo.webp"
             link="https://example.com/case-study"
             type="content"
           />

@@ -296,7 +296,7 @@ const cards = [
   {
     description: "Taylor Swift",
     title: "Blank Space",
-    src: "/nordtech/assets/snake.png",
+    src: "/assets/snake-min.webp",
     ctaText: "Visit",
     ctaLink: "https://github.com/jaivanshchawla",
     content: () => (

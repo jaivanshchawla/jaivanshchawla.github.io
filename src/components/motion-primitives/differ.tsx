@@ -41,12 +41,19 @@ export function Tibraze() {
             </MorphingDialogSubtitle>
           </div>
           <button
-            type='button'
-            className='relative ml-1 flex h-6 w-6 shrink-0 scale-100 select-none appearance-none items-center justify-center rounded-lg border border-zinc-950/10 text-zinc-500 transition-colors hover:bg-zinc-100 hover:text-zinc-800 focus-visible:ring-2 active:scale-[0.98] dark:border-zinc-50/10 dark:bg-zinc-900 dark:text-zinc-500 dark:hover:bg-zinc-800 dark:hover:text-zinc-50 dark:focus-visible:ring-zinc-500'
-            aria-label='Open dialog'
-          >
-            <PlusIcon size={12} />
-          </button>
+  type="button"
+  className="
+    relative ml-1 flex h-6 w-6 shrink-0 scale-100 select-none appearance-none items-center justify-center
+    rounded-lg border transition-colors active:scale-[0.98] focus-visible:ring-2
+    border-[#7A3B44] bg-[#2B1A24] text-[#7A3B44]
+    hover:bg-[#5A3A4B] hover:text-[#D8AFA8]
+    dark:border-[#7A3B44] dark:bg-[#2B1A24] dark:text-[#7A3B44] dark:hover:bg-[#5A3A4B] dark:hover:text-[#D8AFA8]
+  "
+  aria-label="Open dialog"
+>
+  <PlusIcon size={12} />
+</button>
+
         </div>
       </MorphingDialogTrigger>
       <MorphingDialogContainer>
@@ -54,7 +61,7 @@ export function Tibraze() {
           style={{
             borderRadius: '24px',
           }}
-          className='pointer-events-auto relative flex h-auto w-full flex-col overflow-hidden border border-zinc-950/10 bg-white dark:border-zinc-50/10 dark:bg-zinc-900 sm:w-[500px]'
+          className='pointer-events-auto relative flex h-auto w-full flex-col overflow-hidden border border-zinc-950/10 bg-white dark:border-zinc-50/10 dark:bg-neutral-900 sm:w-[500px]'
         >
           <MorphingDialogImage
             src='/assets/magician-min.webp'

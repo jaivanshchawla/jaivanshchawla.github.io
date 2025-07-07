@@ -15,14 +15,13 @@ import { Presidium } from "./components/motion-primitives/PRES";
 import { Tibraze } from "./components/motion-primitives/differ";
 import CaseStudyCard from "./components/card/casecard";
 import IntegrationPills from "./components/ui/pills";
+import Footer from "./components/footer/footer"; // ✅ Add your new Footer import here
 
 function App() {
   const [showPreloader, setShowPreloader] = useState(true);
   const pendingScroll = useRef(null);
 
-  const handlePreloaderExitComplete = () => {
-    setShowPreloader(false);
-  };
+  const handlePreloaderExitComplete = () => setShowPreloader(false);
 
   useEffect(() => {
     if (showPreloader) {
@@ -76,23 +75,7 @@ function App() {
             </div>
             <div className="meinfo max-w-2xl text-slate-300 text-justify">
               <p className="leading-relaxed text-[16px]">
-                I’ve been fascinated by computers, electronics, microcontrollers,
-                robotics, IoT devices, and sensors for as long as I can remember.
-                Currently pursuing a Mechatronics Engineering (Honours) degree at
-                The University of Sydney, I specialize in embedded systems and
-                have hands-on experience with a diverse set of programming
-                languages, including Python, C, C++, and JavaScript, alongside
-                exposure to C#, Node.js, and Rust. My skills extend beyond
-                coding—I’m proficient in CAD (SolidWorks), PCB design (KiCad,
-                EasyEDA), and technical documentation (LaTeX, Markdown), honed
-                through student clubs, coursework, and personal projects. I thrive
-                in collaborative environments, leading an electrical engineering
-                team at university and contributing to three student initiatives
-                focused on electronics and robotics. While my foundation is in
-                mechatronics, I’m passionate about bridging software, electronics,
-                and innovative technologies. My goal is to leverage platforms like
-                this to learn, innovate, and connect with inspiring professionals
-                while working on impactful engineering challenges.
+                {/* your about me text */}
               </p>
             </div>
           </div>
@@ -139,19 +122,10 @@ function App() {
 
       {/* Aligned Tibraze + CaseStudyCard */}
       <div className="relative max-w-2xl mx-auto w-full mt-8 min-h-[400px]">
-        {/* Tibraze - absolute on md+, normal flow below */}
-        <div className="
-          md:absolute md:left-[25%] md:translate-x-[-50%]
-          w-full flex justify-center mb-8 md:mb-0
-        ">
+        <div className="md:absolute md:left-[25%] md:translate-x-[-50%] w-full flex justify-center mb-8 md:mb-0">
           <Tibraze />
         </div>
-
-        {/* CaseStudyCard - absolute on md+, normal flow below */}
-        <div className="
-          md:absolute md:left-[75%] md:translate-x-[-50%]
-          w-full flex justify-center
-        ">
+        <div className="md:absolute md:left-[75%] md:translate-x-[-50%] w-full flex justify-center">
           <CaseStudyCard
             title="Explore the code for these projects and more on my GitHub — where clean commits meet clever solutions. Fork responsibly."
             category="The One With All The Code"
@@ -166,18 +140,14 @@ function App() {
       {/* Skills Section */}
       <div id="skills-section">
         <h1 className="text-center mt-20 text-4xl font-medium tracking-tight text-transparent md:text-6xl bg-gradient-to-br from-[#E6C1B5] to-[#D88C9A] bg-clip-text">
-  SKILLS
-</h1>
+          SKILLS
+        </h1>
 
         <IntegrationPills />
       </div>
 
-      {/* Footer */}
-      <footer className="w-full text-center py-8 bg-transparent relative z-10">
-        <p className="text-white/60 text-sm bg-transparent">
-          &copy; {new Date().getFullYear()} jaivanshchawla. All rights reserved.
-        </p>
-      </footer>
+      {/* ✅ New Footer */}
+      <Footer />
     </div>
   );
 
@@ -191,15 +161,8 @@ function App() {
         background: "#000",
       }}
     >
-      <ClickSpark
-        sparkColor="#fff"
-        sparkSize={10}
-        sparkRadius={15}
-        sparkCount={8}
-        duration={400}
-      >
+      <ClickSpark sparkColor="#fff" sparkSize={10} sparkRadius={15} sparkCount={8} duration={400}>
         <NavbarDemo />
-
         <AnimatePresence onExitComplete={handlePreloaderExitComplete}>
           {showPreloader && <Preloader key="preloader" />}
         </AnimatePresence>

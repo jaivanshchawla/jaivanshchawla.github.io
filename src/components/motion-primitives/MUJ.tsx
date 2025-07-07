@@ -64,13 +64,7 @@ export function Manipal() {
                 </MorphingDialogSubtitle>
                 <div className='mt-4 text-sm text-gray-700'>
                   <p>
-                    In 1982, having sold his jazz bar to devote himself to
-                    writing, Murakami began running to keep fit. A year later,
-                    he’d completed a solo course from Athens to Marathon, and
-                    now, after dozens of such races, not to mention triathlons
-                    and a dozen critically acclaimed books, he reflects upon the
-                    influence the sport has had on his life and—even more
-                    important—on his writing.
+                    Currently blazing through my junior year at Manipal University Jaipur with a 9.20 GPA that honestly still feels surreal. Landing on the Dean's List three times in a row wasn't just luck—it was the result of countless late nights, relentless problem-solving, and an obsession with understanding concepts rather than just memorizing them. Every semester has been a new challenge to push my limits, and somehow, I keep finding that extra gear when things get tough. The numbers are great, but what really drives me is that hunger to see how much further I can go.
                   </p>
                   <p>
                     Equal parts training log, travelogue, and reminiscence, this

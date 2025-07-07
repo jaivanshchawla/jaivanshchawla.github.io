@@ -206,7 +206,7 @@ const cards = [
     title: "Summertime Sadness",
     src: "/assets/cool-min.webp",
     ctaText: "Visit",
-    ctaLink: "https://ui.aceternity.com/templates",
+    ctaLink: "https://github.com/jaivanshchawla",
     content: () => (
       <p>
         Lana Del Rey, an iconic American singer-songwriter, is celebrated for
@@ -226,7 +226,7 @@ const cards = [
     title: "Mitran Di Chhatri",
     src: "/assets/guy-min.webp",
     ctaText: "Visit",
-    ctaLink: "https://ui.aceternity.com/templates",
+    ctaLink: "https://github.com/jaivanshchawla",
     content: () => (
       <p>
         Babbu Maan, a legendary Punjabi singer, is renowned for his soulful
@@ -245,7 +245,7 @@ const cards = [
     title: "For Whom The Bell Tolls",
     src: "/assets/punk-min.webp",
     ctaText: "Visit",
-    ctaLink: "https://ui.aceternity.com/templates",
+    ctaLink: "https://github.com/jaivanshchawla",
     content: () => (
       <p>
         Metallica, an iconic American heavy metal band, is renowned for their
@@ -264,7 +264,7 @@ const cards = [
     title: "Aap Ka Suroor",
     src: "/nordtech/assets/chill.png",
     ctaText: "Visit",
-    ctaLink: "https://ui.aceternity.com/templates",
+    ctaLink: "https://github.com/jaivanshchawla",
     content: () => (
       <p>
         Himesh Reshammiya, a renowned Indian music composer, singer, and actor,
@@ -282,7 +282,7 @@ const cards = [
     title: "One More Time",
     src: "/nordtech/assets/rain.png",
     ctaText: "Visit",
-    ctaLink: "https://ui.aceternity.com/templates",
+    ctaLink: "https://github.com/jaivanshchawla",
     content: () => (
       <p>
         Daft Punk, the legendary French electronic music duo, is celebrated for
@@ -298,7 +298,7 @@ const cards = [
     title: "Blank Space",
     src: "/nordtech/assets/snake.png",
     ctaText: "Visit",
-    ctaLink: "https://ui.aceternity.com/templates",
+    ctaLink: "https://github.com/jaivanshchawla",
     content: () => (
       <p>
         Taylor Swift, a multi-Grammy-winning singer-songwriter, is celebrated

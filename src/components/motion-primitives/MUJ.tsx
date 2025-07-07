@@ -67,17 +67,7 @@ export function Manipal() {
                     Currently blazing through my junior year at Manipal University Jaipur with a 9.20 GPA that honestly still feels surreal. Landing on the Dean's List three times in a row wasn't just luck—it was the result of countless late nights, relentless problem-solving, and an obsession with understanding concepts rather than just memorizing them. Every semester has been a new challenge to push my limits, and somehow, I keep finding that extra gear when things get tough. The numbers are great, but what really drives me is that hunger to see how much further I can go.
                   </p>
                   <p>
-                    Equal parts training log, travelogue, and reminiscence, this
-                    revealing memoir covers his four-month preparation for the
-                    2005 New York City Marathon and takes us to places ranging
-                    from Tokyo’s Jingu Gaien gardens, where he once shared the
-                    course with an Olympian, to the Charles River in Boston
-                    among young women who outpace him. Through this marvelous
-                    lens of sport emerges a panorama of memories and insights:
-                    the eureka moment when he decided to become a writer, his
-                    greatest triumphs and disappointments, his passion for
-                    vintage LPs, and the experience, after fifty, of seeing his
-                    race times improve and then fall back.
+                    Beyond academics, I've been fortunate to dive headfirst into leadership and real-world experience. As a Student Placement Coordinator, I'm constantly working to bridge the gap between students and their dream careers, while my role in the logistics team at Cosmos (our astronomy club) has taught me that the universe is vast, but so is human potential when we work together. Writing content for the Atal Incubation Center has sharpened my ability to communicate complex ideas simply, and my internships have been game-changers—each one revealing new layers of what I'm capable of and what I still need to master. The classroom teaches you theory, but the real world? That's where you learn to adapt, improvise, and evolve.
                   </p>
                   <p>
                     By turns funny and sobering, playful and philosophical, What

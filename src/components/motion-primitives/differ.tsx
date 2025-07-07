@@ -24,7 +24,7 @@ export function Tibraze() {
         style={{
           borderRadius: '12px',
         }}
-        className='flex max-w-[270px] flex-col overflow-hidden border border-zinc-950/10 bg-white dark:border-zinc-50/10 dark:bg-zinc-900'
+        className='flex max-w-[270px] flex-col overflow-hidden border border-zinc-950/10 bg-white dark:border-black dark:bg-black'
       >
         <MorphingDialogImage
           src='/assets/magician-min.webp'

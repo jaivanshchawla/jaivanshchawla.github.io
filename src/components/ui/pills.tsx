@@ -3,7 +3,7 @@ import { cn } from "../../lib/utils";
 
 interface Brand {
   name: string;
-  color: string; // hex color for unique hover styling
+  color: string; // unique hover color
 }
 
 const brands: Brand[] = [
@@ -29,7 +29,7 @@ const brands: Brand[] = [
   { name: "Blender", color: "#F5792A" },
   { name: "Figma,Canva", color: "#A259FF" },
   { name: "Photoshop", color: "#31A8FF" },
-  { name: "Conversational AI", color: "#14B8A6" },
+  { name: "Conversational AI", color: "#FF4C4C" },
 ];
 
 export default function IntegrationPills() {
@@ -39,7 +39,7 @@ export default function IntegrationPills() {
     <div className="flex justify-center py-10">
       <div
         className={cn(
-          "flex w-full max-w-lg flex-wrap justify-center rounded-xl px-2 py-6 shadow-2xl transition-all duration-300 ease-in-out",
+          "flex w-full max-w-lg flex-wrap justify-center rounded-xl px-2 py-6 shadow-2xl transition-colors duration-300 ease-in-out",
         )}
         style={{
           backgroundColor: hoveredIndex !== null ? "#000000" : "#0A0506",
@@ -47,22 +47,26 @@ export default function IntegrationPills() {
       >
         {brands.map((brand, index) => {
           const isHovered = hoveredIndex === index;
-          const isOtherHovered = hoveredIndex !== null && hoveredIndex !== index;
+          const isOtherHovered = hoveredIndex !== null && !isHovered;
 
           return (
             <div
               key={index}
               className={cn(
-                "m-1 transform cursor-pointer rounded-full border-2 bg-white px-6 py-2 text-xl transition-all duration-300 ease-in-out",
+                "m-1 transform cursor-pointer rounded-full border-2 px-6 py-2 text-xl transition-all duration-300 ease-in-out",
                 isHovered
                   ? "scale-110"
                   : isOtherHovered
-                  ? "scale-75 opacity-70 text-gray-400"
-                  : "scale-100 text-black",
+                  ? "scale-75 opacity-60"
+                  : "scale-100",
               )}
               style={{
-                borderColor: isHovered ? brand.color : "#CCCCCC",
-                color: isHovered ? brand.color : undefined,
+                borderColor: isHovered
+                  ? brand.color
+                  : "#C89A98",
+                color: isHovered
+                  ? brand.color
+                  : "#ffffff",
               }}
               onMouseEnter={() => setHoveredIndex(index)}
               onMouseLeave={() => setHoveredIndex(null)}

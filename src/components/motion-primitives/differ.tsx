@@ -27,8 +27,8 @@ export function Tibraze() {
         className='flex max-w-[270px] flex-col overflow-hidden border border-zinc-950/10 bg-white dark:border-zinc-50/10 dark:bg-zinc-900'
       >
         <MorphingDialogImage
-          src='/nordtech/assets/magician.png'
-          alt='A desk lamp designed by Edouard Wilfrid Buquet in 1925. It features a double-arm design and is made from nickel-plated brass, aluminium and varnished wood.'
+          src='/assets/magician-min.webp'
+          alt='Tibraze picture.'
           className='h-48 w-full object-cover'
         />
         <div className='flex grow flex-row items-end justify-between px-3 py-2'>
@@ -58,7 +58,7 @@ export function Tibraze() {
         >
           <MorphingDialogImage
             src='/nordtech/assets/magician.png'
-            alt='A desk lamp designed by Edouard Wilfrid Buquet in 1925. It features a double-arm design and is made from nickel-plated brass, aluminium and varnished wood.'
+            alt='Tibraze picture'
             className='h-full w-full'
           />
           <div className='p-6'>

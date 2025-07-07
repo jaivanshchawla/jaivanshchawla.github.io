@@ -262,7 +262,7 @@ const cards = [
   {
     description: "Lord Himesh",
     title: "Aap Ka Suroor",
-    src: "/nordtech/assets/chill.png",
+    src: "/assets/chill-min.webp",
     ctaText: "Visit",
     ctaLink: "https://github.com/jaivanshchawla",
     content: () => (

@@ -36,10 +36,10 @@ export default function IntegrationPills() {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   return (
-    <div className="flex justify-center py-0"> {/* ⬅️ Changed py-10 → py-0 */}
+    <div className="flex justify-center pt-10 pb-0">
       <div
         className={cn(
-          "flex w-full max-w-lg flex-wrap justify-center rounded-xl px-2 py-6 shadow-2xl transition-colors duration-300 ease-in-out",
+          "flex w-full max-w-lg flex-wrap justify-center rounded-xl px-2 py-0 shadow-2xl transition-colors duration-300 ease-in-out",
         )}
         style={{
           backgroundColor: hoveredIndex !== null ? "#000000" : "#0A0506",

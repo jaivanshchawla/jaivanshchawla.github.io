@@ -122,8 +122,8 @@ const brands = [
 export default function IntegrationPills() {
   return (
     <div className="flex justify-center py-10">
-      {/* Rectangular box around all cards with blue background */}
-      <div className="group flex w-full max-w-lg flex-wrap justify-center rounded-xl border-2 border-gray-400 bg-blue-100 px-2 py-6 shadow-2xl transition-all duration-300 ease-in-out hover:bg-blue-600 hover:shadow-2xl">
+      {/* Rectangular box around all cards with blue background, no border */}
+      <div className="group flex w-full max-w-lg flex-wrap justify-center rounded-xl bg-blue-100 px-2 py-6 shadow-2xl transition-all duration-300 ease-in-out hover:bg-blue-200 hover:shadow-2xl">
         {brands.map((brand, index) => (
           <div
             key={index}

@@ -312,8 +312,8 @@ This wasn't just content writing—it was strategic communication that helped bu
     ),
   },
   {
-    description: "Artificial Intelligence Intern",
-    title: "Codsoft",
+    description: "Codsoft",
+    title: "Artificial Intelligence Intern",
     src: "/assets/codsoftnew.webp",
     ctaText: "Sept 2024 - Oct 2025",
     ctaLink: "https://www.codsoft.in/",
@@ -339,10 +339,37 @@ This wasn't just an internship; it was an AI bootcamp that transformed me from s
     ),
   },
   {
-  description: "Full Stack Developer Intern",
-  title: "ASR Aviation",
+  description: "ASR Aviation",
+  title: "Full Stack Developer Intern",
   src: "/assets/asr.webp",
   ctaText: "Mar 2025",
+  ctaLink: "https://asraviation.com/",
+  ctaColor: "#D9AF4F",
+  content: () => (
+    <p>
+My full-stack development internship at ASR Aviation was absolutely game-changing—diving headfirst into India's rapidly expanding aviation ecosystem while building mission-critical digital infrastructure that directly impacts flight operations and passenger safety. This wasn't just another web development role; it was an immersive deep dive into aviation technology where every line of code I wrote had real-world consequences in one of the world's most safety-critical industries.
+
+From day one, I was thrown into the complex world of aviation software development, working with cutting-edge technologies like React.js, Node.js, and sophisticated database systems to build scalable web applications that could handle the demanding requirements of aviation operations. The learning curve was absolutely insane—I had to master not just technical implementation but also understand aviation industry regulations, safety protocols, and the intricate operational workflows that keep aircraft flying safely.
+
+The flagship project I spearheaded was developing a comprehensive **Aircraft Maintenance Management System** that revolutionized how ASR Aviation tracked maintenance schedules, regulatory compliance, and aircraft readiness. This wasn't some basic CRUD application—I built a real-time monitoring system that could process thousands of maintenance records, automatically flag compliance issues, and generate detailed reports that meet stringent aviation authority requirements. The complexity was mind-blowing: integrating with multiple aircraft databases, handling complex maintenance workflows, and ensuring zero downtime because aircraft safety literally depends on these systems.
+
+The front-end development pushed me to master responsive design principles that work flawlessly across tablets, mobile devices, and desktop workstations used by maintenance crews, pilots, and ground staff. I implemented dynamic dashboards with real-time data visualization that could display aircraft status, maintenance schedules, and compliance metrics in intuitive formats that busy aviation professionals could understand instantly.
+
+Backend architecture was where things got seriously complex. I built RESTful APIs that could handle concurrent requests from multiple aircraft systems, implemented robust authentication protocols that meet aviation security standards, and optimized database queries for lightning-fast response times because delays in aviation systems can have catastrophic consequences. The data integrity requirements were absolutely unforgiving—every transaction had to be logged, every change auditable, and every backup procedure tested to military-grade standards.
+
+What made this experience truly exceptional was the collaborative environment with aviation professionals who had decades of industry experience. I wasn't just coding in isolation—I was working alongside pilots, maintenance engineers, and aviation safety experts who taught me how technology intersects with flight operations. Additionally, I **revitalized SEO architecture and platform accessibility with 25+ improvements using Figma, enhancing UX and compliance for all users** across the aviation platform ecosystem.
+
+The scalability challenges were absolutely insane. Aviation systems need to handle peak operational loads during busy flight schedules while maintaining perfect reliability during off-peak hours. I implemented caching strategies, optimized database indexing, and built monitoring systems that could detect performance issues before they affected flight operations.
+
+This internship didn't just teach me full-stack development; it transformed me into a developer who understands how technology enables safe, efficient aviation operations. The combination of cutting-edge web technologies, aviation industry expertise, and real-world problem-solving created a foundation that's already proving invaluable as I continue building technology solutions for complex, regulated industries.
+    </p>
+  ),
+},
+{
+  description: "buildspace",
+  title: "3D Artist",
+  src: "/assets/asr.webp",
+  ctaText: "June 2024 - July 2024",
   ctaLink: "https://asraviation.com/",
   ctaColor: "#D9AF4F",
   content: () => (

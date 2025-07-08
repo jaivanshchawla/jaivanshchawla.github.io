@@ -14,7 +14,7 @@ const Footer = () => {
         </h1>
 
         {/* Social Links */}
-        <div className="flex flex-wrap justify-center gap-6 mb-8 animate-fade-in">
+        <div className="flex flex-wrap justify-center items-center gap-6 md:gap-10 px-4 mb-10 animate-fade-in">
           {[
             { href: "https://github.com", alt: "GitHub", src: "/assets/githublogo.svg" },
             { href: "https://linkedin.com", alt: "LinkedIn", src: "/assets/linkedinlogo.webp" },
@@ -27,20 +27,21 @@ const Footer = () => {
               href={href}
               target="_blank"
               rel="noopener noreferrer"
-              className="group transition-transform transform hover:scale-110 duration-300"
+              className="group transition-transform hover:scale-110 duration-300"
             >
-              <img
-                src={src}
-                alt={alt}
-                className="w-8 h-8 transition duration-300 grayscale brightness-125 group-hover:grayscale-0 group-hover:brightness-100"
-                style={{ filter: "invert(0.8)", transition: "filter 0.3s" }}
-              />
+              <div className="overflow-visible w-10 h-10">
+                <img
+                  src={src}
+                  alt={alt}
+                  className="w-full h-full object-contain opacity-40 group-hover:opacity-100 transition duration-300"
+                />
+              </div>
             </a>
           ))}
         </div>
 
-        {/* Spacer gap between buttons and text */}
-        <div className="h-8" />
+        {/* Spacer gap between icons and contact text */}
+        <div className="h-10" />
 
         {/* Contact Info */}
         <div className="flex flex-col items-center text-gray-300 text-sm gap-2 animate-fade-in">

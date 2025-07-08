@@ -368,10 +368,10 @@ This internship didn't just teach me full-stack development; it transformed me i
 {
   description: "buildspace",
   title: "3D Artist",
-  src: "/assets/asr.webp",
+  src: "/assets/bs.webp",
   ctaText: "June 2024 - July 2024",
   ctaLink: "https://asraviation.com/",
-  ctaColor: "#D9AF4F",
+  ctaColor: "#EA5646",
   content: () => (
     <p>My 3D artistry journey during buildspace Season 5 was absolutely mind-melting—six weeks of pure creative chaos where I transformed from a complete Blender novice into someone who could bend 3D reality to my will, all while being part of this insane global community of 60,000+ creators building their wildest ideas during nights and weekends. This wasn't just learning software; this was diving headfirst into the deep end of digital creation where every vertex, every shader node, and every animation curve became a building block for visual stories that didn't exist before I made them.
 Starting from absolute zero—literally not knowing how to navigate Blender's interface—I threw myself into the most unforgiving learning curve imaginable. The first week was brutal: wrestling with viewport navigation, accidentally deleting entire meshes, and spending hours trying to figure out why my textures looked like abstract nightmares. But something clicked during those late-night sessions when the rest of the world was asleep, and I was alone with my computer, sculpting digital clay into forms that started resembling actual objects.

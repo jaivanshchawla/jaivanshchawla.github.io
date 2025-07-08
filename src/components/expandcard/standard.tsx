@@ -314,7 +314,7 @@ This wasn't just content writing—it was strategic communication that helped bu
   {
     description: "Artificial Intelligence Intern",
     title: "Codsoft",
-    src: "/assets/codsoft.webp",
+    src: "/assets/codsoftnew.webp",
     ctaText: "Sept 2024 - Oct 2025",
     ctaLink: "https://www.codsoft.in/",
     ctaColor: "#C04548",

@@ -20,6 +20,7 @@ const Footer = () => {
             { href: "https://linkedin.com", alt: "LinkedIn", src: "/assets/linkedinlogo.webp" },
             { href: "mailto:email@example.com", alt: "Email", src: "/assets/gmaillogo.svg" },
             { href: "https://instagram.com", alt: "Instagram", src: "/assets/instalogo.svg" },
+            { href: "https://www.zedge.net/?", alt: "Zedge", src: "/assets/zedgelogo.svg" },
           ].map(({ href, alt, src }) => (
             <a
               key={alt}

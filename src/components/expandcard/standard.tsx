@@ -206,7 +206,7 @@ What started as me joining the placement cell as a graphic designer somehow snow
     description: "BLUESTOCK.in",
     title: "Software Development Intern",
     src: "/assets/bluestock.webp",
-    ctaText: "Jan 2025 - Present",
+    ctaText: "July 2025 - Present",
     ctaLink: "https://bluestock.in/",
     ctaColor: "#5736AE",
     content: () => (
@@ -222,7 +222,7 @@ What makes this insane is that I'm not just learning fintech development; I'm ac
     description: "StableCode",
     title: "Artificial Intelligence Intern",
     src: "/assets/stablecode.webp",
-    ctaText: "Jan 2025 - Present",
+    ctaText: "June 2025 - July 2025",
     ctaLink: "https://stablecodex.web.app/",
     ctaColor: "#0E6EB6",
     content: () => (
@@ -240,12 +240,12 @@ Each project taught me different aspects of AI development, from natural languag
     ),
   },
   {
-    description: "StableCode",
+    description: "Getinterned",
     title: "Web Developer Intern",
-    src: "/assets/stablecode.webp",
-    ctaText: "Jan 2025 - Present",
-    ctaLink: "https://stablecodex.web.app/",
-    ctaColor: "#0E6EB6",
+    src: "/assets/getintern.webp",
+    ctaText: "June 2025 - July 2025",
+    ctaLink: "https://https://getinterned.org//",
+    ctaColor: "#4439E1",
     content: () => (
       <p>
 My web development internship at GetInterned was absolutely relentless—a structured gauntlet of weekly challenges that pushed every aspect of my development skills to their breaking point. This wasn't just another internship; it was a carefully orchestrated battlefield where only the most adaptable and skilled developers could thrive.

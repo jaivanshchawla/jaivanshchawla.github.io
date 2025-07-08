@@ -19,7 +19,7 @@ const Footer = () => {
             { href: "https://github.com/jaivanshchawla", alt: "GitHub", src: "/assets/githublogo.svg" },
             { href: "https://linkedin.com/in/jaivanshchawla", alt: "LinkedIn", src: "/assets/linkedinlogo.webp" },
             { href: "mailto:jaivanshmuj@gmail.com", alt: "Email", src: "/assets/gmaillogo.svg" },
-            { href: "https://instagram.com", alt: "Instagram", src: "/assets/instalogo.svg" },
+            { href: "https://www.instagram.com/__coolguyjc__/", alt: "Instagram", src: "/assets/instalogo.svg" },
             { href: "https://www.zedge.net/?", alt: "Zedge", src: "/assets/zedgelogo.svg" },
           ].map(({ href, alt, src }) => (
             <a

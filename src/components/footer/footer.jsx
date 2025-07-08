@@ -2,17 +2,14 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="relative mt-32 text-center">
-      <div className="absolute inset-0 h-full w-full">
-        {/* Placeholder for your gradient footer background image */}
-        {/* Add the background gradient later using a bg-gradient or bg-[url(...)] class */}
-      </div>
+    <footer className="relative mt-32 text-center overflow-hidden">
+      {/* 🌄 Background Gradient Image */}
+      <div className="absolute inset-0 h-full w-full z-0 bg-[url('/assets/footer-gradient.svg')] bg-cover bg-center bg-no-repeat" />
 
-      <div className="relative z-10 max-w-4xl mx-auto bg-black bg-opacity-60 rounded-t-3xl px-8 py-12 flex flex-col items-center backdrop-blur-sm">
+      {/* ✨ Content Overlay */}
+      <div className="relative z-10 max-w-4xl mx-auto bg-black/60 rounded-t-3xl px-8 py-12 flex flex-col items-center backdrop-blur-sm">
         {/* Contact Title */}
-        <h1
-          className="text-4xl md:text-5xl font-bold mb-8 text-transparent bg-gradient-to-br from-[#F1DFA3] to-[#EAC67A] bg-clip-text animate-fade-in"
-        >
+        <h1 className="text-4xl md:text-5xl font-bold mb-8 text-transparent bg-gradient-to-br from-[#F1DFA3] to-[#EAC67A] bg-clip-text animate-fade-in">
           CONTACT
         </h1>
 
@@ -32,7 +29,7 @@ const Footer = () => {
           </a>
         </div>
 
-        {/* Bottom Info */}
+        {/* Contact Info */}
         <div className="flex flex-col items-center text-gray-300 text-sm gap-2 animate-fade-in">
           <a href="/" className="hover:text-white font-medium transition-colors duration-300">coolguyjc</a>
 
@@ -45,13 +42,15 @@ const Footer = () => {
           <div className="flex gap-2 justify-center flex-wrap">
             <span>Jaivansh Chawla</span>
             <span>|</span>
-            <span>Gurugram/Jaipur,India</span>
+            <span>Gurugram/Jaipur, India</span>
           </div>
         </div>
       </div>
 
-      {/* Copyright below rectangle */}
-      <p className="text-gray-500 text-xs mt-4 animate-fade-in">© 2025 JC. All rights reserved.</p>
+      {/* Copyright */}
+      <p className="text-gray-500 text-xs mt-4 z-10 relative animate-fade-in">
+        © 2025 JC. All rights reserved.
+      </p>
     </footer>
   );
 };

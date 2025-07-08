@@ -34,7 +34,7 @@ export function Presidium() {
             <MorphingDialogTitle className='text-[10px] font-medium text-black sm:text-xs'>
               School Education
             </MorphingDialogTitle>
-            <MorphingDialogSubtitle className='text-[10px] text-gray-600 sm:text-xs'>
+            <MorphingDialogSubtitle className='text-[10px] text-gray-800 sm:text-xs'>
               Presidium School, Gurgaon (2010-2023)
             </MorphingDialogSubtitle>
           </div>

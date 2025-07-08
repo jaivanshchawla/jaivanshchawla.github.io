@@ -44,7 +44,7 @@ export function Manipal() {
       <MorphingDialogContainer>
         <MorphingDialogContent
           style={{ borderRadius: '12px' }}
-          className='relative h-auto w-[500px] border border-gray-100 bg-white'
+          className='relative h-auto w-[500px] border border-gray-100 bg-[#F6EFE4]'
         >
           <ScrollArea className='h-[90vh]' type='scroll'>
             <div className='relative p-6'>
@@ -59,10 +59,10 @@ export function Manipal() {
                 <MorphingDialogTitle className='text-black'>
                   B.Tech Computer Science Engineering (AIML)
                 </MorphingDialogTitle>
-                <MorphingDialogSubtitle className='font-light text-gray-400'>
+                <MorphingDialogSubtitle className='font-light text-gray-700'>
                   Manipal University Jaipur (2023-2027)
                 </MorphingDialogSubtitle>
-                <div className='mt-4 text-sm text-gray-700'>
+                <div className='mt-4 text-sm text-gray-800'>
                   <p>
                     Currently blazing through my junior year at Manipal University Jaipur with a 9.20 GPA that honestly still feels surreal every time I look at it. Landing on the Dean's List three consecutive times wasn't just luck—it was the result of countless 3 AM study sessions, relentless problem-solving marathons, and an almost unhealthy obsession with understanding concepts from their very core rather than just memorizing formulas like a robot. Every semester has been a new battlefield where I've pushed my limits so hard that I've surprised myself with what I'm capable of achieving. The numbers are great, sure, but what really drives me is this insatiable hunger to see how much further I can stretch my mind, how many more impossibilities I can turn into achievements. Some people think I'm crazy for spending entire weekends diving deep into algorithm complexities or database optimization techniques, but when you're genuinely passionate about learning, the line between work and play just disappears. The Dean's List recognitions are incredible milestones, but they're also just stepping stones to something even bigger that I can't quite see yet—and that uncertainty is absolutely thrilling.
                   </p>

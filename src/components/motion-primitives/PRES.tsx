@@ -44,7 +44,7 @@ export function Presidium() {
       <MorphingDialogContainer>
         <MorphingDialogContent
           style={{ borderRadius: '12px' }}
-          className='relative h-auto w-[500px] border border-gray-100 bg-white'
+          className='relative h-auto w-[500px] border border-gray-100 bg-[#F3E6E6]'
         >
           <ScrollArea className='h-[90vh]' type='scroll'>
             <div className='relative p-6'>
@@ -59,10 +59,10 @@ export function Presidium() {
                 <MorphingDialogTitle className='text-black'>
                   School Education
                 </MorphingDialogTitle>
-                <MorphingDialogSubtitle className='font-light text-gray-400'>
+                <MorphingDialogSubtitle className='font-light text-gray-700'>
                   Presidium School, Gurgaon (2010-2023)
                 </MorphingDialogSubtitle>
-                <div className='mt-4 text-sm text-gray-700'>
+                <div className='mt-4 text-sm text-gray-900'>
                   <p>
                     Presidium wasn't just my educational institution from 2010 to 2023—it was the forge where my relentless drive for excellence was first ignited and hammered into the weapon of determination I wield today. Thirteen years at a single school meant I wasn't just passing through; I was building something monumental, creating a legacy that would echo through those halls long after I graduated. When the CBSE 10th grade boards arrived, I didn't just meet expectations—I obliterated them with a stunning 94.6%, a score that represented countless hours of disciplined study, strategic preparation, and an almost obsessive attention to detail that had teachers wondering if I was some kind of academic machine. The transition to 11th and 12th grade with PCM (Physics, Chemistry, Mathematics) was like stepping into a completely different universe of complexity, where every concept demanded not just understanding but mastery, and every problem required a level of analytical thinking that pushed my brain to its absolute limits. Then came the ultimate test of adaptability and resilience—the COVID-19 lockdown that turned my 10th and 11th grade experience into a completely digital battlefield. While many students struggled with online learning, I saw it as an opportunity to prove that excellence isn't location-dependent; it's mindset-dependent. Navigating through virtual classrooms, managing technical glitches, maintaining focus during endless Zoom sessions, and somehow managing to not just survive but thrive in an environment that destroyed many students' academic trajectories—that was where my mental fortitude was truly tested and proven. The 80.6% in 12th grade boards wasn't just a percentage; it was a testament to my ability to adapt, evolve, and maintain high standards even when the entire world was falling apart around me. These scores weren't just numbers on a report card—they were proof that I could perform under any circumstances, adapt to any challenge, and emerge victorious from any academic battlefield thrown my way.
                   </p>

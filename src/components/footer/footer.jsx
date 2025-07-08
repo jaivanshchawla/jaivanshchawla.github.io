@@ -17,8 +17,8 @@ const Footer = () => {
         <div className="flex flex-wrap justify-center items-center gap-8 md:gap-20 px-4 mb-10 animate-fade-in">
           {[
             { href: "https://github.com/jaivanshchawla", alt: "GitHub", src: "/assets/githublogo.svg" },
-            { href: "https://in.linkedin.com/in/jaivanshchawla", alt: "LinkedIn", src: "/assets/linkedinlogo.webp" },
-            { href: "mailto:email@example.com", alt: "Email", src: "/assets/gmaillogo.svg" },
+            { href: "https://linkedin.com/in/jaivanshchawla", alt: "LinkedIn", src: "/assets/linkedinlogo.webp" },
+            { href: "mailto:jaivanshmuj@gmail.com", alt: "Email", src: "/assets/gmaillogo.svg" },
             { href: "https://instagram.com", alt: "Instagram", src: "/assets/instalogo.svg" },
             { href: "https://www.zedge.net/?", alt: "Zedge", src: "/assets/zedgelogo.svg" },
           ].map(({ href, alt, src }) => (

@@ -263,10 +263,10 @@ GetInterned didn't just teach me web development—they forged me into a develop
   {
     description: "Zidio Development",
     title: "Web Developer Intern",
-    src: "/assets/getintern.webp",
+    src: "/assets/zidio.webp",
     ctaText: "June 2025 - Present",
     ctaLink: "https://https://getinterned.org//",
-    ctaColor: "#4439E1",
+    ctaColor: "#343695",
     content: () => (
       <p>
 My web development internship at Zidio Development was absolutely transformative—a comprehensive deep dive into modern web technologies that completely revolutionized my approach to building scalable, production-ready applications. This wasn't just another internship; it was an intensive training ground where theoretical knowledge met real-world application in the most demanding ways possible.

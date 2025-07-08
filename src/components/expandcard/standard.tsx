@@ -370,7 +370,7 @@ This internship didn't just teach me full-stack development; it transformed me i
   title: "3D Artist",
   src: "/assets/bs.webp",
   ctaText: "June 2024 - July 2024",
-  ctaLink: "https://asraviation.com/",
+  ctaLink: "https://buildspace.so/",
   ctaColor: "#EA5646",
   content: () => (
     <p>My 3D artistry journey during buildspace Season 5 was absolutely mind-melting—six weeks of pure creative chaos where I transformed from a complete Blender novice into someone who could bend 3D reality to my will, all while being part of this insane global community of 60,000+ creators building their wildest ideas during nights and weekends. This wasn't just learning software; this was diving headfirst into the deep end of digital creation where every vertex, every shader node, and every animation curve became a building block for visual stories that didn't exist before I made them.

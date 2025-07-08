@@ -14,7 +14,7 @@ const Footer = () => {
         </h1>
 
         {/* Social Links */}
-        <div className="flex flex-wrap justify-center items-center gap-6 md:gap-10 px-4 mb-10 animate-fade-in">
+        <div className="flex flex-wrap justify-center items-center gap-8 md:gap-20 px-4 mb-10 animate-fade-in">
           {[
             { href: "https://github.com", alt: "GitHub", src: "/assets/githublogo.svg" },
             { href: "https://linkedin.com", alt: "LinkedIn", src: "/assets/linkedinlogo.webp" },
@@ -29,7 +29,7 @@ const Footer = () => {
               rel="noopener noreferrer"
               className="group transition-transform hover:scale-110 duration-300"
             >
-              <div className="overflow-visible w-10 h-10">
+              <div className="overflow-visible w-12 h-12">
                 <img
                   src={src}
                   alt={alt}

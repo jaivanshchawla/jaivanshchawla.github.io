@@ -339,12 +339,12 @@ This wasn't just an internship; it was an AI bootcamp that transformed me from s
     ),
   },
   {
-  description: "ASR Aviation",
-  title: "Full Stack Developer Intern",
-  src: "/assets/asr-aviation.webp",
+  description: "Full Stack Developer Intern",
+  title: "ASR Aviation",
+  src: "/assets/asr.webp",
   ctaText: "Mar 2025",
   ctaLink: "https://asraviation.com/",
-  ctaColor: "#1E40AF",
+  ctaColor: "#D9AF4F",
   content: () => (
     <p>
 My full-stack development internship at ASR Aviation was absolutely game-changing—diving headfirst into India's rapidly expanding aviation ecosystem while building mission-critical digital infrastructure that directly impacts flight operations and passenger safety. This wasn't just another web development role; it was an immersive deep dive into aviation technology where every line of code I wrote had real-world consequences in one of the world's most safety-critical industries.

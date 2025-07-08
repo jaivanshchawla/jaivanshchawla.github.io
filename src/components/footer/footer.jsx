@@ -20,7 +20,7 @@ const Footer = () => {
             { href: "https://linkedin.com/in/jaivanshchawla", alt: "LinkedIn", src: "/assets/linkedinlogo.webp" },
             { href: "mailto:jaivanshmuj@gmail.com", alt: "Email", src: "/assets/gmaillogo.svg" },
             { href: "https://www.instagram.com/__coolguyjc__/", alt: "Instagram", src: "/assets/instalogo.svg" },
-            { href: "https://www.zedge.net/?", alt: "Zedge", src: "/assets/zedgelogo.svg" },
+            { href: "https://www.zedge.net/profiles/7a501060-5251-4205-a6ac-2e93dd178e97", alt: "Zedge", src: "/assets/zedgelogo.svg" },
           ].map(({ href, alt, src }) => (
             <a
               key={alt}

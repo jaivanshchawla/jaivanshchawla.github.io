@@ -21,11 +21,11 @@ export function Manipal() {
     >
       <MorphingDialogTrigger
         style={{ borderRadius: '4px' }}
-        className='border border-gray-200/60 bg-white'
+        className='border border-gray-200/60 bg-[#F7EFEF]'
       >
         <div className='flex items-center space-x-3 p-3'>
           <MorphingDialogImage
-            src='https://m.media-amazon.com/images/I/71skAxiMC2L._AC_UF1000,1000_QL80_.jpg'
+            src='/assets/manipal.webp'
             alt='What I Talk About When I Talk About Running - book cover'
             className='h-8 w-8 object-cover object-top'
             style={{ borderRadius: '4px' }}
@@ -34,7 +34,7 @@ export function Manipal() {
             <MorphingDialogTitle className='text-[10px] font-medium text-black sm:text-xs'>
               B.Tech Computer Science Engineering (AIML)
             </MorphingDialogTitle>
-            <MorphingDialogSubtitle className='text-[10px] text-gray-600 sm:text-xs'>
+            <MorphingDialogSubtitle className='text-[10px] text-gray-900 sm:text-xs'>
               Manipal University Jaipur (2023-2027)
             </MorphingDialogSubtitle>
           </div>

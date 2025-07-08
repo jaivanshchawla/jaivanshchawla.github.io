@@ -64,7 +64,7 @@ const Hero = () => {
 
       {/* Background SVG */}
       <img
-        src="/nordtech/assets/header-gradient.svg"
+        src="/assets/header-gradient.svg"
         alt="Header Gradient Background"
         className={styles.headerGradient}
         aria-hidden="true"

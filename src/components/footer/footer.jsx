@@ -6,8 +6,8 @@ const Footer = () => {
       {/* 🌄 Background Gradient Image */}
       <div className="absolute inset-0 h-full w-full z-0 bg-[url('/assets/footer-gradient.svg')] bg-cover bg-center bg-no-repeat" />
 
-      {/* ✨ Content Overlay */}
-      <div className="relative z-10 max-w-4xl mx-auto bg-black/60 rounded-t-3xl px-8 py-12 flex flex-col items-center backdrop-blur-sm">
+      {/* ✨ Pure blur panel with no background color or border */}
+      <div className="relative z-10 max-w-4xl mx-auto rounded-t-3xl px-8 py-12 flex flex-col items-center backdrop-blur-md">
         {/* Contact Title */}
         <h1 className="text-4xl md:text-5xl font-bold mb-8 text-transparent bg-gradient-to-br from-[#F1DFA3] to-[#EAC67A] bg-clip-text animate-fade-in">
           CONTACT

@@ -221,9 +221,9 @@ What makes this insane is that I'm not just learning fintech development; I'm ac
   {
     description: "StableCode",
     title: "Artificial Intelligence Intern",
-    src: "/assets/bluestock.webp",
+    src: "/assets/stablecode.webp",
     ctaText: "Jan 2025 - Present",
-    ctaLink: "https://bluestock.in/",
+    ctaLink: "https://stablecodex.web.app/",
     ctaColor: "#5736AE",
     content: () => (
       <p>

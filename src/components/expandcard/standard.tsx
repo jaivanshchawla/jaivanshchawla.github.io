@@ -89,7 +89,7 @@ export function ExpandableCardDemo() {
                   layoutId={`button-${activeIndex}`}
                   href={cards[activeIndex].ctaLink}
                   target="_blank"
-                  className="px-4 py-3 text-sm rounded-full font-bold text-white"
+                  className="min-w-fit whitespace-nowrap px-5 py-2 text-sm rounded-full font-bold text-white text-center flex items-center justify-center"
                   style={{ backgroundColor: cards[activeIndex].ctaColor }}
                 >
                   {cards[activeIndex].ctaText}
@@ -145,7 +145,7 @@ export function ExpandableCardDemo() {
 
             <motion.button
               layoutId={`button-${index}`}
-              className="px-4 py-2 text-sm rounded-full font-bold bg-white text-black mt-4 md:mt-0 transition-colors duration-300"
+              className="min-w-fit whitespace-nowrap px-5 py-2 text-sm rounded-full font-bold bg-white text-black mt-4 md:mt-0 transition-colors duration-300 text-center flex items-center justify-center"
               style={{
                 border: `1px solid ${card.ctaColor}`,
               }}

@@ -280,4 +280,35 @@ The project portfolio I built during this internship is absolutely insane—from
 This internship didn't just teach me web development; it transformed me into a developer who can tackle any full-stack challenge with confidence. The combination of hands-on projects, professional mentorship, and exposure to industry-standard tools and practices at Zidio Development created a foundation that's already proving invaluable in my career trajectory.</p>
     ),
   },
+  {
+    description: "Atal Incubation Center (MUJ)",
+    title: "Content Writer",
+    src: "/assets/aicmuj.webp",
+    ctaText: "Nov 2024 - May 2025",
+    ctaLink: "https://www.zidio.in/",
+    ctaColor: "#DB7943",
+    content: () => (
+      <p>
+        My 7-month tenure as Content Writer at Atal Incubation Center-MUJ was absolutely transformative—a deep dive into the heart of India's innovation ecosystem that completely revolutionized how I approach storytelling, startup communication, and entrepreneurial content creation. Working within this flagship initiative of Atal Innovation Mission and NITI Aayog wasn't just a job; it was front-row access to the country's most ambitious entrepreneurship acceleration program.
+
+Every single day brought me face-to-face with groundbreaking startups, visionary founders, and industry leaders who were actively reshaping entire sectors of the economy. I wasn't just writing content—I was documenting the birth of India's next generation of unicorns, capturing the raw energy of innovation as it happened in real-time.
+
+The flagship events I covered were absolutely insane in their scope and impact. **Startup Mela 3.0** wasn't just another networking event—it was a convergence of over 200 startups, VCs, and industry leaders where million-dollar deals were happening in real-time. My comprehensive event coverage captured every keynote, every pitch session, every breakthrough moment, resulting in a 40% surge in online engagement that brought national attention to the incredible innovation happening at AIC-MUJ. The articles I crafted didn't just report on events; they told the stories of entrepreneurs who were literally changing the world.
+
+**Cohort 2025 Conference** pushed me into even more complex territory—documenting the comprehensive 20-week incubation program that transforms raw ideas into scalable, profitable ventures. I had exclusive access to the 12 Critical Success Elements framework, interviewing founders as they navigated the notorious "Valley of Death" that kills most startups. My in-depth reports on their journeys, challenges, and breakthroughs became essential reading for aspiring entrepreneurs across the country.
+
+The **Scale Your Startup: Interact with CEO** series was where my content creation skills truly exploded. I wasn't just writing summaries—I was crafting detailed case studies that broke down exactly how successful CEOs built their companies from ground zero. These weren't generic success stories; they were actionable blueprints that readers could actually implement, complete with specific strategies, common pitfalls, and insider insights that most entrepreneurs never get access to.
+
+My collaboration with founders and VCs was absolutely mind-blowing. I wasn't interviewing them from the outside—I was embedded in their strategic planning sessions, pitch preparations, and investor meetings. This gave me unprecedented insight into how early-stage venture development actually works, from ideation to scaling. The 30+ articles I published weren't just content pieces; they were educational resources that documented real-world startup growth strategies, funding approaches, and market expansion techniques.
+
+The technical workflow I developed using **Notion for content organization, Grammarly for precision editing, and WordPress for professional publishing** created a content pipeline that could handle the massive volume of high-quality articles needed to document this incredible innovation ecosystem. Every piece went through rigorous fact-checking, multiple revision cycles, and collaboration with subject matter experts to ensure accuracy and value.
+
+What made this experience truly exceptional was the direct access to AIC-MUJ's comprehensive support infrastructure—the 10,000 sq. m innovation facility, prototype development labs, and rich mentorship network that included industry veterans, successful entrepreneurs, and investment professionals. I wasn't just writing about the startup ecosystem; I was living inside it, understanding the complex dynamics that determine which startups succeed and which fail.
+
+The promotional content I created for preincubation programs directly contributed to attracting high-quality applicants from across India. My detailed program descriptions, success stories, and application guidance helped position AIC-MUJ as one of the premier innovation destinations in the country. The content strategy I developed increased program applications by significant margins while maintaining the quality standards that made AIC-MUJ one of only ten selections from over 3,658 initial applicants.
+
+This wasn't just content writing—it was strategic communication that helped build one of India's most successful startup ecosystems. Every article, every report, every piece of promotional material contributed to creating an environment where innovation could thrive and entrepreneurs could access the resources they needed to build world-changing companies.
+      </p>
+    ),
+  },
 ];

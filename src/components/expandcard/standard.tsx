@@ -194,7 +194,7 @@ const cards = [
     title: "Student Placement Co-ordinator",
     src: "/assets/manipal.webp",
     ctaText: "Jan 2025 - Present",
-    ctaLink: "https://ui.aceternity.com/templates",
+    ctaLink: "https://jaipur.manipal.edu/",
     ctaColor: "#F28C28",
     content: () => (
       <p>

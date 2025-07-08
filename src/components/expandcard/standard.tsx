@@ -224,7 +224,7 @@ What makes this insane is that I'm not just learning fintech development; I'm ac
     src: "/assets/stablecode.webp",
     ctaText: "Jan 2025 - Present",
     ctaLink: "https://stablecodex.web.app/",
-    ctaColor: "#5736AE",
+    ctaColor: "#0E6EB6",
     content: () => (
       <p>
 My AI internship at StableCode was absolutely mental—five projects that completely rewired how I think about artificial intelligence and machine learning. This wasn't just coding exercises; this was diving headfirst into the bleeding edge of AI development and emerging with solutions that actually work in the real world.
@@ -236,6 +236,27 @@ The Rock, Paper, Scissors game against AI was where things got seriously interes
 The face detection app pushed me deep into computer vision territory, working with OpenCV and machine learning models to build systems that could identify and track faces with scary accuracy. But the real beast was the offline voice assistant—building an AI that could understand speech, process commands, and respond intelligently without any internet connection. This meant optimizing models for local processing, handling voice recognition in real-time, and creating responses that felt genuinely intelligent.
 
 Each project taught me different aspects of AI development, from natural language processing to computer vision to machine learning optimization. StableCode didn't just give me tasks; they threw me into AI challenges that forced me to understand how these technologies actually work under the hood. Now I think in algorithms, dream in neural networks, and see AI applications everywhere.
+      </p>
+    ),
+  },
+  {
+    description: "StableCode",
+    title: "Web Developer Intern",
+    src: "/assets/stablecode.webp",
+    ctaText: "Jan 2025 - Present",
+    ctaLink: "https://stablecodex.web.app/",
+    ctaColor: "#0E6EB6",
+    content: () => (
+      <p>
+My web development internship at GetInterned was absolutely relentless—a structured gauntlet of weekly challenges that pushed every aspect of my development skills to their breaking point. This wasn't just another internship; it was a carefully orchestrated battlefield where only the most adaptable and skilled developers could thrive.
+
+Week 1 hit me with a frontend quiz that tested everything from React component optimization to CSS animations and responsive design principles. I had to prove I could build interfaces that weren't just functional but genuinely engaging across all devices. Week 2 cranked up the intensity with a backend quiz that dove deep into server architecture, database optimization, REST API design, and security protocols—the kind of stuff that separates real developers from code copiers.
+
+Week 3 brought the game-changing project challenge: **SmartTailor**, a cloud-based micro-ERP platform for local tailoring shops. This wasn't some toy project—I had to build a complete workflow management system with customer order tracking, fabric inventory management, digital measurement storage, and mobile-friendly interfaces. The complexity was insane: customers could place orders with specific fabric types and measurements, tailors got comprehensive dashboards for managing orders and deadlines, and the whole system included real-time status updates from "cutting started" to "out for delivery." The optional features pushed me even further—AI-based measurement estimation, fabric pricing integration, WhatsApp bot functionality, and productivity tracking for solo tailors.
+
+The final hackathon was where everything came together. Five problem statements ranging from AI-powered health kiosks to smart inventory systems, each requiring full-stack solutions that could actually solve real-world problems. Working under intense time pressure, I had to choose the most challenging problem, architect a complete solution, and build something production-ready while judges evaluated technical skills, creativity, and problem-solving abilities.
+
+GetInterned didn't just teach me web development—they forged me into a developer who could handle any challenge thrown my way. Every quiz, every project, every sleepless night debugging code contributed to building the kind of comprehensive skill set that most developers take years to develop.
       </p>
     ),
   },

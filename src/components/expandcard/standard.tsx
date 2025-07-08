@@ -285,7 +285,7 @@ This internship didn't just teach me web development; it transformed me into a d
     title: "Content Writer",
     src: "/assets/aicmuj.webp",
     ctaText: "Nov 2024 - May 2025",
-    ctaLink: "https://www.zidio.in/",
+    ctaLink: "https://www.aicmuj.com/index.php",
     ctaColor: "#DB7943",
     content: () => (
       <p>

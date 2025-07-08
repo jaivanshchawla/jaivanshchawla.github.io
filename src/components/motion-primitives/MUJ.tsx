@@ -50,7 +50,7 @@ export function Manipal() {
             <div className='relative p-6'>
               <div className='flex justify-center py-10'>
                 <MorphingDialogImage
-                  src='https://m.media-amazon.com/images/I/71skAxiMC2L._AC_UF1000,1000_QL80_.jpg'
+                  src='/assets/muj.webp'
                   alt='What I Talk About When I Talk About Running - book cover'
                   className='h-auto w-[200px]'
                 />

@@ -21,7 +21,7 @@ export function Presidium() {
     >
       <MorphingDialogTrigger
         style={{ borderRadius: '4px' }}
-        className='border border-gray-200/60 bg-white'
+        className='border border-gray-200/60 bg-[#F7EFEF]'
       >
         <div className='flex items-center space-x-3 p-3'>
           <MorphingDialogImage

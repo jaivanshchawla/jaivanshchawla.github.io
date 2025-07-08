@@ -15,19 +15,31 @@ const Footer = () => {
 
         {/* Social Links */}
         <div className="flex flex-wrap justify-center gap-6 mb-8 animate-fade-in">
-          <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="hover:scale-110 transition duration-300">
-            <img src="/icons/github.svg" alt="GitHub" className="w-8 h-8" />
-          </a>
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:scale-110 transition duration-300">
-            <img src="/icons/linkedin.svg" alt="LinkedIn" className="w-8 h-8" />
-          </a>
-          <a href="mailto:email@example.com" className="hover:scale-110 transition duration-300">
-            <img src="/icons/email.svg" alt="Email" className="w-8 h-8" />
-          </a>
-          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:scale-110 transition duration-300">
-            <img src="/icons/instagram.svg" alt="Instagram" className="w-8 h-8" />
-          </a>
+          {[
+            { href: "https://github.com", alt: "GitHub", src: "/assets/githublogo.svg" },
+            { href: "https://linkedin.com", alt: "LinkedIn", src: "/icons/linkedin.svg" },
+            { href: "mailto:email@example.com", alt: "Email", src: "/icons/email.svg" },
+            { href: "https://instagram.com", alt: "Instagram", src: "/assets/instalogo.svg" },
+          ].map(({ href, alt, src }) => (
+            <a
+              key={alt}
+              href={href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group transition-transform transform hover:scale-110 duration-300"
+            >
+              <img
+                src={src}
+                alt={alt}
+                className="w-8 h-8 transition duration-300 grayscale brightness-125 group-hover:grayscale-0 group-hover:brightness-100"
+                style={{ filter: "invert(0.8)", transition: "filter 0.3s" }}
+              />
+            </a>
+          ))}
         </div>
+
+        {/* Spacer gap between buttons and text */}
+        <div className="h-8" />
 
         {/* Contact Info */}
         <div className="flex flex-col items-center text-gray-300 text-sm gap-2 animate-fade-in">

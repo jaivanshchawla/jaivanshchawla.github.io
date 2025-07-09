@@ -277,7 +277,7 @@ const cards = [
   {
     description: "Handwritten Text Recognition & Key Concept Extraction ",
     title: "ScriptSense",
-    src: "/assets/snake-min.webp",
+    src: "/assets/sslogo.webp",
     ctaText: "Visit",
     ctaLink: "https://github.com/jaivanshchawla",
     ctaColor: "#BA68C8", // Purple

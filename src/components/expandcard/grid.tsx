@@ -3,7 +3,7 @@
 import React, { useEffect, useId, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { useOutsideClick } from "../../hooks/use-outside-click";
-import LazyImage from "../ui/LazyImage"; // ✅ Lazy loading component
+import LazyImage from "../ui/LazyImage";
 
 export function ExpandableCardGrid() {
   const [active, setActive] = useState<(typeof cards)[number] | boolean | null>(null);
@@ -12,9 +12,7 @@ export function ExpandableCardGrid() {
 
   useEffect(() => {
     function onKeyDown(event: KeyboardEvent) {
-      if (event.key === "Escape") {
-        setActive(false);
-      }
+      if (event.key === "Escape") setActive(false);
     }
 
     if (active && typeof active === "object") {
@@ -43,7 +41,7 @@ export function ExpandableCardGrid() {
       </AnimatePresence>
 
       <AnimatePresence>
-        {active && typeof active === "object" ? (
+        {active && typeof active === "object" && (
           <div className="fixed inset-0 grid place-items-center z-[100]">
             <motion.button
               key={`button-${active.title}-${id}`}
@@ -56,68 +54,60 @@ export function ExpandableCardGrid() {
             >
               <CloseIcon />
             </motion.button>
+
             <motion.div
               layoutId={`card-${active.title}-${id}`}
               ref={ref}
-              className="w-full max-w-[500px] h-full md:h-fit md:max-h-[90%] flex flex-col bg-white dark:bg-neutral-900 sm:rounded-3xl overflow-hidden"
+              className="w-full max-w-[500px] max-h-[90vh] flex flex-col bg-white dark:bg-neutral-900 sm:rounded-3xl overflow-hidden"
             >
-              <motion.div layoutId={`image-${active.title}-${id}`}>
+              <motion.div
+                layoutId={`image-${active.title}-${id}`}
+                className="flex items-center justify-center w-full h-80 bg-white dark:bg-neutral-900 sm:rounded-t-3xl"
+              >
                 <LazyImage
                   width={200}
                   height={200}
                   src={active.src}
                   alt={active.title}
-                  className="w-full h-80 lg:h-80 sm:rounded-tr-lg sm:rounded-tl-lg object-cover object-top"
+                  className="w-full h-full object-contain"
                 />
               </motion.div>
 
-              <div>
-                <div className="flex justify-between items-start p-4">
-                  <div>
-                    <motion.h3
-                      layoutId={`title-${active.title}-${id}`}
-                      className="font-medium text-neutral-700 dark:text-neutral-200 text-base"
-                    >
-                      {active.title}
-                    </motion.h3>
-                    <motion.p
-                      layoutId={`description-${active.description}-${id}`}
-                      className="text-neutral-600 dark:text-neutral-400 text-base"
-                    >
-                      {active.description}
-                    </motion.p>
-                  </div>
-
-                  <motion.a
-                    layout
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    exit={{ opacity: 0 }}
-                    href={active.ctaLink}
-                    target="_blank"
-                    className="px-4 py-3 text-sm rounded-full font-bold bg-green-500 text-white"
+              <div className="flex justify-between items-start p-4 shrink-0">
+                <div>
+                  <motion.h3
+                    layoutId={`title-${active.title}-${id}`}
+                    className="font-bold text-neutral-700 dark:text-neutral-200"
                   >
-                    {active.ctaText}
-                  </motion.a>
+                    {active.title}
+                  </motion.h3>
+                  <motion.p
+                    layoutId={`description-${active.description}-${id}`}
+                    className="text-neutral-600 dark:text-neutral-400"
+                  >
+                    {active.description}
+                  </motion.p>
                 </div>
 
-                <div className="pt-4 relative px-4">
-                  <motion.div
-                    layout
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    exit={{ opacity: 0 }}
-                    className="text-neutral-600 text-xs md:text-sm lg:text-base h-40 md:h-fit pb-10 flex flex-col items-start gap-4 overflow-auto dark:text-neutral-400 [mask:linear-gradient(to_bottom,white,white,transparent)] [scrollbar-width:none] [-ms-overflow-style:none] [-webkit-overflow-scrolling:touch]"
-                  >
-                    {typeof active.content === "function"
-                      ? active.content()
-                      : active.content}
-                  </motion.div>
-                </div>
+                <motion.a
+                  layoutId={`button-${active.title}-${id}`}
+                  href={active.ctaLink}
+                  target="_blank"
+                  className="min-w-fit whitespace-nowrap px-5 py-2 text-sm rounded-full font-bold text-white text-center flex items-center justify-center"
+                  style={{ backgroundColor: active.ctaColor }}
+                >
+                  {active.ctaText}
+                </motion.a>
+              </div>
+
+              <div className="flex-1 overflow-y-auto px-4 pb-4 text-neutral-600 dark:text-neutral-400 text-xs md:text-sm lg:text-base space-y-4 scroll-smooth [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
+                <motion.div layout initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
+                  {typeof active.content === "function" ? active.content() : active.content}
+                </motion.div>
               </div>
             </motion.div>
           </div>
-        ) : null}
+        )}
       </AnimatePresence>
 
       <ul className="max-w-2xl mx-auto w-full grid grid-cols-1 md:grid-cols-2 items-start gap-4">
@@ -129,15 +119,19 @@ export function ExpandableCardGrid() {
             className="p-4 flex flex-col hover:bg-neutral-50 dark:hover:bg-neutral-800 rounded-xl cursor-pointer"
           >
             <div className="flex gap-4 flex-col w-full">
-              <motion.div layoutId={`image-${card.title}-${id}`}>
+              <motion.div
+                layoutId={`image-${card.title}-${id}`}
+                className="flex items-center justify-center w-full h-60 bg-transparent rounded-lg overflow-hidden"
+              >
                 <LazyImage
                   width={100}
                   height={100}
                   src={card.src}
                   alt={card.title}
-                  className="h-60 w-full rounded-lg object-cover object-top"
+                  className="w-full h-full object-contain"
                 />
               </motion.div>
+
               <div className="flex justify-center items-center flex-col">
                 <motion.h3
                   layoutId={`title-${card.title}-${id}`}
@@ -160,30 +154,27 @@ export function ExpandableCardGrid() {
   );
 }
 
-export const CloseIcon = () => {
-  return (
-    <motion.svg
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0, transition: { duration: 0.05 } }}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      className="h-4 w-4 text-black"
-    >
-      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-      <path d="M18 6l-12 12" />
-      <path d="M6 6l12 12" />
-    </motion.svg>
-  );
-};
-
+export const CloseIcon = () => (
+  <motion.svg
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    exit={{ opacity: 0, transition: { duration: 0.05 } }}
+    xmlns="http://www.w3.org/2000/svg"
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    className="h-4 w-4 text-black"
+  >
+    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+    <path d="M18 6l-12 12" />
+    <path d="M6 6l12 12" />
+  </motion.svg>
+);
 
 const cards = [
   {
@@ -192,6 +183,7 @@ const cards = [
     src: "/assets/cool-min.webp",
     ctaText: "Visit",
     ctaLink: "https://github.com/jaivanshchawla",
+    ctaColor: "#FF69B4", // Hot Pink
     content: () => (
       <p>
         Lana Del Rey, an iconic American singer-songwriter, is celebrated for
@@ -212,6 +204,7 @@ const cards = [
     src: "/assets/guy-min.webp",
     ctaText: "Visit",
     ctaLink: "https://github.com/jaivanshchawla",
+    ctaColor: "#D32F2F", // Red
     content: () => (
       <p>
         Babbu Maan, a legendary Punjabi singer, is renowned for his soulful
@@ -231,6 +224,7 @@ const cards = [
     src: "/assets/punk-min.webp",
     ctaText: "Visit",
     ctaLink: "https://github.com/jaivanshchawla",
+    ctaColor: "#607D8B", // Slate Gray
     content: () => (
       <p>
         Metallica, an iconic American heavy metal band, is renowned for their
@@ -250,6 +244,7 @@ const cards = [
     src: "/assets/chill-min.webp",
     ctaText: "Visit",
     ctaLink: "https://github.com/jaivanshchawla",
+    ctaColor: "#00BCD4", // Cyan
     content: () => (
       <p>
         Himesh Reshammiya, a renowned Indian music composer, singer, and actor,
@@ -268,6 +263,7 @@ const cards = [
     src: "/assets/rain-min.webp",
     ctaText: "Visit",
     ctaLink: "https://github.com/jaivanshchawla",
+    ctaColor: "#FFC107", // Amber Yellow
     content: () => (
       <p>
         Daft Punk, the legendary French electronic music duo, is celebrated for
@@ -284,6 +280,7 @@ const cards = [
     src: "/assets/snake-min.webp",
     ctaText: "Visit",
     ctaLink: "https://github.com/jaivanshchawla",
+    ctaColor: "#BA68C8", // Purple
     content: () => (
       <p>
         Taylor Swift, a multi-Grammy-winning singer-songwriter, is celebrated
@@ -296,3 +293,4 @@ const cards = [
     ),
   },
 ];
+

@@ -221,7 +221,7 @@ const cards = [
   {
     description: "Metallica",
     title: "SATMAP",
-    src: "/assets/punk-min.webp",
+    src: "/assets/SATMAPLOGO.webp",
     ctaText: "Visit",
     ctaLink: "https://github.com/jaivanshchawla",
     ctaColor: "#607D8B", // Slate Gray

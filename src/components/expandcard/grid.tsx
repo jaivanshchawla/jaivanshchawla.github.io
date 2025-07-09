@@ -180,7 +180,7 @@ const cards = [
   {
     description: "Smart Blood Donor Finder",
     title: "Arteria",
-    src: "/assets/cool-min.webp",
+    src: "/assets/arterialogo.webp",
     ctaText: "Github",
     ctaLink: "https://github.com/jaivanshchawla",
     ctaColor: "#FF69B4", // Hot Pink

@@ -199,8 +199,8 @@ const cards = [
     ),
   },
   {
-    description: "Research Project",
-    title: "Chess-WebApp",
+    description: "Alumni Database Management System",
+    title: "JASSPA",
     src: "/assets/guy-min.webp",
     ctaText: "Visit",
     ctaLink: "https://github.com/jaivanshchawla",

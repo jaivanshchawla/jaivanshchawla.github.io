@@ -201,7 +201,7 @@ const cards = [
   {
     description: "Alumni Database Management System",
     title: "JASSPA",
-    src: "/assets/guy-min.webp",
+    src: "/assets/jasspalogo.webp",
     ctaText: "Visit",
     ctaLink: "https://github.com/jaivanshchawla",
     ctaColor: "#D32F2F", // Red

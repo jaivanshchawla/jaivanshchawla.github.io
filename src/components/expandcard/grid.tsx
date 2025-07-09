@@ -178,10 +178,10 @@ export const CloseIcon = () => (
 
 const cards = [
   {
-    description: "Lana Del Rey",
-    title: "Summertime Sadness",
+    description: "Arteria",
+    title: "Smart Blood Donor Finder",
     src: "/assets/cool-min.webp",
-    ctaText: "Visit",
+    ctaText: "Github",
     ctaLink: "https://github.com/jaivanshchawla",
     ctaColor: "#FF69B4", // Hot Pink
     content: () => (

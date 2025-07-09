@@ -178,8 +178,8 @@ export const CloseIcon = () => (
 
 const cards = [
   {
-    description: "Arteria",
-    title: "Smart Blood Donor Finder",
+    description: "Smart Blood Donor Finder",
+    title: "Arteria",
     src: "/assets/cool-min.webp",
     ctaText: "Github",
     ctaLink: "https://github.com/jaivanshchawla",
@@ -199,8 +199,8 @@ const cards = [
     ),
   },
   {
-    description: "Babbu Maan",
-    title: "Mitran Di Chhatri",
+    description: "Research Project",
+    title: "Chess-WebApp",
     src: "/assets/guy-min.webp",
     ctaText: "Visit",
     ctaLink: "https://github.com/jaivanshchawla",

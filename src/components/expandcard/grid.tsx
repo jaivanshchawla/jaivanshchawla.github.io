@@ -275,8 +275,8 @@ const cards = [
     ),
   },
   {
-    description: "Taylor Swift",
-    title: "Blank Space",
+    description: "Handwritten Text Recognition & Key Concept Extraction ",
+    title: "ScriptSense",
     src: "/assets/snake-min.webp",
     ctaText: "Visit",
     ctaLink: "https://github.com/jaivanshchawla",

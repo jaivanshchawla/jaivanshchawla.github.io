@@ -220,7 +220,7 @@ const cards = [
   },
   {
     description: "Metallica",
-    title: "For Whom The Bell Tolls",
+    title: "SATMAP",
     src: "/assets/punk-min.webp",
     ctaText: "Visit",
     ctaLink: "https://github.com/jaivanshchawla",

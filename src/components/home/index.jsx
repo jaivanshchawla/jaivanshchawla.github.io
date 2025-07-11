@@ -57,10 +57,12 @@ const Hero = () => {
     }
   }, []);
 
-  // Handler to open the resume PDF in a new tab
-  const handleResumeClick = () => {
+ const handleResumeClick = () => {
+  setTimeout(() => {
     window.open('/assets/resume.pdf', '_blank');
-  };
+  }, 300); // 300ms delay (adjust as needed)
+};
+
 
   return (
     <section className={styles.hero}>

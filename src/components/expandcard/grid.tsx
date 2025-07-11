@@ -223,7 +223,7 @@ const cards = [
     title: "SATMAP",
     src: "/assets/SATMAPLOGO.webp",
     ctaText: "Visit",
-    ctaLink: "https://github.com/jaivanshchawla",
+    ctaLink: "https://github.com/jaivanshchawla/Satviz",
     ctaColor: "#607D8B", // Slate Gray
     content: () => (
       <p>

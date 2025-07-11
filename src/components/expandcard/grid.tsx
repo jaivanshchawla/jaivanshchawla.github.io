@@ -183,7 +183,7 @@ const cards = [
     src: "/assets/arterialogo.webp",
     ctaText: "Github",
     ctaLink: "https://github.com/jaivanshchawla/Arteria",
-    ctaColor: "#FF69B4", // Hot Pink
+    ctaColor: "#E53935", // Hot Pink
     content: () => (
       <p>
         Lana Del Rey, an iconic American singer-songwriter, is celebrated for

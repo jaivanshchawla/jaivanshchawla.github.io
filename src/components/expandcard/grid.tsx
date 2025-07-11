@@ -182,7 +182,7 @@ const cards = [
     title: "Arteria",
     src: "/assets/arterialogo.webp",
     ctaText: "Github",
-    ctaLink: "https://github.com/jaivanshchawla",
+    ctaLink: "https://github.com/jaivanshchawla/Arteria",
     ctaColor: "#FF69B4", // Hot Pink
     content: () => (
       <p>

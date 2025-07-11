@@ -70,10 +70,10 @@ export function Tibraze() {
           />
           <div className='p-6'>
             <MorphingDialogTitle className='text-2xl text-zinc-950 dark:text-zinc-50'>
-              EB27
+              The Research Collection
             </MorphingDialogTitle>
             <MorphingDialogSubtitle className='text-zinc-700 dark:text-zinc-400'>
-              Edouard Wilfrid Buquet
+              Exploring, Experimenting, Evolving
             </MorphingDialogSubtitle>
             <MorphingDialogDescription
               disableLayoutAnimation
@@ -95,11 +95,11 @@ export function Tibraze() {
               </p>
               <a
                 className='mt-2 inline-flex text-zinc-500 underline'
-                href='https://www.are.na/block/12759029'
+                href='https://github.com/jaivanshchawla/WebChessEngine'
                 target='_blank'
                 rel='noopener noreferrer'
               >
-                Are.na block
+                web.chess.engine
               </a>
             </MorphingDialogDescription>
           </div>

@@ -203,7 +203,7 @@ const cards = [
     title: "JASSPA",
     src: "/assets/jasspalogo.webp",
     ctaText: "Visit",
-    ctaLink: "https://github.com/jaivanshchawla",
+    ctaLink: "https://github.com/jaivanshchawla/JASSPA---Alumni-Portal",
     ctaColor: "#D32F2F", // Red
     content: () => (
       <p>

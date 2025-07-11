@@ -183,7 +183,7 @@ const cards = [
     src: "/assets/arterialogo.webp",
     ctaText: "Github",
     ctaLink: "https://github.com/jaivanshchawla/Arteria",
-    ctaColor: "#E53935", // Hot Pink
+    ctaColor: "#E53935", 
     content: () => (
       <p>
         Lana Del Rey, an iconic American singer-songwriter, is celebrated for
@@ -204,7 +204,7 @@ const cards = [
     src: "/assets/jasspalogo.webp",
     ctaText: "Visit",
     ctaLink: "https://github.com/jaivanshchawla/JASSPA---Alumni-Portal",
-    ctaColor: "#D32F2F", // Red
+    ctaColor: "#0F52BA", // Red
     content: () => (
       <p>
         Babbu Maan, a legendary Punjabi singer, is renowned for his soulful

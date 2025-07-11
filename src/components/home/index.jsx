@@ -57,6 +57,11 @@ const Hero = () => {
     }
   }, []);
 
+  // Handler to open the resume PDF in a new tab
+  const handleResumeClick = () => {
+    window.open('/assets/resume.pdf', '_blank');
+  };
+
   return (
     <section className={styles.hero}>
       {/* Spotlight: rendered first, behind everything */}
@@ -85,7 +90,7 @@ const Hero = () => {
       </div>
       <div className="mt-12 flex justify-center relative z-20">
         <CoolMode>
-          <RippleButton>RESUME</RippleButton>
+          <RippleButton onClick={handleResumeClick}>RESUME</RippleButton>
         </CoolMode>
       </div>
     </section>

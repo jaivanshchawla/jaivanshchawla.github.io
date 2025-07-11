@@ -224,7 +224,7 @@ const cards = [
     src: "/assets/SATMAPLOGO.webp",
     ctaText: "Visit",
     ctaLink: "https://github.com/jaivanshchawla/Satviz",
-    ctaColor: "#607D8B", // Slate Gray
+    ctaColor: "#FF5A09", // Slate Gray
     content: () => (
       <p>
         Metallica, an iconic American heavy metal band, is renowned for their
@@ -280,7 +280,7 @@ const cards = [
     src: "/assets/sslogo.webp",
     ctaText: "Visit",
     ctaLink: "https://github.com/jaivanshchawla",
-    ctaColor: "#BA68C8", // Purple
+    ctaColor: "#3A6C72", // Purple
     content: () => (
       <p>
         Taylor Swift, a multi-Grammy-winning singer-songwriter, is celebrated

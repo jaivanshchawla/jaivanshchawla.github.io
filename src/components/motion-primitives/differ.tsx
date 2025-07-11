@@ -34,10 +34,10 @@ export function Tibraze() {
         <div className='flex grow flex-row items-end justify-between px-3 py-2'>
           <div>
             <MorphingDialogTitle className='text-zinc-950 dark:text-zinc-50'>
-              EB27
+              Research Projects
             </MorphingDialogTitle>
             <MorphingDialogSubtitle className='text-zinc-700 dark:text-zinc-400'>
-              Edouard Wilfrid Buquet
+              A Showcase of Past and Current Work
             </MorphingDialogSubtitle>
           </div>
           <button

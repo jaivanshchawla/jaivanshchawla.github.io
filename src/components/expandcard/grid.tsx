@@ -251,7 +251,6 @@ const cards = [
             <li>• Weather patterns (monsoon = dengue surge)</li>
           </ul>
         </div>
-
         <hr className="border-neutral-300 dark:border-neutral-600" />
         
         <div className="text-center">

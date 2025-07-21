@@ -238,7 +238,6 @@ const cards = [
           </div>
         </div>
         <hr className="border-neutral-300 dark:border-neutral-600" />
-        
         <div>
           <h4 className="font-semibold text-purple-600 dark:text-purple-400 mb-2">🔮 The "Hella Crazy" Future</h4>
           <p className="mb-2 font-medium text-pink-600 dark:text-pink-400">

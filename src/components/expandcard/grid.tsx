@@ -227,7 +227,6 @@ const cards = [
             </div>
           </div>
         </div>
-
         <hr className="border-neutral-300 dark:border-neutral-600" />
         
         <div>

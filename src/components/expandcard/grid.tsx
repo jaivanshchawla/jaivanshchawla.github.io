@@ -192,7 +192,6 @@ const cards = [
             Picture this: You're in a hospital corridor at 3 AM. A patient needs O-negative blood urgently, but the blood bank is empty. Traditional donor lists are outdated phone directories from 2019. Facebook groups are flooded with desperate pleas. WhatsApp forwards create chaos instead of solutions.
           </p>
         </div>
-        
         <hr className="border-neutral-300 dark:border-neutral-600" />
         
         <div>

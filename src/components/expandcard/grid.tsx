@@ -185,9 +185,99 @@ const cards = [
     ctaLink: "https://github.com/jaivanshchawla/Arteria",
     ctaColor: "#E53935", 
     content: () => (
-      <p>
+      <div className="space-y-4">
+        <div>
+          <h4 className="font-semibold text-red-600 dark:text-red-400 mb-2">🩸 The Vision That Started It All</h4>
+          <p>
+            Picture this: You're in a hospital corridor at 3 AM. A patient needs O-negative blood urgently, but the blood bank is empty. Traditional donor lists are outdated phone directories from 2019. Facebook groups are flooded with desperate pleas. WhatsApp forwards create chaos instead of solutions.
+          </p>
+        </div>
         
-      </p>
+        <hr className="border-neutral-300 dark:border-neutral-600" />
+        
+        <div>
+          <p className="font-medium text-red-500 dark:text-red-400 mb-2">
+            This is exactly what happened during COVID-19. People were literally dying while potential donors were just kilometers away, scrolling through their phones, unaware of the emergency happening in their backyard.
+          </p>
+          <p>
+            The spark for Arteria ignited during our college blood donation camp in January 2025. Watching hundreds of students donate blood while manually filling paper forms like it's 1995 was the eureka moment.
+          </p>
+        </div>
+
+        <hr className="border-neutral-300 dark:border-neutral-600" />
+        
+        <div>
+          <h4 className="font-semibold text-emerald-600 dark:text-emerald-400 mb-2">🚀 What Arteria Actually Does</h4>
+          <p className="mb-3">
+            Arteria isn't just another donor database – it's a <span className="font-semibold text-emerald-500">hyper-intelligent blood matching ecosystem</span> that treats every second like it could save a life.
+          </p>
+          
+          <div className="space-y-2">
+            <p><strong className="text-blue-600 dark:text-blue-400">⚡ Lightning-Fast Filtering:</strong> Tree-structured algorithm processes 1,000+ donor profiles in milliseconds</p>
+            <p><strong className="text-purple-600 dark:text-purple-400">🎯 Dijkstra's Algorithm:</strong> Dynamically calculates nearest suitable donor in seconds</p>
+            <p><strong className="text-green-600 dark:text-green-400">🔒 Aadhaar Authentication:</strong> For Indians, by Indians. No fake profiles, just verified citizens</p>
+          </div>
+        </div>
+
+        <hr className="border-neutral-300 dark:border-neutral-600" />
+        
+        <div>
+          <h4 className="font-semibold text-cyan-600 dark:text-cyan-400 mb-2">🔧 Tech Stack</h4>
+          <div className="grid grid-cols-1 gap-3">
+            <div>
+              <p className="font-medium mb-1">Current Arsenal:</p>
+              <ul className="text-sm space-y-1 ml-4">
+                <li>• <span className="text-yellow-600 dark:text-yellow-400">Python</span> (Pandas, NumPy) – Data crunching powerhouse</li>
+                <li>• <span className="text-blue-600 dark:text-blue-400">MySQL</span> – Rock-solid relational database</li>
+                <li>• <span className="text-green-600 dark:text-green-400">Flask</span> – Lightning-fast API framework</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <hr className="border-neutral-300 dark:border-neutral-600" />
+        
+        <div>
+          <h4 className="font-semibold text-green-600 dark:text-green-400 mb-2">🏆 Current Achievements</h4>
+          <div className="space-y-2 text-sm">
+            <p><strong>📊 1,000+ Donor Records</strong> processed with 98%+ matching accuracy</p>
+            <p><strong>⚡ Sub-second Response</strong> times in emergency simulations</p>
+            <p><strong>🌳 Hierarchical System</strong> that makes traditional searches look stone-age</p>
+            <p><strong>🚨 Emergency Optimization</strong> finds perfect donor before paperwork finishes</p>
+          </div>
+        </div>
+
+        <hr className="border-neutral-300 dark:border-neutral-600" />
+        
+        <div>
+          <h4 className="font-semibold text-purple-600 dark:text-purple-400 mb-2">🔮 The "Hella Crazy" Future</h4>
+          <p className="mb-2 font-medium text-pink-600 dark:text-pink-400">
+            🧠 Blood Demand Forecasting AI - What if we could predict blood shortages before they happen?
+          </p>
+          <p className="text-sm mb-2">Our upcoming AI analyzes:</p>
+          <ul className="text-sm space-y-1 ml-4">
+            <li>• Historical hospital admission data</li>
+            <li>• Traffic accident patterns</li>
+            <li>• Major events (IPL matches = spike in emergencies)</li>
+            <li>• Weather patterns (monsoon = dengue surge)</li>
+          </ul>
+        </div>
+
+        <hr className="border-neutral-300 dark:border-neutral-600" />
+        
+        <div className="text-center">
+          <h4 className="font-semibold text-amber-600 dark:text-amber-400 mb-2">💰 The Reward Revolution</h4>
+          <p className="text-sm">
+            Monetary Incentive Integration – Donors earn credits for successful donations. Think Uber for blood donation, but with emergency service urgency.
+          </p>
+        </div>
+
+        <div className="text-center pt-2">
+          <p className="font-semibold text-red-500 dark:text-red-400">
+            🩸 Where Technology Meets Humanity, One Drop at a Time 🩸
+          </p>
+        </div>
+      </div>
     ),
   },
   {
@@ -298,11 +388,10 @@ const cards = [
         Taylor Swift, a multi-Grammy-winning singer-songwriter, is celebrated
         for her storytelling prowess and genre-spanning musical evolution.
         Rising to fame as a country artist before conquering pop music,
-        she has captivated millions worldwide. <br /> <br /> Swift’s deeply
+        she has captivated millions worldwide. <br /> <br /> Swift's deeply
         personal lyrics and catchy melodies have made her one of the most
         influential artists of her generation.
       </p>
     ),
   },
 ];
-

@@ -193,7 +193,6 @@ const cards = [
           </p>
         </div>
         <hr className="border-neutral-300 dark:border-neutral-600" />
-        
         <div>
           <p className="font-medium text-red-500 dark:text-red-400 mb-2">
             This is exactly what happened during COVID-19. People were literally dying while potential donors were just kilometers away, scrolling through their phones, unaware of the emergency happening in their backyard.

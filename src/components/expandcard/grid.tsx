@@ -228,7 +228,6 @@ const cards = [
           </div>
         </div>
         <hr className="border-neutral-300 dark:border-neutral-600" />
-        
         <div>
           <h4 className="font-semibold text-green-600 dark:text-green-400 mb-2">🏆 Current Achievements</h4>
           <div className="space-y-2 text-sm">

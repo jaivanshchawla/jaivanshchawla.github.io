@@ -42,7 +42,9 @@ export function NavbarDemo() {
         <NavbarLogo />
         <NavItems items={navItems} onItemClick={handleSmoothScroll} />
         <div className="flex items-center gap-4">
-          <NavbarButton variant="secondary">Resume</NavbarButton>
+          <a href="/assets/resume.pdf" target="_blank" rel="noopener noreferrer">
+  <NavbarButton variant="secondary">Resume</NavbarButton>
+</a>
           <NavbarButton
             variant="customGrey"
             onClick={(e) => handleSmoothScroll(e, "#footer-section")}
@@ -75,12 +77,15 @@ export function NavbarDemo() {
           ))}
           <div className="flex w-full flex-col gap-4">
             <NavbarButton
-              onClick={() => setIsMobileMenuOpen(false)}
-              variant="customGreen"
-              className="w-full"
-            >
-              Resume
-            </NavbarButton>
+  onClick={() => {
+    setIsMobileMenuOpen(false);
+    window.open('/assets/resume.pdf', '_blank');
+  }}
+  variant="customGreen"
+  className="w-full"
+>
+  Resume
+</NavbarButton>
             <NavbarButton
               onClick={(e) => handleSmoothScroll(e, "#footer-section")}
               variant="customSilver"

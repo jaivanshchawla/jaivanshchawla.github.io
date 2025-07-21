@@ -10,6 +10,7 @@ import {
   MorphingDialogContainer,
 } from './morphing-dialog';
 import { PlusIcon } from 'lucide-react';
+import { ScrollArea } from '../../website/ScrollArea'; // <-- add this import
 
 export function Tibraze() {
   return (
@@ -41,19 +42,18 @@ export function Tibraze() {
             </MorphingDialogSubtitle>
           </div>
           <button
-  type="button"
-  className="
-    relative ml-1 flex h-6 w-6 shrink-0 scale-100 select-none appearance-none items-center justify-center
-    rounded-lg border transition-colors active:scale-[0.98] focus-visible:ring-2
-    border-[#7A3B44] bg-[#2B1A24] text-[#7A3B44]
-    hover:bg-[#5A3A4B] hover:text-[#D8AFA8]
-    dark:border-[#7A3B44] dark:bg-[#2B1A24] dark:text-[#7A3B44] dark:hover:bg-[#5A3A4B] dark:hover:text-[#D8AFA8]
-  "
-  aria-label="Open dialog"
->
-  <PlusIcon size={12} />
-</button>
-
+            type="button"
+            className="
+              relative ml-1 flex h-6 w-6 shrink-0 scale-100 select-none appearance-none items-center justify-center
+              rounded-lg border transition-colors active:scale-[0.98] focus-visible:ring-2
+              border-[#7A3B44] bg-[#2B1A24] text-[#7A3B44]
+              hover:bg-[#5A3A4B] hover:text-[#D8AFA8]
+              dark:border-[#7A3B44] dark:bg-[#2B1A24] dark:text-[#7A3B44] dark:hover:bg-[#5A3A4B] dark:hover:text-[#D8AFA8]
+            "
+            aria-label="Open dialog"
+          >
+            <PlusIcon size={12} />
+          </button>
         </div>
       </MorphingDialogTrigger>
       <MorphingDialogContainer>
@@ -63,46 +63,83 @@ export function Tibraze() {
           }}
           className='pointer-events-auto relative flex h-auto w-full flex-col overflow-hidden border border-zinc-950/10 bg-white dark:border-zinc-50/10 dark:bg-neutral-900 sm:w-[500px]'
         >
-          <MorphingDialogImage
-            src='/assets/magician-min.webp'
-            alt='Tibraze picture'
-            className='h-full w-full'
-          />
-          <div className='p-6'>
-            <MorphingDialogTitle className='text-2xl text-zinc-950 dark:text-zinc-50'>
-              The Research Collection
-            </MorphingDialogTitle>
-            <MorphingDialogSubtitle className='text-zinc-700 dark:text-zinc-400'>
-              Exploring, Experimenting, Evolving
-            </MorphingDialogSubtitle>
-            <MorphingDialogDescription
-              disableLayoutAnimation
-              variants={{
-                initial: { opacity: 0, scale: 0.8, y: 100 },
-                animate: { opacity: 1, scale: 1, y: 0 },
-                exit: { opacity: 0, scale: 0.8, y: 100 },
-              }}
-            >
-              <p className='mt-2 text-zinc-500 dark:text-zinc-500'>
-                Little is known about the life of Édouard-Wilfrid Buquet. He was
-                born in France in 1866, but the time and place of his death is
-                unfortunately a mystery.
-              </p>
-              <p className='text-zinc-500'>
-                Research conducted in the 1970s revealed that he’d designed the
-                “EB 27” double-arm desk lamp in 1925, handcrafting it from
-                nickel-plated brass, aluminium and varnished wood.
-              </p>
-              <a
-                className='mt-2 inline-flex text-zinc-500 underline'
-                href='https://github.com/jaivanshchawla/WebChessEngine'
-                target='_blank'
-                rel='noopener noreferrer'
+          <ScrollArea className='h-[90vh]' type='scroll'>
+            <MorphingDialogImage
+              src='/assets/magician-min.webp'
+              alt='Tibraze picture'
+              className='h-full w-full'
+            />
+            <div className='p-6'>
+              <MorphingDialogTitle className='text-2xl text-zinc-950 dark:text-zinc-50'>
+                The Research Collection
+              </MorphingDialogTitle>
+              <MorphingDialogSubtitle className='text-zinc-700 dark:text-zinc-400'>
+                Exploring, Experimenting, Evolving
+              </MorphingDialogSubtitle>
+              <MorphingDialogDescription
+                disableLayoutAnimation
+                variants={{
+                  initial: { opacity: 0, scale: 0.8, y: 100 },
+                  animate: { opacity: 1, scale: 1, y: 0 },
+                  exit: { opacity: 0, scale: 0.8, y: 100 },
+                }}
               >
-                web.chess.engine
-              </a>
-            </MorphingDialogDescription>
-          </div>
+                <p className='mt-2 text-zinc-500 dark:text-zinc-500'>
+                  Little is known about the life of Édouard-Wilfrid Buquet. He was
+                  born in France in 1866, but the time and place of his death is
+                  unfortunately a mystery.
+                </p>
+                <p className='text-zinc-500'>
+                  Research conducted in the 1970s revealed that he’d designed the
+                  “EB 27” double-arm desk lamp in 1925, handcrafting it from
+                  nickel-plated brass, aluminium and varnished wood.
+                </p>
+                <a
+                  className='mt-2 inline-flex text-zinc-500 underline'
+                  href='https://github.com/jaivanshchawla/WebChessEngine'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                >
+                  web.chess.engine
+                </a>
+                <p className='text-zinc-500'>
+                  Research conducted in the 1970s revealed that he’d designed the
+                  “EB 27” double-arm desk lamp in 1925, handcrafting it from
+                  nickel-plated brass, aluminium and varnished wood.
+                </p>
+                <p className='text-zinc-500'>
+                  Research conducted in the 1970s revealed that he’d designed the
+                  “EB 27” double-arm desk lamp in 1925, handcrafting it from
+                  nickel-plated brass, aluminium and varnished wood.
+                </p>
+                <p className='text-zinc-500'>
+                  Research conducted in the 1970s revealed that he’d designed the
+                  “EB 27” double-arm desk lamp in 1925, handcrafting it from
+                  nickel-plated brass, aluminium and varnished wood.
+                </p>
+                <p className='text-zinc-500'>
+                  Research conducted in the 1970s revealed that he’d designed the
+                  “EB 27” double-arm desk lamp in 1925, handcrafting it from
+                  nickel-plated brass, aluminium and varnished wood.
+                </p>
+                <p className='text-zinc-500'>
+                  Research conducted in the 1970s revealed that he’d designed the
+                  “EB 27” double-arm desk lamp in 1925, handcrafting it from
+                  nickel-plated brass, aluminium and varnished wood.
+                </p>
+                <p className='text-zinc-500'>
+                  Research conducted in the 1970s revealed that he’d designed the
+                  “EB 27” double-arm desk lamp in 1925, handcrafting it from
+                  nickel-plated brass, aluminium and varnished wood.
+                </p>
+                <p className='text-zinc-500'>
+                  Research conducted in the 1970s revealed that he’d designed the
+                  “EB 27” double-arm desk lamp in 1925, handcrafting it from
+                  nickel-plated brass, aluminium and varnished wood.
+                </p>
+              </MorphingDialogDescription>
+            </div>
+          </ScrollArea>
           <MorphingDialogClose className='text-zinc-50' />
         </MorphingDialogContent>
       </MorphingDialogContainer>

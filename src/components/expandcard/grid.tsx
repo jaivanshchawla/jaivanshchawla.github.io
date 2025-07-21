@@ -271,13 +271,33 @@ const cards = [
         iconic robot personas. <br /> <br /> Known for their infectious beats
         and groundbreaking albums like "Discovery," Daft Punk has influenced
         countless artists and earned a devoted global fan base.
+        Daft Punk, the legendary French electronic music duo, is celebrated for
+        revolutionizing house music with their innovative soundscapes and
+        iconic robot personas. <br /> <br /> Known for their infectious beats
+        and groundbreaking albums like "Discovery," Daft Punk has influenced
+        countless artists and earned a devoted global fan base.
+        Daft Punk, the legendary French electronic music duo, is celebrated for
+        revolutionizing house music with their innovative soundscapes and
+        iconic robot personas. <br /> <br /> Known for their infectious beats
+        and groundbreaking albums like "Discovery," Daft Punk has influenced
+        countless artists and earned a devoted global fan base.
+        Daft Punk, the legendary French electronic music duo, is celebrated for
+        revolutionizing house music with their innovative soundscapes and
+        iconic robot personas. <br /> <br /> Known for their infectious beats
+        and groundbreaking albums like "Discovery," Daft Punk has influenced
+        countless artists and earned a devoted global fan base.
+        Daft Punk, the legendary French electronic music duo, is celebrated for
+        revolutionizing house music with their innovative soundscapes and
+        iconic robot personas. <br /> <br /> Known for their infectious beats
+        and groundbreaking albums like "Discovery," Daft Punk has influenced
+        countless artists and earned a devoted global fan base.
       </p>
     ),
   },
   {
     description: "Handwritten Text Recognition & Key Concept Extraction ",
     title: "ScriptSense",
-    src: "/assets/sslogo.webp",
+    src: "/assets/ssense.webp",
     ctaText: "Visit",
     ctaLink: "https://github.com/jaivanshchawla",
     ctaColor: "#3A6C72", // Purple

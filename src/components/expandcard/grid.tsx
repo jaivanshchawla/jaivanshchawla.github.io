@@ -207,7 +207,6 @@ const cards = [
           <p className="mb-3">
             Arteria isn't just another donor database – it's a <span className="font-semibold text-emerald-500">hyper-intelligent blood matching ecosystem</span> that treats every second like it could save a life.
           </p>
-          
           <div className="space-y-2">
             <p><strong className="text-blue-600 dark:text-blue-400">⚡ Lightning-Fast Filtering:</strong> Tree-structured algorithm processes 1,000+ donor profiles in milliseconds</p>
             <p><strong className="text-purple-600 dark:text-purple-400">🎯 Dijkstra's Algorithm:</strong> Dynamically calculates nearest suitable donor in seconds</p>

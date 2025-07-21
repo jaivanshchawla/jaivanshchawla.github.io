@@ -252,7 +252,6 @@ const cards = [
           </ul>
         </div>
         <hr className="border-neutral-300 dark:border-neutral-600" />
-        
         <div className="text-center">
           <h4 className="font-semibold text-amber-600 dark:text-amber-400 mb-2">💰 The Reward Revolution</h4>
           <p className="text-sm">

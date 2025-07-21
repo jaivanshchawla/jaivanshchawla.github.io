@@ -258,7 +258,6 @@ const cards = [
             Monetary Incentive Integration – Donors earn credits for successful donations. Think Uber for blood donation, but with emergency service urgency.
           </p>
         </div>
-
         <div className="text-center pt-2">
           <p className="font-semibold text-red-500 dark:text-red-400">
             🩸 Where Technology Meets Humanity, One Drop at a Time 🩸

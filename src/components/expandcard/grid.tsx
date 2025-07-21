@@ -202,7 +202,6 @@ const cards = [
           </p>
         </div>
         <hr className="border-neutral-300 dark:border-neutral-600" />
-        
         <div>
           <h4 className="font-semibold text-emerald-600 dark:text-emerald-400 mb-2">🚀 What Arteria Actually Does</h4>
           <p className="mb-3">

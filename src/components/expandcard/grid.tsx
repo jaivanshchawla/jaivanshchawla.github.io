@@ -213,7 +213,6 @@ const cards = [
             <p><strong className="text-green-600 dark:text-green-400">🔒 Aadhaar Authentication:</strong> For Indians, by Indians. No fake profiles, just verified citizens</p>
           </div>
         </div>
-
         <hr className="border-neutral-300 dark:border-neutral-600" />
         
         <div>

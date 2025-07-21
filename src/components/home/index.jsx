@@ -41,8 +41,8 @@ const Hero = () => {
         gsap.fromTo(
           subheadingEl,
           {
-            opacity: 0,
-            filter: "blur(20px)",
+            opacity: 0.5,
+            filter: "blur(7px)",
             color: "#000000",
           },
           {

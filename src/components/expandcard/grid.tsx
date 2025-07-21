@@ -237,7 +237,6 @@ const cards = [
             <p><strong>🚨 Emergency Optimization</strong> finds perfect donor before paperwork finishes</p>
           </div>
         </div>
-
         <hr className="border-neutral-300 dark:border-neutral-600" />
         
         <div>

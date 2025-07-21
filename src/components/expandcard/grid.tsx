@@ -201,7 +201,6 @@ const cards = [
             The spark for Arteria ignited during our college blood donation camp in January 2025. Watching hundreds of students donate blood while manually filling paper forms like it's 1995 was the eureka moment.
           </p>
         </div>
-
         <hr className="border-neutral-300 dark:border-neutral-600" />
         
         <div>

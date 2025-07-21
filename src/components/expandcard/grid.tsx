@@ -214,7 +214,6 @@ const cards = [
           </div>
         </div>
         <hr className="border-neutral-300 dark:border-neutral-600" />
-        
         <div>
           <h4 className="font-semibold text-cyan-600 dark:text-cyan-400 mb-2">🔧 Tech Stack</h4>
           <div className="grid grid-cols-1 gap-3">

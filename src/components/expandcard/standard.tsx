@@ -206,7 +206,7 @@ What started as me joining the placement cell as a graphic designer somehow snow
   {
     description: "Awajahi Logistics",
     title: "Software Development Intern",
-    src: "/assets/bluestock.webp",
+    src: "/assets/awajahi.png",
     ctaText: "July 2025 - Present",
     ctaLink: "https://www.awajahi.com/",
     ctaColor: "#5736AE",

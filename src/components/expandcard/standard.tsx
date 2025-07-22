@@ -204,7 +204,7 @@ What started as me joining the placement cell as a graphic designer somehow snow
     ),
   },
   {
-    description: "BLUESTOCK.in",
+    description: "Awajahi Logistics",
     title: "Software Development Intern",
     src: "/assets/bluestock.webp",
     ctaText: "July 2025 - Present",

@@ -208,7 +208,7 @@ What started as me joining the placement cell as a graphic designer somehow snow
     title: "Software Development Intern",
     src: "/assets/bluestock.webp",
     ctaText: "July 2025 - Present",
-    ctaLink: "https://bluestock.in/",
+    ctaLink: "https://www.awajahi.com/",
     ctaColor: "#5736AE",
     content: () => (
       <p>

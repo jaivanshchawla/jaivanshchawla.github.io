@@ -209,7 +209,7 @@ What started as me joining the placement cell as a graphic designer somehow snow
     src: "/assets/awajahi.png",
     ctaText: "July 2025 - Present",
     ctaLink: "https://www.awajahi.com/",
-    ctaColor: "#5736AE",
+    ctaColor: "#F27C28",
     content: () => (
       <p>
 Currently absolutely demolishing expectations as a Software Development Engineer Intern at Bluestock Fintech, and honestly? This experience is rewiring my brain in ways I never thought possible. Every single day I'm building production-level fintech solutions that actual clients depend on—no sandbox projects, no fake data, just pure real-world chaos that demands perfection.

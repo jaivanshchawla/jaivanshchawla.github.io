@@ -191,6 +191,22 @@ export const CloseIcon = () => (
 
 const cards = [
   {
+    description: "Awajahi Logistics",
+    title: "Software Development Intern",
+    src: "/assets/awajahi.png",
+    ctaText: "July 2025 - Present",
+    ctaLink: "https://www.awajahi.com/",
+    ctaColor: "#F27C28",
+    content: () => (
+      <p>
+Currently absolutely demolishing expectations as a Software Development Engineer Intern at Bluestock Fintech, and honestly? This experience is rewiring my brain in ways I never thought possible. Every single day I'm building production-level fintech solutions that actual clients depend on—no sandbox projects, no fake data, just pure real-world chaos that demands perfection.
+My main battlefield is developing a comprehensive IPO Web Application from scratch using Django REST Framework and PostgreSQL, handling millions of dollars worth of financial data like it's just another Tuesday. The front-end work in React.js isn't just about pretty interfaces—I'm crafting experiences that let financial professionals make split-second decisions with confidence, building responsive systems that update in real-time because milliseconds matter when money's on the line. The back-end APIs I'm architecting don't just serve data; they're intelligent systems that process massive transaction volumes while maintaining the bulletproof security standards that fintech absolutely demands.
+Working with PostgreSQL to manage critical financial data has taught me database optimization techniques that most developers never encounter. Every query needs to be lightning-fast, every schema perfectly normalized, every security layer impenetrable. The collaborative environment here pushes me beyond what I thought was possible—working alongside seasoned developers who constantly challenge me to think bigger, code cleaner, and solve problems I didn't even know existed.
+What makes this insane is that I'm not just learning fintech development; I'm actively contributing to systems that streamline real IPO processes for actual companies. The mentorship from Yash Kale and the entire Bluestock team has been incredible—they've shown me that great software isn't just functional, it's transformative. This isn't just an internship; it's a masterclass in building solutions that actually matter in the financial world.
+      </p>
+    ),
+  },
+  {
     description: "Manipal University Jaipur",
     title: "Student Placement Co-ordinator",
     src: "/assets/manipal.webp",
@@ -204,9 +220,9 @@ What started as me joining the placement cell as a graphic designer somehow snow
     ),
   },
   {
-    description: "Awajahi Logistics",
-    title: "Software Development Intern",
-    src: "/assets/awajahi.png",
+    description: "Microsoft",
+    title: "Software Engineering for All - Program Fellow",
+    src: "assets/Microsoft_logo.svg.webp",
     ctaText: "July 2025 - Present",
     ctaLink: "https://www.awajahi.com/",
     ctaColor: "#F27C28",

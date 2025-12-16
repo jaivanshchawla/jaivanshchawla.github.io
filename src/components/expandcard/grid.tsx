@@ -309,7 +309,7 @@ const cards = [
   {
     description: "Student Management Project",
     title: "Zyntra",
-    src: "/assets/chill-min.webp",
+    src: "/assets/ZYNTRA.webp",
     ctaText: "Visit",
     ctaLink: "https://github.com/jaivanshchawla",
     ctaColor: "#00BCD4", // Cyan
@@ -328,7 +328,7 @@ const cards = [
   {
     description: "Cricket Score Predictor",
     title: "Match Maven",
-    src: "/assets/rain-min.webp",
+    src: "/assets/MATCHMAVEN.webp",
     ctaText: "Visit",
     ctaLink: "https://github.com/jaivanshchawla",
     ctaColor: "#FFC107", // Amber Yellow

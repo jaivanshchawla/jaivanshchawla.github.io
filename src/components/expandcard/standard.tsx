@@ -199,11 +199,22 @@ const cards = [
     ctaColor: "#F27C28",
     content: () => (
       <p>
-Currently absolutely demolishing expectations as a Software Development Engineer Intern at Bluestock Fintech, and honestly? This experience is rewiring my brain in ways I never thought possible. Every single day I'm building production-level fintech solutions that actual clients depend on—no sandbox projects, no fake data, just pure real-world chaos that demands perfection.
-My main battlefield is developing a comprehensive IPO Web Application from scratch using Django REST Framework and PostgreSQL, handling millions of dollars worth of financial data like it's just another Tuesday. The front-end work in React.js isn't just about pretty interfaces—I'm crafting experiences that let financial professionals make split-second decisions with confidence, building responsive systems that update in real-time because milliseconds matter when money's on the line. The back-end APIs I'm architecting don't just serve data; they're intelligent systems that process massive transaction volumes while maintaining the bulletproof security standards that fintech absolutely demands.
-Working with PostgreSQL to manage critical financial data has taught me database optimization techniques that most developers never encounter. Every query needs to be lightning-fast, every schema perfectly normalized, every security layer impenetrable. The collaborative environment here pushes me beyond what I thought was possible—working alongside seasoned developers who constantly challenge me to think bigger, code cleaner, and solve problems I didn't even know existed.
-What makes this insane is that I'm not just learning fintech development; I'm actively contributing to systems that streamline real IPO processes for actual companies. The mentorship from Yash Kale and the entire Bluestock team has been incredible—they've shown me that great software isn't just functional, it's transformative. This isn't just an internship; it's a masterclass in building solutions that actually matter in the financial world.
-      </p>
+Currently building the digital backbone of a real-world logistics operation as a Software Developer Intern at Awajahi Logistics, where software directly decides whether trucks move or don’t. The core product is a production-grade logistics platform that manages a 200+ truck fleet and serves 100+ business users, handling 500+ daily bookings, live trip tracking, document uploads, and operational reporting—all without room for “we’ll fix it later.”
+My main weapon of choice is Next.js, which I use to build end-to-end workflows that ops teams actually rely on, not just admire. On the backend side of things, I design and ship REST APIs backed by MongoDB that power booking systems, trip lifecycles, vehicle data, and real-time operational updates. A lot of time goes into making sure the data model makes sense in the real world—because logistics data is messy, inconsistent, and allergic to bad schema design. After heavy MongoDB query optimization and smarter data access patterns, we cut API response latency by nearly 45%, which means dashboards load faster and decisions happen sooner.
+File handling is another battlefield. I integrated AWS S3 for secure storage of trip documents, invoices, and operational files, making uploads reliable and retrieval instant. On top of that, I built automated Excel export pipelines that transform raw MongoDB data into clean, structured reports for 200+ vehicles—because logistics runs on insights, and sometimes those insights live inside Excel sheets.
+On the frontend, I live in Figma before I live in code, collaborating on clean, usable interfaces and then bringing them to life using a mix of modern UI libraries and custom components. The goal is simple: reduce clicks, reduce confusion, and make complex logistics flows feel boring—in the best possible way. Everything ships through Vercel with CI/CD pipelines, and I’ve pushed 10+ production features with zero critical post-deployment bugs, which is the kind of adrenaline rush they don’t tell you about in textbooks.
+Beyond code, I work closely with product and operations teams using Trello to break real logistics problems into shippable features, translating on-ground chaos into structured tickets, timelines, and system logic. This internship has been less about “learning frameworks” and more about learning how software behaves when real trucks, real money, and real people depend on it—and honestly, that’s where I do my best work. Check out the{' '}
+<a
+  href="https://awajahi.com"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="text-[#F27C28] font-semibold"
+>
+  Awajahi
+</a>{' '}
+platform here for my work in action!!!
+
+</p>
     ),
   },
   {
@@ -215,7 +226,7 @@ What makes this insane is that I'm not just learning fintech development; I'm ac
     ctaColor: "#F28C28",
     content: () => (
       <p>
-What started as me joining the placement cell as a graphic designer somehow snowballed into becoming a full-blown event coordination specialist at Manipal University Jaipur's Dell Technologies Leadership Summit 5.0, where after getting selected as Student Placement Coordinator and becoming deeply integrated with the main team, I naturally evolved into simultaneously handling Liaison Officer, Core Event Organizer, and Lead Graphic Designer roles while juggling 40+ HR professionals and 400+ attendees without completely losing my sanity (spoiler: I definitely lost it, but in the best way possible). Armed with every design software I could get my hands on - Canva, Figma, Photoshop, and Blender - I obsessively crafted 20+ visual assets including flexes, ID cards, backdrops, social media creatives, and placement reports, treating every pixel like it held the secrets to corporate success. As personal liaison to Mr. Sachin Sabyasachi from Dell Technologies HR, I became his campus guardian angel, managing everything from acoustics to coffee preferences while orchestrating full-cycle event execution with the precision of someone who definitely has color-coded spreadsheets and contingency plans for their contingency plans. Through sheer determination and probably unhealthy amounts of caffeine, I coordinated speaker onboarding, scheduling, technical execution, venue setup, and attendee management, essentially becoming a human translator between student chaos and corporate professionalism. Blessed with an incredible senior team and my brilliant graphic design partner who somehow tolerated my perfectionist tendencies, I managed to solve problems before they existed and delivered flawless execution with zero incidents - all while maintaining the enthusiasm of someone who genuinely believes that event planning is the most beautiful form of organized chaos ever invented.
+What started as me joining the placement cell as a graphic designer somehow snowballed into becoming a full-blown event coordination specialist at Manipal University Jaipur's  Leadership Summit 5.0, where after getting selected as Student Placement Coordinator and becoming deeply integrated with the main team, I naturally evolved into simultaneously handling Liaison Officer, Core Event Organizer, and Lead Graphic Designer roles while juggling 40+ HR professionals and 400+ attendees without completely losing my sanity (spoiler: I definitely lost it, but in the best way possible). Armed with every design software I could get my hands on - Canva, Figma, Photoshop, and Blender - I obsessively crafted 20+ visual assets including flexes, ID cards, backdrops, social media creatives, and placement reports, treating every pixel like it held the secrets to corporate success. As personal liaison to Mr. Sachin Sabyasachi from Dell Technologies HR, I became his campus guardian angel, managing everything from acoustics to coffee preferences while orchestrating full-cycle event execution with the precision of someone who definitely has color-coded spreadsheets and contingency plans for their contingency plans. Through sheer determination and probably unhealthy amounts of caffeine, I coordinated speaker onboarding, scheduling, technical execution, venue setup, and attendee management, essentially becoming a human translator between student chaos and corporate professionalism. Blessed with an incredible senior team and my brilliant graphic design partner who somehow tolerated my perfectionist tendencies, I managed to solve problems before they existed and delivered flawless execution with zero incidents - all while maintaining the enthusiasm of someone who genuinely believes that event planning is the most beautiful form of organized chaos ever invented.
 </p>
     ),
   },
@@ -223,23 +234,34 @@ What started as me joining the placement cell as a graphic designer somehow snow
     description: "Microsoft",
     title: "Software Engineering for All - Program Fellow",
     src: "assets/Microsoft_logo.svg.webp",
-    ctaText: "July 2025 - Present",
+    ctaText: "June 2025 -  Aug 2025",
     ctaLink: "https://www.awajahi.com/",
-    ctaColor: "#F27C28",
+    ctaColor: "#1719fb ",
     content: () => (
       <p>
-Currently absolutely demolishing expectations as a Software Development Engineer Intern at Bluestock Fintech, and honestly? This experience is rewiring my brain in ways I never thought possible. Every single day I'm building production-level fintech solutions that actual clients depend on—no sandbox projects, no fake data, just pure real-world chaos that demands perfection.
-My main battlefield is developing a comprehensive IPO Web Application from scratch using Django REST Framework and PostgreSQL, handling millions of dollars worth of financial data like it's just another Tuesday. The front-end work in React.js isn't just about pretty interfaces—I'm crafting experiences that let financial professionals make split-second decisions with confidence, building responsive systems that update in real-time because milliseconds matter when money's on the line. The back-end APIs I'm architecting don't just serve data; they're intelligent systems that process massive transaction volumes while maintaining the bulletproof security standards that fintech absolutely demands.
-Working with PostgreSQL to manage critical financial data has taught me database optimization techniques that most developers never encounter. Every query needs to be lightning-fast, every schema perfectly normalized, every security layer impenetrable. The collaborative environment here pushes me beyond what I thought was possible—working alongside seasoned developers who constantly challenge me to think bigger, code cleaner, and solve problems I didn't even know existed.
-What makes this insane is that I'm not just learning fintech development; I'm actively contributing to systems that streamline real IPO processes for actual companies. The mentorship from Yash Kale and the entire Bluestock team has been incredible—they've shown me that great software isn't just functional, it's transformative. This isn't just an internship; it's a masterclass in building solutions that actually matter in the financial world.
-      </p>
+Built an AI-powered collaboration platform called{' '}
+<a
+  href="https://drive.google.com/file/d/1IodUYpjfA493eYWjGXeqoyxPzE6pF-WE/view?usp=sharing"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="text-[#19aaac] font-semibold"
+>
+  Meraki
+</a>
+{' '}as part of Microsoft&apos;s Software Engineering for All (SEFA) Program—and yes, it&apos;s exactly as ambitious as it sounds. Meraki is designed to solve a very real problem: students with great ideas struggling to find the right collaborators, structure their projects, and actually ship something meaningful. So we built a platform where AI doesn&apos;t just assist—it actively collaborates.
+At its core, Meraki is an intelligent project discovery and collaboration ecosystem. Students can explore projects through a dynamic, filter-rich feed, while AI analyzes their skills, interests, learning styles, and cognitive preferences to recommend projects and teammates that actually make sense together. Once inside a project, the AI transforms vague ideas into structured roadmaps—breaking goals into milestones, generating task checklists, and helping teams move from &ldquo;cool concept&rdquo; to &ldquo;clear execution&rdquo; without getting stuck in chaos.
+My role sat right at the intersection of design, systems thinking, and AI-first UX. I led the visual identity from scratch—logo, brand language, color systems, typography—then translated that into 15+ high-fidelity screens and interactive prototypes in Figma, following Microsoft Fluent Design principles throughout. Accessibility wasn&apos;t a checkbox here; it was the foundation. The entire experience was designed to be WCAG 2.1 AA compliant, with high-contrast modes, keyboard-only navigation, text-to-speech, speech-to-text, dyslexia-friendly layouts, and AI responses that adapt to different cognitive needs.
+On the intelligence side, Meraki&apos;s AI acts as a true mentor. It recommends teams holistically (not just by skills), powers an AI mentor chat that adapts to how users think and learn, performs sentiment analysis on team chats to flag morale issues early, and delivers insights through both text and voice—because inclusivity means choice. I also mapped out the full Azure-backed architecture, documenting how 13+ services work together across authentication, search, recommendations, communication, AI reasoning, accessibility tooling, and DevOps pipelines.
+What made SEFA special wasn&apos;t just building Meraki—it was building it the Microsoft way. Agile iterations, real design critiques, system-level thinking, detailed documentation, and constant focus on impact at scale. This wasn&apos;t a hackathon project or a slide-deck idea. It was a deeply thought-out, end-to-end product designed to make collaboration fairer, smarter, and genuinely inclusive—and honestly, one of the most rewarding builds I&apos;ve been part of.
+</p>
+
     ),
   },
   {
     description: "BLUESTOCK.in",
     title: "Software Development Intern",
     src: "/assets/bluestock.webp",
-    ctaText: "July 2025 - Present",
+    ctaText: "July 2025 - Sept 2025",
     ctaLink: "https://bluestock.in/",
     ctaColor: "#5736AE",
     content: () => (
@@ -297,7 +319,7 @@ GetInterned didn't just teach me web development—they forged me into a develop
     description: "Zidio Development",
     title: "Web Developer Intern",
     src: "/assets/zidio.webp",
-    ctaText: "June 2025 - Present",
+    ctaText: "June 2025 - Aug 2025",
     ctaLink: "https://www.zidio.in/",
     ctaColor: "#343695",
     content: () => (
@@ -347,7 +369,7 @@ This wasn't just content writing—it was strategic communication that helped bu
     description: "Codsoft",
     title: "Artificial Intelligence Intern",
     src: "/assets/codsoftnew.webp",
-    ctaText: "Sept 2024 - Oct 2025",
+    ctaText: "Sept 2024 - Oct 2024",
     ctaLink: "https://www.codsoft.in/",
     ctaColor: "#C04548",
     content: () => (

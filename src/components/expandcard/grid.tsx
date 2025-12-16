@@ -287,7 +287,7 @@ const cards = [
     ),
   },
   {
-    description: "Metallica",
+    description: "Real life satelite visualization project",
     title: "SATMAP",
     src: "/assets/SATMAPLOGO.webp",
     ctaText: "Visit",
@@ -307,8 +307,8 @@ const cards = [
     ),
   },
   {
-    description: "Lord Himesh",
-    title: "Aap Ka Suroor",
+    description: "Student Management Project",
+    title: "Zyntra",
     src: "/assets/chill-min.webp",
     ctaText: "Visit",
     ctaLink: "https://github.com/jaivanshchawla",
@@ -326,8 +326,8 @@ const cards = [
     ),
   },
   {
-    description: "Daft Punk",
-    title: "One More Time",
+    description: "Cricket Score Predictor",
+    title: "Match Maven",
     src: "/assets/rain-min.webp",
     ctaText: "Visit",
     ctaLink: "https://github.com/jaivanshchawla",

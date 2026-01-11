@@ -265,17 +265,7 @@ const cards = [
     ctaLink: "https://stablecodex.web.app/",
     ctaColor: "#0E6EB6",
     content: () => (
-      <p>
-        My AI internship at StableCode was absolutely mental—five projects that completely rewired how I think about artificial intelligence and machine learning. This wasn't just coding exercises; this was diving headfirst into the bleeding edge of AI development and emerging with solutions that actually work in the real world.
-
-        Started with building a rule-based AI chatbot that could hold genuine conversations, not just spit out pre-programmed responses. The challenge was creating decision trees complex enough to handle human unpredictability while maintaining conversational flow that felt natural. Then came the movie recommendation system using content-based filtering—analyzing user preferences, movie metadata, and viewing patterns to build recommendation algorithms that actually understood what people wanted to watch next.
-
-        The Rock, Paper, Scissors game against AI was where things got seriously interesting. This wasn't just random number generation; I built an AI that could learn human patterns, predict behavioral tendencies, and adapt its strategy in real-time. Watching my AI consistently beat human players by recognizing their unconscious patterns was absolutely mind-blowing.
-
-        The face detection app pushed me deep into computer vision territory, working with OpenCV and machine learning models to build systems that could identify and track faces with scary accuracy. But the real beast was the offline voice assistant—building an AI that could understand speech, process commands, and respond intelligently without any internet connection. This meant optimizing models for local processing, handling voice recognition in real-time, and creating responses that felt genuinely intelligent.
-
-        Each project taught me different aspects of AI development, from natural language processing to computer vision to machine learning optimization. StableCode didn't just give me tasks; they threw me into AI challenges that forced me to understand how these technologies actually work under the hood. Now I think in algorithms, dream in neural networks, and see AI applications everywhere.
-      </p>
+      <p></p>
     ),
   },
   {

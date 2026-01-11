@@ -258,17 +258,6 @@ const cards = [
     ),
   },
   {
-    description: "StableCode",
-    title: "Artificial Intelligence Intern",
-    src: "/assets/stablecode.webp",
-    ctaText: "June 2025 - July 2025",
-    ctaLink: "https://stablecodex.web.app/",
-    ctaColor: "#0E6EB6",
-    content: () => (
-      <p></p>
-    ),
-  },
-  {
     description: "Getinterned",
     title: "Web Developer Intern",
     src: "/assets/getintern.webp",

@@ -258,17 +258,6 @@ const cards = [
     ),
   },
   {
-    description: "Zidio Development",
-    title: "Web Developer Intern",
-    src: "/assets/zidio.webp",
-    ctaText: "June 2025 - Aug 2025",
-    ctaLink: "https://www.zidio.in/",
-    ctaColor: "#343695",
-    content: () => (
-      <p></p>
-    ),
-  },
-  {
     description: "Atal Incubation Center (MUJ)",
     title: "Content Writer",
     src: "/assets/aicmuj.webp",

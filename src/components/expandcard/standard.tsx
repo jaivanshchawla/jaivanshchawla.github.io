@@ -265,17 +265,7 @@ const cards = [
     ctaLink: "https://https://getinterned.org//",
     ctaColor: "#4439E1",
     content: () => (
-      <p>
-        My web development internship at GetInterned was absolutely relentless—a structured gauntlet of weekly challenges that pushed every aspect of my development skills to their breaking point. This wasn't just another internship; it was a carefully orchestrated battlefield where only the most adaptable and skilled developers could thrive.
-
-        Week 1 hit me with a frontend quiz that tested everything from React component optimization to CSS animations and responsive design principles. I had to prove I could build interfaces that weren't just functional but genuinely engaging across all devices. Week 2 cranked up the intensity with a backend quiz that dove deep into server architecture, database optimization, REST API design, and security protocols—the kind of stuff that separates real developers from code copiers.
-
-        Week 3 brought the game-changing project challenge: **SmartTailor**, a cloud-based micro-ERP platform for local tailoring shops. This wasn't some toy project—I had to build a complete workflow management system with customer order tracking, fabric inventory management, digital measurement storage, and mobile-friendly interfaces. The complexity was insane: customers could place orders with specific fabric types and measurements, tailors got comprehensive dashboards for managing orders and deadlines, and the whole system included real-time status updates from "cutting started" to "out for delivery." The optional features pushed me even further—AI-based measurement estimation, fabric pricing integration, WhatsApp bot functionality, and productivity tracking for solo tailors.
-
-        The final hackathon was where everything came together. Five problem statements ranging from AI-powered health kiosks to smart inventory systems, each requiring full-stack solutions that could actually solve real-world problems. Working under intense time pressure, I had to choose the most challenging problem, architect a complete solution, and build something production-ready while judges evaluated technical skills, creativity, and problem-solving abilities.
-
-        GetInterned didn't just teach me web development—they forged me into a developer who could handle any challenge thrown my way. Every quiz, every project, every sleepless night debugging code contributed to building the kind of comprehensive skill set that most developers take years to develop.
-      </p>
+      <p> </p>
     ),
   },
   {

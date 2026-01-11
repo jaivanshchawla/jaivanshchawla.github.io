@@ -258,17 +258,6 @@ const cards = [
     ),
   },
   {
-    description: "BLUESTOCK.in",
-    title: "Software Development Intern",
-    src: "/assets/bluestock.webp",
-    ctaText: "July 2025 - Sept 2025",
-    ctaLink: "https://bluestock.in/",
-    ctaColor: "#5736AE",
-    content: () => (
-      <p></p>
-    ),
-  },
-  {
     description: "StableCode",
     title: "Artificial Intelligence Intern",
     src: "/assets/stablecode.webp",

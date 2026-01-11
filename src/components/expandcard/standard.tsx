@@ -258,17 +258,6 @@ const cards = [
     ),
   },
   {
-    description: "Getinterned",
-    title: "Web Developer Intern",
-    src: "/assets/getintern.webp",
-    ctaText: "June 2025 - July 2025",
-    ctaLink: "https://https://getinterned.org//",
-    ctaColor: "#4439E1",
-    content: () => (
-      <p> </p>
-    ),
-  },
-  {
     description: "Zidio Development",
     title: "Web Developer Intern",
     src: "/assets/zidio.webp",

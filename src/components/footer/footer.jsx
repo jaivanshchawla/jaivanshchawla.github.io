@@ -45,8 +45,8 @@ const Footer = () => {
 
         {/* Contact Info */}
         <div className="flex flex-col items-center text-gray-300 text-sm gap-2 animate-fade-in">
-          <a  href="https://jaivanshchawla.github.io/" target="_blank"  rel="noopener noreferrer" className="hover:text-white font-medium transition-colors duration-300">coolguyjc</a>
-
+          <a href="https://jaivanshchawla.github.io/" target="_blank" rel="noopener noreferrer" className="hover:text-white font-medium transition-colors duration-300">coolguyjc</a>
+          <a href="https://links-jaivansh.vercel.app" target="_blank" rel="noopener noreferrer" className="hover:text-white font-medium transition-colors duration-300">links</a>
           <div className="flex gap-2 justify-center flex-wrap">
             <span>jaivanshmuj@gmail.com</span>
             <span>|</span>

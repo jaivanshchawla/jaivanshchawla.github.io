@@ -296,15 +296,7 @@ const cards = [
     ctaLink: "https://github.com/jaivanshchawla",
     ctaColor: "#00BCD4", // Cyan
     content: () => (
-      <p>
-        Himesh Reshammiya, a renowned Indian music composer, singer, and actor,
-        is celebrated for his distinctive voice and innovative compositions.
-        Born in Mumbai, India, he has become a prominent figure in the Bollywood
-        music industry. <br /> <br /> His songs often feature a blend of
-        contemporary and traditional Indian music. With a career spanning over
-        two decades, he has released numerous hit albums and singles that have
-        garnered him a massive fan following.
-      </p>
+      <p></p>
     ),
   },
   {
@@ -315,33 +307,7 @@ const cards = [
     ctaLink: "https://github.com/jaivanshchawla",
     ctaColor: "#FFC107", // Amber Yellow
     content: () => (
-      <p>
-        Daft Punk, the legendary French electronic music duo, is celebrated for
-        revolutionizing house music with their innovative soundscapes and
-        iconic robot personas. <br /> <br /> Known for their infectious beats
-        and groundbreaking albums like "Discovery," Daft Punk has influenced
-        countless artists and earned a devoted global fan base.
-        Daft Punk, the legendary French electronic music duo, is celebrated for
-        revolutionizing house music with their innovative soundscapes and
-        iconic robot personas. <br /> <br /> Known for their infectious beats
-        and groundbreaking albums like "Discovery," Daft Punk has influenced
-        countless artists and earned a devoted global fan base.
-        Daft Punk, the legendary French electronic music duo, is celebrated for
-        revolutionizing house music with their innovative soundscapes and
-        iconic robot personas. <br /> <br /> Known for their infectious beats
-        and groundbreaking albums like "Discovery," Daft Punk has influenced
-        countless artists and earned a devoted global fan base.
-        Daft Punk, the legendary French electronic music duo, is celebrated for
-        revolutionizing house music with their innovative soundscapes and
-        iconic robot personas. <br /> <br /> Known for their infectious beats
-        and groundbreaking albums like "Discovery," Daft Punk has influenced
-        countless artists and earned a devoted global fan base.
-        Daft Punk, the legendary French electronic music duo, is celebrated for
-        revolutionizing house music with their innovative soundscapes and
-        iconic robot personas. <br /> <br /> Known for their infectious beats
-        and groundbreaking albums like "Discovery," Daft Punk has influenced
-        countless artists and earned a devoted global fan base.
-      </p>
+      <p></p>
     ),
   },
   {

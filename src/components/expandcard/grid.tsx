@@ -408,8 +408,153 @@ const cards = [
     ctaLink: "https://github.com/jaivanshchawla/Satviz",
     ctaColor: "#FF5A09", // Slate Gray
     content: () => (
-      <p></p>
+      <div className="space-y-4">
+        <div>
+          <h4 className="font-semibold text-sky-600 dark:text-sky-400 mb-2">
+            🛰️ The Problem Above Our Heads
+          </h4>
+          <p>
+            Satellite communication looks effortless from Earth — a signal goes up, data comes down, problem solved.
+            But in orbit, nothing is that simple.
+          </p>
+          <p className="mt-2">
+            Line-of-sight breaks. Earth blocks signals. Satellites move at 7.5 km/s.
+            A missed handshake isn’t a glitch — it’s physics.
+          </p>
+        </div>
+
+        <hr className="border-neutral-300 dark:border-neutral-600" />
+
+        <div>
+          <p className="font-medium text-sky-500 dark:text-sky-400 mb-2">
+            During the Space Handshakes Hackathon, one question stood out:
+          </p>
+          <p>
+            <span className="font-semibold text-sky-600">
+              How do you *see*, analyze, and reason about satellite-to-satellite communication before anything is launched?
+            </span>
+          </p>
+          <p className="mt-2">
+            SatMap (Satviz) was built to answer that — not with spreadsheets or static plots, but with
+            a live, spatial, time-aware simulation of orbital reality.
+          </p>
+        </div>
+
+        <hr className="border-neutral-300 dark:border-neutral-600" />
+
+        <div>
+          <h4 className="font-semibold text-emerald-600 dark:text-emerald-400 mb-2">
+            🚀 What SatMap Actually Does
+          </h4>
+          <p className="mb-3">
+            SatMap is a <span className="font-semibold text-emerald-500">2D + 3D satellite communication simulator</span>
+            that models Beacon-to-Iridium handshakes across real orbital mechanics.
+          </p>
+
+          <div className="space-y-2">
+            <p>
+              <strong className="text-blue-600 dark:text-blue-400">📡 Handshake Simulation:</strong>
+              Simulates Beacon–Iridium communication using bi-directional Line-of-Sight logic
+            </p>
+            <p>
+              <strong className="text-purple-600 dark:text-purple-400">🛰️ Dynamic TLE Generation:</strong>
+              Generates valid Beacon TLEs on the fly for custom Sun-Synchronous and LEO orbits
+            </p>
+            <p>
+              <strong className="text-green-600 dark:text-green-400">⏱️ Time-Stepped Propagation:</strong>
+              Propagates orbits across 5,000+ time steps per run using satellite.js
+            </p>
+          </div>
+        </div>
+
+        <hr className="border-neutral-300 dark:border-neutral-600" />
+
+        <div>
+          <h4 className="font-semibold text-cyan-600 dark:text-cyan-400 mb-2">
+            🧠 Under the Hood: The Simulation Brain
+          </h4>
+          <p className="mb-2">
+            SatMap isn’t animation — it’s computation.
+          </p>
+          <div className="space-y-2 text-sm">
+            <p>• ECI → Geodetic coordinate conversion at each time step</p>
+            <p>• Earth occultation checks using geometric LOS calculations</p>
+            <p>• Horizon-aligned Beacon FOV vs nadir-pointing Iridium cones</p>
+            <p>• Handshake detection, blackout logging, and event timing analysis</p>
+          </div>
+        </div>
+
+        <hr className="border-neutral-300 dark:border-neutral-600" />
+
+        <div>
+          <h4 className="font-semibold text-indigo-600 dark:text-indigo-400 mb-2">
+            🌍 From Data to Space You Can Explore
+          </h4>
+          <p className="mb-2">
+            SatMap V3.0 introduced a full spatial leap — bringing the simulation into three dimensions.
+          </p>
+          <div className="space-y-2 text-sm">
+            <p>• Switchable 2D map and fully interactive 3D Earth globe</p>
+            <p>• Real-time satellite trails, active link lines, and handshake markers</p>
+            <p>• 3D communication cones and Earth footprint projections</p>
+            <p>• Playback controls: realtime, timelapse, speed control, time-range filtering</p>
+          </div>
+        </div>
+
+        <hr className="border-neutral-300 dark:border-neutral-600" />
+
+        <div>
+          <h4 className="font-semibold text-teal-600 dark:text-teal-400 mb-2">
+            🛠️ Tech Stack
+          </h4>
+          <ul className="text-sm space-y-1 ml-4">
+            <li>• <span className="text-yellow-600 dark:text-yellow-400">TypeScript</span> – Strongly-typed simulation core</li>
+            <li>• <span className="text-green-600 dark:text-green-400">satellite.js</span> – Orbital propagation & mechanics</li>
+            <li>• <span className="text-blue-600 dark:text-blue-400">React</span> – Real-time UI and state orchestration</li>
+            <li>• <span className="text-indigo-600 dark:text-indigo-400">Three.js + @react-three/fiber</span> – Immersive 3D visualization</li>
+            <li>• <span className="text-cyan-600 dark:text-cyan-400">Axios</span> – Live Iridium TLE ingestion from CelesTrak</li>
+          </ul>
+        </div>
+
+        <hr className="border-neutral-300 dark:border-neutral-600" />
+
+        <div>
+          <h4 className="font-semibold text-green-600 dark:text-green-400 mb-2">
+            📊 Simulation Scale & Impact
+          </h4>
+          <div className="space-y-2 text-sm">
+            <p><strong>🛰️ 1,000+ Orbital Events</strong> analyzed per simulation run</p>
+            <p><strong>⏱️ 5,000+ Time Steps</strong> processed with deterministic propagation</p>
+            <p><strong>📡 Accurate Blackout Logging</strong> with handshake timing precision</p>
+            <p><strong>🌍 IRIDIUM & IRIDIUM-NEXT</strong> constellation support</p>
+          </div>
+        </div>
+
+        <hr className="border-neutral-300 dark:border-neutral-600" />
+
+        <div>
+          <h4 className="font-semibold text-fuchsia-600 dark:text-fuchsia-400 mb-2">
+            🔮 Where SatMap Is Headed
+          </h4>
+          <ul className="text-sm space-y-1 ml-4">
+            <li>• Public API for programmatic simulation triggering</li>
+            <li>• Advanced antenna pattern and interference modeling</li>
+            <li>• Doppler shift and atmospheric effects</li>
+            <li>• Exportable handshake and blackout datasets</li>
+            <li>• High-fidelity Earth visuals and satellite models</li>
+          </ul>
+        </div>
+
+        <hr className="border-neutral-300 dark:border-neutral-600" />
+
+        <div className="text-center pt-2">
+          <p className="font-semibold text-sky-500 dark:text-sky-400">
+            🛰️ Turning Orbital Mechanics Into Something You Can See, Test, and Trust 🛰️
+          </p>
+        </div>
+      </div>
     ),
+
   },
   {
     description: "Student Management Project",

@@ -564,8 +564,153 @@ const cards = [
     ctaLink: "https://github.com/jaivanshchawla",
     ctaColor: "#00BCD4", // Cyan
     content: () => (
-      <p></p>
+      <div className="space-y-4">
+        <div>
+          <h4 className="font-semibold text-violet-600 dark:text-violet-400 mb-2">
+            🧠 The Learning Problem Nobody Fixed Properly
+          </h4>
+          <p>
+            Online learning platforms are everywhere — yet most of them still feel static, scripted, and painfully one-directional.
+            Videos don’t adapt. Doubts wait. Human tutors don’t scale.
+          </p>
+          <p className="mt-2">
+            The real gap wasn’t content — it was <span className="font-semibold text-violet-600">interaction</span>.
+            Learning needed a voice. A personality. A companion that could think, respond, and evolve in real time.
+          </p>
+        </div>
+
+        <hr className="border-neutral-300 dark:border-neutral-600" />
+
+        <div>
+          <p className="font-medium text-violet-500 dark:text-violet-400 mb-2">
+            Zyntra was built around a simple question:
+          </p>
+          <p>
+            <span className="font-semibold text-violet-600">
+              What if every learner could build their own AI teacher — not just chat with one?
+            </span>
+          </p>
+          <p className="mt-2">
+            Not a generic bot, but a personalized teaching companion with a defined subject, voice, tone, and teaching style —
+            available instantly, anytime.
+          </p>
+        </div>
+
+        <hr className="border-neutral-300 dark:border-neutral-600" />
+
+        <div>
+          <h4 className="font-semibold text-emerald-600 dark:text-emerald-400 mb-2">
+            🚀 What Zyntra Actually Does
+          </h4>
+          <p className="mb-3">
+            Zyntra is a <span className="font-semibold text-emerald-500">real-time AI teaching platform</span> where users create,
+            customize, and learn with AI-powered companions.
+          </p>
+
+          <div className="space-y-2">
+            <p>
+              <strong className="text-blue-600 dark:text-blue-400">🎓 AI Companions:</strong>
+              Build teachers with custom subjects, personalities, voices, and teaching styles
+            </p>
+            <p>
+              <strong className="text-purple-600 dark:text-purple-400">🎙️ Voice-First Learning:</strong>
+              Sub-200ms voice responses using Vapi AI and 11Labs for natural conversations
+            </p>
+            <p>
+              <strong className="text-green-600 dark:text-green-400">📚 Companion Library:</strong>
+              Browse, search, and filter AI teachers by topic, subject, or learning intent
+            </p>
+          </div>
+        </div>
+
+        <hr className="border-neutral-300 dark:border-neutral-600" />
+
+        <div>
+          <h4 className="font-semibold text-cyan-600 dark:text-cyan-400 mb-2">
+            ⚡ Real-Time, At Scale
+          </h4>
+          <p className="mb-2">
+            Zyntra isn’t a demo — it’s production-grade.
+          </p>
+          <div className="space-y-2 text-sm">
+            <p>• Real-time transcript streaming during live voice sessions</p>
+            <p>• Scaled to 100+ concurrent users with 99.9% uptime</p>
+            <p>• 500+ daily learning interactions across personalized paths</p>
+            <p>• Subscription-backed access with user-specific learning history</p>
+          </div>
+        </div>
+
+        <hr className="border-neutral-300 dark:border-neutral-600" />
+
+        <div>
+          <h4 className="font-semibold text-indigo-600 dark:text-indigo-400 mb-2">
+            🧩 Under the Hood: Platform Architecture
+          </h4>
+          <p className="mb-2">
+            Zyntra was designed as a modern, type-safe, full-stack AI product — not a stitched-together prototype.
+          </p>
+          <div className="space-y-2 text-sm">
+            <p>• Server Actions handling companion creation, filtering, and sessions</p>
+            <p>• Supabase-backed PostgreSQL for secure, scalable data storage</p>
+            <p>• Clerk-protected routes for authentication and subscriptions</p>
+            <p>• Streaming voice pipelines optimized for low-latency feedback</p>
+          </div>
+        </div>
+
+        <hr className="border-neutral-300 dark:border-neutral-600" />
+
+        <div>
+          <h4 className="font-semibold text-teal-600 dark:text-teal-400 mb-2">
+            🛠️ Tech Stack
+          </h4>
+          <ul className="text-sm space-y-1 ml-4">
+            <li>• <span className="text-blue-600 dark:text-blue-400">Next.js (App Router)</span> – Server-first architecture</li>
+            <li>• <span className="text-indigo-600 dark:text-indigo-400">TypeScript</span> – End-to-end type safety</li>
+            <li>• <span className="text-emerald-600 dark:text-emerald-400">Supabase (PostgreSQL)</span> – Scalable data layer</li>
+            <li>• <span className="text-purple-600 dark:text-purple-400">Clerk</span> – Authentication & subscriptions</li>
+            <li>• <span className="text-pink-600 dark:text-pink-400">Vapi AI + 11Labs</span> – Real-time voice intelligence</li>
+            <li>• <span className="text-cyan-600 dark:text-cyan-400">ShadCN UI + Tailwind</span> – Clean, accessible UI</li>
+          </ul>
+        </div>
+
+        <hr className="border-neutral-300 dark:border-neutral-600" />
+
+        <div>
+          <h4 className="font-semibold text-green-600 dark:text-green-400 mb-2">
+            📊 Platform Impact
+          </h4>
+          <div className="space-y-2 text-sm">
+            <p><strong>👥 100+ Concurrent Users</strong> supported without degradation</p>
+            <p><strong>⚡ Sub-200ms Voice Latency</strong> for natural conversation flow</p>
+            <p><strong>📈 500+ Daily Interactions</strong> across personalized learning paths</p>
+            <p><strong>🔒 99.9% Uptime</strong> with secure authentication and billing</p>
+          </div>
+        </div>
+
+        <hr className="border-neutral-300 dark:border-neutral-600" />
+
+        <div>
+          <h4 className="font-semibold text-fuchsia-600 dark:text-fuchsia-400 mb-2">
+            🔮 Where Zyntra Is Headed
+          </h4>
+          <ul className="text-sm space-y-1 ml-4">
+            <li>• Adaptive difficulty based on learner performance</li>
+            <li>• Multi-companion collaborative learning sessions</li>
+            <li>• Emotion-aware teaching using voice signals</li>
+            <li>• Institution-level deployments for schools and universities</li>
+          </ul>
+        </div>
+
+        <hr className="border-neutral-300 dark:border-neutral-600" />
+
+        <div className="text-center pt-2">
+          <p className="font-semibold text-violet-500 dark:text-violet-400">
+            🧠 Learning, Reimagined — One AI Companion at a Time 🧠
+          </p>
+        </div>
+      </div>
     ),
+
   },
   {
     description: "Cricket Score Predictor",

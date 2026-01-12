@@ -318,14 +318,7 @@ const cards = [
     ctaLink: "https://github.com/jaivanshchawla",
     ctaColor: "#3A6C72", // Purple
     content: () => (
-      <p>
-        Taylor Swift, a multi-Grammy-winning singer-songwriter, is celebrated
-        for her storytelling prowess and genre-spanning musical evolution.
-        Rising to fame as a country artist before conquering pop music,
-        she has captivated millions worldwide. <br /> <br /> Swift's deeply
-        personal lyrics and catchy melodies have made her one of the most
-        influential artists of her generation.
-      </p>
+      <p></p>
     ),
   },
 ];

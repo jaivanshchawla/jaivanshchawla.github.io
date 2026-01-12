@@ -274,7 +274,130 @@ const cards = [
     ctaLink: "https://github.com/jaivanshchawla/JASSPA---Alumni-Portal",
     ctaColor: "#0F52BA", // Red
     content: () => (
-      <p></p>
+      <div className="space-y-4">
+        <div>
+          <h4 className="font-semibold text-indigo-600 dark:text-indigo-400 mb-2">
+            🎓 The Problem Nobody Talks About
+          </h4>
+          <p>
+            Colleges don’t really end at graduation — they just quietly disappear. Alumni WhatsApp groups die after 2 weeks. LinkedIn connections go cold.
+            Important seniors become “that guy from 2019” whose number no one has anymore.
+          </p>
+        </div>
+
+        <hr className="border-neutral-300 dark:border-neutral-600" />
+
+        <div>
+          <p className="font-medium text-indigo-500 dark:text-indigo-400 mb-2">
+            JASSPA faced the same silent problem: hundreds of alumni, rich placement history, and years of academic resources — scattered across spreadsheets,
+            drives, and forgotten emails.
+          </p>
+          <p>
+            JASSPA Codes was built to fix that fragmentation. Not as a social network clone, but as a
+            <span className="font-semibold text-indigo-600"> living institutional memory</span> — structured, searchable, and actually useful.
+          </p>
+        </div>
+
+        <hr className="border-neutral-300 dark:border-neutral-600" />
+
+        <div>
+          <h4 className="font-semibold text-emerald-600 dark:text-emerald-400 mb-2">
+            🧩 What the Portal Actually Does
+          </h4>
+          <p className="mb-3">
+            The JASSPA Alumni Portal isn’t just a directory — it’s a
+            <span className="font-semibold text-emerald-500"> centralized collaboration hub</span> connecting alumni, students, and administrators.
+          </p>
+
+          <div className="space-y-2">
+            <p>
+              <strong className="text-blue-600 dark:text-blue-400">🔍 Intelligent Alumni Search:</strong>
+              Filter 500+ alumni by batch, specialization, and placement history in real time
+            </p>
+            <p>
+              <strong className="text-purple-600 dark:text-purple-400">📅 Event Tracking Engine:</strong>
+              Calendar-based event module tracking 20+ upcoming alumni and academic events
+            </p>
+            <p>
+              <strong className="text-green-600 dark:text-green-400">📚 Academic Archive:</strong>
+              Centralized access to 100+ technical resources, notes, and past examination papers
+            </p>
+          </div>
+        </div>
+
+        <hr className="border-neutral-300 dark:border-neutral-600" />
+
+        <div>
+          <h4 className="font-semibold text-cyan-600 dark:text-cyan-400 mb-2">
+            🔐 Built for Control, Not Chaos
+          </h4>
+          <p className="mb-2">
+            Unlike open forums that decay into noise, JASSPA Codes maintains quality through a
+            <span className="font-semibold text-cyan-500"> secure admin-first architecture</span>.
+          </p>
+          <div className="space-y-2 text-sm">
+            <p>• JWT-based authentication for admins and moderators</p>
+            <p>• Controlled content moderation and alumni verification</p>
+            <p>• Secure handling of 50+ monthly user queries</p>
+          </div>
+        </div>
+
+        <hr className="border-neutral-300 dark:border-neutral-600" />
+
+        <div>
+          <h4 className="font-semibold text-teal-600 dark:text-teal-400 mb-2">
+            🛠️ Tech Stack
+          </h4>
+          <div className="grid grid-cols-1 gap-3 text-sm">
+            <ul className="space-y-1 ml-4">
+              <li>• <span className="text-yellow-600 dark:text-yellow-400">HTML, CSS, JavaScript</span> – Clean, responsive frontend</li>
+              <li>• <span className="text-green-600 dark:text-green-400">Node.js + Express.js</span> – Scalable backend APIs</li>
+              <li>• <span className="text-emerald-600 dark:text-emerald-400">MongoDB</span> – Flexible document-based alumni records</li>
+              <li>• <span className="text-blue-600 dark:text-blue-400">REST APIs + JWT</span> – Secure, modular communication</li>
+            </ul>
+          </div>
+        </div>
+
+        <hr className="border-neutral-300 dark:border-neutral-600" />
+
+        <div>
+          <h4 className="font-semibold text-green-600 dark:text-green-400 mb-2">
+            📊 Impact So Far
+          </h4>
+          <div className="space-y-2 text-sm">
+            <p><strong>👥 500+ Alumni Profiles</strong> organized and searchable</p>
+            <p><strong>📈 50+ Monthly Queries</strong> handled via admin dashboard</p>
+            <p><strong>📅 20+ Events</strong> tracked with calendar integration</p>
+            <p><strong>📚 100+ Academic Resources</strong> preserved and accessible</p>
+          </div>
+        </div>
+
+        <hr className="border-neutral-300 dark:border-neutral-600" />
+
+        <div>
+          <h4 className="font-semibold text-fuchsia-600 dark:text-fuchsia-400 mb-2">
+            🔮 The Long-Term Vision
+          </h4>
+          <p className="mb-2 font-medium text-pink-600 dark:text-pink-400">
+            What if alumni portals didn’t just store data — but actively shaped careers?
+          </p>
+          <ul className="text-sm space-y-1 ml-4">
+            <li>• Alumni–student mentorship matching</li>
+            <li>• Placement trend analytics across batches</li>
+            <li>• Automated event recommendations</li>
+            <li>• Institutional memory that evolves every year</li>
+          </ul>
+        </div>
+
+        <hr className="border-neutral-300 dark:border-neutral-600" />
+
+        <div className="text-center pt-2">
+          <p className="font-semibold text-indigo-500 dark:text-indigo-400">
+            🎓 Preserving Legacy. Powering Connections. Building Continuity. 🎓
+          </p>
+        </div>
+      </div>
+
     ),
   },
   {

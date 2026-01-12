@@ -183,7 +183,7 @@ const cards = [
     src: "/assets/arterialogo.webp",
     ctaText: "Github",
     ctaLink: "https://github.com/jaivanshchawla/Arteria",
-    ctaColor: "#E53935", 
+    ctaColor: "#E53935",
     content: () => (
       <div className="space-y-4">
         <div>
@@ -274,16 +274,7 @@ const cards = [
     ctaLink: "https://github.com/jaivanshchawla/JASSPA---Alumni-Portal",
     ctaColor: "#0F52BA", // Red
     content: () => (
-      <p>
-        Babbu Maan, a legendary Punjabi singer, is renowned for his soulful
-        voice and profound lyrics that resonate deeply with his audience. Born
-        in the village of Khant Maanpur in Punjab, India, he has become a
-        cultural icon in the Punjabi music industry. <hr></hr> His songs
-        often reflect the struggles and triumphs of everyday life, capturing the
-        essence of Punjabi culture and traditions. With a career spanning over
-        two decades, Babbu Maan has released numerous hit albums and singles
-        that have garnered him a massive fan following both in India and abroad.
-      </p>
+      <p></p>
     ),
   },
   {

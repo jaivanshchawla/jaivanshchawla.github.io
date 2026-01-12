@@ -875,7 +875,166 @@ const cards = [
     ctaLink: "https://github.com/jaivanshchawla",
     ctaColor: "#3A6C72", // Purple
     content: () => (
-      <p></p>
+      <div className="space-y-4">
+        <div>
+          <h4 className="font-semibold text-slate-600 dark:text-slate-400 mb-2">
+            ✍️ The Problem Hidden in Handwriting
+          </h4>
+          <p>
+            Handwritten documents still dominate classrooms, archives, forms, and historical records —
+            yet most of this data remains effectively invisible to machines.
+          </p>
+          <p className="mt-2">
+            Traditional OCR struggles with writer variability, inconsistent spacing, noise, and spelling errors.
+            Recognizing text is hard — <span className="font-semibold text-slate-600">understanding it is harder</span>.
+          </p>
+        </div>
+
+        <hr className="border-neutral-300 dark:border-neutral-600" />
+
+        <div>
+          <p className="font-medium text-slate-500 dark:text-slate-400 mb-2">
+            ScriptSense was built to bridge that gap.
+          </p>
+          <p>
+            Not just to read handwritten text — but to transform it into
+            <span className="font-semibold text-slate-600">
+              structured, machine-usable knowledge
+            </span>.
+          </p>
+        </div>
+
+        <hr className="border-neutral-300 dark:border-neutral-600" />
+
+        <div>
+          <h4 className="font-semibold text-emerald-600 dark:text-emerald-400 mb-2">
+            🚀 What ScriptSense Actually Does
+          </h4>
+          <p className="mb-3">
+            ScriptSense is an <span className="font-semibold text-emerald-500">end-to-end OCR + NLP pipeline</span>
+            for handwritten documents — from raw images to structured semantic output.
+          </p>
+
+          <div className="space-y-2">
+            <p>
+              <strong className="text-blue-600 dark:text-blue-400">🧠 Transformer-Based OCR:</strong>
+              Fine-tuned TrOCR models for line- and page-level handwritten text recognition
+            </p>
+            <p>
+              <strong className="text-purple-600 dark:text-purple-400">📄 Multi-Writer Generalization:</strong>
+              Robust recognition across 310+ writers in the CVL dataset
+            </p>
+            <p>
+              <strong className="text-green-600 dark:text-green-400">🔎 Key Concept Extraction:</strong>
+              Named Entity Recognition with structured post-processing and correction
+            </p>
+          </div>
+        </div>
+
+        <hr className="border-neutral-300 dark:border-neutral-600" />
+
+        <div>
+          <h4 className="font-semibold text-cyan-600 dark:text-cyan-400 mb-2">
+            📊 Accuracy That Actually Matters
+          </h4>
+          <p className="mb-2">
+            ScriptSense focuses on evaluation metrics that reflect real-world usability.
+          </p>
+          <div className="space-y-2 text-sm">
+            <p><strong>📉 Character Error Rate (CER):</strong> 0.04</p>
+            <p><strong>📉 Word Error Rate (WER):</strong> 0.09</p>
+            <p>• Achieved via fine-tuning transformer OCR on writer-diverse data</p>
+            <p>• Evaluated across both line-level and page-level recognition</p>
+          </div>
+        </div>
+
+        <hr className="border-neutral-300 dark:border-neutral-600" />
+
+        <div>
+          <h4 className="font-semibold text-indigo-600 dark:text-indigo-400 mb-2">
+            🧠 Pipeline Architecture
+          </h4>
+          <p className="mb-2">
+            ScriptSense is designed as a modular, reproducible ML pipeline.
+          </p>
+          <div className="space-y-2 text-sm">
+            <p>• Automated XML parsing and label generation for CVL dataset</p>
+            <p>• Transformer fine-tuning with configurable batch size and learning rate</p>
+            <p>• OCR outputs serialized for downstream processing</p>
+            <p>• Post-OCR spelling correction using pretrained language models</p>
+            <p>• spaCy NER with optional entity reduction into broader semantic classes</p>
+          </div>
+        </div>
+
+        <hr className="border-neutral-300 dark:border-neutral-600" />
+
+        <div>
+          <h4 className="font-semibold text-teal-600 dark:text-teal-400 mb-2">
+            🧩 From Text to Structure
+          </h4>
+          <p className="mb-2">
+            Recognition alone isn’t enough — ScriptSense organizes information.
+          </p>
+          <div className="space-y-2 text-sm">
+            <p>• Extraction of 15+ entity types using spaCy NER</p>
+            <p>• Spelling normalization for noisy handwritten output</p>
+            <p>• Structured JSON schema per document sample</p>
+            <p>• Ready for downstream analytics, search, or storage</p>
+          </div>
+        </div>
+
+        <hr className="border-neutral-300 dark:border-neutral-600" />
+
+        <div>
+          <h4 className="font-semibold text-teal-600 dark:text-teal-400 mb-2">
+            🛠️ Tech Stack
+          </h4>
+          <ul className="text-sm space-y-1 ml-4">
+            <li>• <span className="text-yellow-600 dark:text-yellow-400">Python</span> – Core pipeline orchestration</li>
+            <li>• <span className="text-green-600 dark:text-green-400">PyTorch</span> – Model training and evaluation</li>
+            <li>• <span className="text-blue-600 dark:text-blue-400">HuggingFace Transformers</span> – TrOCR fine-tuning</li>
+            <li>• <span className="text-indigo-600 dark:text-indigo-400">spaCy</span> – Named entity recognition</li>
+            <li>• <span className="text-cyan-600 dark:text-cyan-400">pandas / numpy</span> – Data handling and analysis</li>
+          </ul>
+        </div>
+
+        <hr className="border-neutral-300 dark:border-neutral-600" />
+
+        <div>
+          <h4 className="font-semibold text-green-600 dark:text-green-400 mb-2">
+            📈 Research-Grade Outcomes
+          </h4>
+          <div className="space-y-2 text-sm">
+            <p><strong>🖋️ High-Fidelity OCR</strong> across noisy, real-world handwriting</p>
+            <p><strong>🧠 Structured Knowledge Extraction</strong> from unstructured text</p>
+            <p><strong>📦 Reproducible Pipeline</strong> with modular scripts and checkpoints</p>
+            <p><strong>📊 Insightful Plots</strong> for dataset and training behavior analysis</p>
+          </div>
+        </div>
+
+        <hr className="border-neutral-300 dark:border-neutral-600" />
+
+        <div>
+          <h4 className="font-semibold text-fuchsia-600 dark:text-fuchsia-400 mb-2">
+            🔮 Where ScriptSense Can Go Next
+          </h4>
+          <ul className="text-sm space-y-1 ml-4">
+            <li>• Domain-specific fine-tuning (forms, exams, medical notes)</li>
+            <li>• Multilingual handwritten OCR</li>
+            <li>• Layout-aware document understanding</li>
+            <li>• API-first deployment for document intelligence systems</li>
+          </ul>
+        </div>
+
+        <hr className="border-neutral-300 dark:border-neutral-600" />
+
+        <div className="text-center pt-2">
+          <p className="font-semibold text-slate-500 dark:text-slate-400">
+            ✍️ Turning Handwriting Into Structured Intelligence ✍️
+          </p>
+        </div>
+      </div>
     ),
+
   },
 ];

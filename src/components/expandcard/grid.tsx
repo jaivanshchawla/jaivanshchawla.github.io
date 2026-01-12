@@ -720,8 +720,152 @@ const cards = [
     ctaLink: "https://github.com/jaivanshchawla",
     ctaColor: "#FFC107", // Amber Yellow
     content: () => (
-      <p></p>
+      <div className="space-y-4">
+        <div>
+          <h4 className="font-semibold text-orange-600 dark:text-orange-400 mb-2">
+            🏏 The Problem Every Cricket Fan Knows
+          </h4>
+          <p>
+            Watching a live IPL match is pure chaos — momentum swings every over, one wicket changes everything,
+            and yet most “predictions” are either gut feelings or post-match stats.
+          </p>
+          <p className="mt-2">
+            The real question fans ask mid-match is simple:
+            <span className="font-semibold text-orange-600">
+              Who’s winning *right now* — and by how much?
+            </span>
+          </p>
+        </div>
+
+        <hr className="border-neutral-300 dark:border-neutral-600" />
+
+        <div>
+          <p className="font-medium text-orange-500 dark:text-orange-400 mb-2">
+            MatchMaven was built to bring data science into the stadium.
+          </p>
+          <p>
+            Not after the match. Not before the toss.
+            <span className="font-semibold text-orange-600">
+              Live — ball by ball — when decisions actually matter.
+            </span>
+          </p>
+        </div>
+
+        <hr className="border-neutral-300 dark:border-neutral-600" />
+
+        <div>
+          <h4 className="font-semibold text-emerald-600 dark:text-emerald-400 mb-2">
+            🚀 What MatchMaven Actually Does
+          </h4>
+          <p className="mb-3">
+            MatchMaven is a <span className="font-semibold text-emerald-500">live IPL prediction platform</span>
+            that uses machine learning to forecast match outcomes and final scores in real time.
+          </p>
+
+          <div className="space-y-2">
+            <p>
+              <strong className="text-blue-600 dark:text-blue-400">🏆 Winner Prediction:</strong>
+              ML model estimates win probabilities dynamically as the match progresses
+            </p>
+            <p>
+              <strong className="text-purple-600 dark:text-purple-400">🔢 Score Prediction:</strong>
+              Regression model predicts final total (±5 runs) using live match state
+            </p>
+            <p>
+              <strong className="text-green-600 dark:text-green-400">📊 Match Dashboard:</strong>
+              Unified view of Upcoming, Live, and Completed matches
+            </p>
+          </div>
+        </div>
+
+        <hr className="border-neutral-300 dark:border-neutral-600" />
+
+        <div>
+          <h4 className="font-semibold text-cyan-600 dark:text-cyan-400 mb-2">
+            🧠 Inside the Model
+          </h4>
+          <p className="mb-2">
+            MatchMaven isn’t guesswork — it’s trained intuition.
+          </p>
+          <div className="space-y-2 text-sm">
+            <p>• Models trained on 50,000+ historical IPL records</p>
+            <p>• Live features: runs, overs, wickets, venue, and momentum indicators</p>
+            <p>• Separate pipelines for classification (winner) and regression (score)</p>
+            <p>• Serialized models served via Flask APIs for low-latency inference</p>
+          </div>
+        </div>
+
+        <hr className="border-neutral-300 dark:border-neutral-600" />
+
+        <div>
+          <h4 className="font-semibold text-indigo-600 dark:text-indigo-400 mb-2">
+            ⚡ Real-Time, Fan-First Experience
+          </h4>
+          <p className="mb-2">
+            Data is useless if it’s slow or unreadable.
+          </p>
+          <div className="space-y-2 text-sm">
+            <p>• Live probability outputs updated on user input</p>
+            <p>• Parallax hero section and animated match cards</p>
+            <p>• Clean React–Flask integration with near-instant responses</p>
+            <p>• Designed for fans — not analysts with spreadsheets</p>
+          </div>
+        </div>
+
+        <hr className="border-neutral-300 dark:border-neutral-600" />
+
+        <div>
+          <h4 className="font-semibold text-teal-600 dark:text-teal-400 mb-2">
+            🛠️ Tech Stack
+          </h4>
+          <ul className="text-sm space-y-1 ml-4">
+            <li>• <span className="text-yellow-600 dark:text-yellow-400">Python + Flask</span> – ML inference APIs</li>
+            <li>• <span className="text-green-600 dark:text-green-400">scikit-learn</span> – Training and prediction models</li>
+            <li>• <span className="text-blue-600 dark:text-blue-400">React + Vite</span> – Fast, interactive frontend</li>
+            <li>• <span className="text-purple-600 dark:text-purple-400">CSS Animations</span> – Fluid UI interactions</li>
+            <li>• <span className="text-cyan-600 dark:text-cyan-400">Render</span> – Zero-DevOps deployment</li>
+            <li>• <span className="text-indigo-600 dark:text-indigo-400">Git LFS</span> – Large ML model versioning</li>
+          </ul>
+        </div>
+
+        <hr className="border-neutral-300 dark:border-neutral-600" />
+
+        <div>
+          <h4 className="font-semibold text-green-600 dark:text-green-400 mb-2">
+            📊 Platform Impact
+          </h4>
+          <div className="space-y-2 text-sm">
+            <p><strong>📈 Real-Time Win Probabilities</strong> during live IPL matches</p>
+            <p><strong>🎯 Score Predictions</strong> accurate within ±5 runs</p>
+            <p><strong>⚡ Sub-second Responses</strong> via Flask inference APIs</p>
+            <p><strong>🌍 Live Public Demo</strong> deployed and accessible</p>
+          </div>
+        </div>
+
+        <hr className="border-neutral-300 dark:border-neutral-600" />
+
+        <div>
+          <h4 className="font-semibold text-fuchsia-600 dark:text-fuchsia-400 mb-2">
+            🔮 What’s Next for MatchMaven
+          </h4>
+          <ul className="text-sm space-y-1 ml-4">
+            <li>• Ball-by-ball win probability graphs</li>
+            <li>• Player impact modeling (batters & bowlers)</li>
+            <li>• Team strategy simulations</li>
+            <li>• Multi-season and venue-based trend analysis</li>
+          </ul>
+        </div>
+
+        <hr className="border-neutral-300 dark:border-neutral-600" />
+
+        <div className="text-center pt-2">
+          <p className="font-semibold text-orange-500 dark:text-orange-400">
+            🏏 Turning Live Cricket Into Data-Driven Drama 🏏
+          </p>
+        </div>
+      </div>
     ),
+
   },
   {
     description: "Handwritten Text Recognition & Key Concept Extraction ",

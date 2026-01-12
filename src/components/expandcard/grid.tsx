@@ -285,16 +285,7 @@ const cards = [
     ctaLink: "https://github.com/jaivanshchawla/Satviz",
     ctaColor: "#FF5A09", // Slate Gray
     content: () => (
-      <p>
-        Metallica, an iconic American heavy metal band, is renowned for their
-        powerful sound and intense performances. Formed in Los Angeles,
-        California, they have become a cultural icon in the heavy metal music
-        industry. <br /> <br /> Their songs often reflect themes of aggression,
-        social issues, and personal struggles. With a career spanning over four
-        decades, Metallica has released numerous hit albums and singles that
-        have garnered them a massive fan following both in the United States and
-        abroad.
-      </p>
+      <p></p>
     ),
   },
   {

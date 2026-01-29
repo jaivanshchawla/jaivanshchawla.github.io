@@ -143,7 +143,7 @@ function App() {
               category="The One With All The Code"
               image="/assets/robocomp.webp"
               logo="/assets/turbo.webp"
-              link="https://example.com/case-study"
+              link="https://github.com/jaivanshchawla"
               type="content"
             />
           </div>

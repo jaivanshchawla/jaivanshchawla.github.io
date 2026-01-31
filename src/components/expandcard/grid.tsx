@@ -561,7 +561,7 @@ const cards = [
     title: "Zyntra",
     src: "/assets/ZYNTRA.webp",
     ctaText: "Visit",
-    ctaLink: "https://github.com/jaivanshchawla",
+    ctaLink: "https://github.com/jaivanshchawla/Zyntra",
     ctaColor: "#00BCD4", // Cyan
     content: () => (
       <div className="space-y-4">
